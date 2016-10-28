@@ -1,0 +1,44 @@
+/*Windows Skins css3*/
+/*Windows Aero*/
+
+/*NOTICE:
+Do NOT ask me to:
+[1]create the glassy animation/transparency
+[2]test aforementioned feature
+[3]research how to create said feature
+[4]ANYTHING to do with making it super-HD...
+[5]YOU ARE ON YOUR OWN, CUZ:
+[A]It probably has awful performance
+[B]This is not a Windows OS Sim
+[C]It's pretty un-necesarry
+[D]It may well require throwing the canvas element in there, and other stuff I DON'T wanna mess with
+*/
+
+/*default (sky blue)*/
+.Aero {
+  min-height:31px;
+  min-width:56px;
+  max-width:100%;
+  max-height:100%;
+  display:inline-block; /*fixes width spanning entire page*/
+  background: #F0F0F0;
+  /*dimmensions all set to preferred sizes individually, 
+  color "black" has been defined as a fallback measure*/
+  border-top:27px solid black; /*chnage to a sky blue*/
+  border-right:8px solid black;
+  border-bottom:4px solid black;
+  border-left:8px solid black;
+  padding: 10px 20px;
+  /*uses border image "win-7-aero-blue" 
+  slices it to the same dimmensions as the normal border (IMPORTANT that these match EXACTLY)
+  and does not retain the center, 
+  enabling the element's BG to be set independent of the border image
+  */
+  -webkit-border-image:url("Aero-Blue.png") 27 8 4 8; /* Safari */
+  -o-border-image:url("Aero-Blue.png") 27 8 4 8; /* Opera */
+  /*effects firefox*/
+  -moz-border-image:url("Aero-Blue.png") 27 8 4 8; /* Old */
+  border-image:url("Aero-Blue.png") 27 8 4 8;
+}
+
+/*todo add other colors (use ID's) */

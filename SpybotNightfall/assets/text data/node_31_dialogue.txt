@@ -1,0 +1,40 @@
+[
+
+#A1: [
+"SPINNER: Hey, agent.  You've been pretty hot lately.   looking for some extra work?", 
+"what's the operation?",
+"i'm already on a couple of missions." 
+],
+
+#B1: [
+"SPINNER: A P.e.d. exec stole some precious files from a rival at pharmhaus.  we need you to retrieve them.", 
+"What do I get out of this?",
+"Where's the node?" 
+],
+
+#B2: [
+"SPINNER: for a hacker of your talent, this should be a breeze.  all you have to do is rescue some files from a p.e.d. exec who stole them.", 
+"What do I get out of this?",
+"Where's the node?" 
+],
+
+#C1: [
+"SPINNER: that's the best part.  you already have access to it.  it's the p.e.d. re-insurance database you just opened.  And if you succeed, pharmhaus has a big credit bonus for you.", 
+"i'm in.",
+"let me think about it." 
+],
+
+#C2: [
+"SPINNER: Pharmhaus is offering a nice credit bonus as a reward.  and the best part is, the  node is the p.e.d. node that you just opened, the re-insurance database.", 
+"i'm in.",
+"let me think about it." 
+],
+
+#d1: [
+"SPINNER: you know where to go.  I'll contact you when you're finished.",
+"Close."
+]
+
+]
+
+ 

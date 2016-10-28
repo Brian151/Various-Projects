@@ -1,0 +1,51 @@
+[
+
+#A1: [
+"wm: wow, you're level 4!  that's radical!!!! I knew you'd make it!", 
+"what's up?",
+"Thanks, Winter." 
+],
+
+#A2: [
+"wm: i found something big!  i finished my nightfall search and i found another secret stash!", 
+"Where is it?",
+"What did you find?" 
+],
+
+#B1: [
+"wm: it's tucked into the pharmhaus proprietary research node.  nasty defense software.  Anyway, it's some kind of access codes for A really tight private security set-up.", 
+"Okay." 
+],
+
+#B2: [
+"wm: i'm putting the node on your map now.  I tried to get them myself, but i got rejected before i could boot up.  it's definitely nightfall though.", 
+"i'll handle it from here.",
+"great work, winter." 
+],
+
+
+#C1: [
+"wm: some kind of access codes for a really tight private security set-up.  it's hidden away in the pharmhaus proprietary research node.  nasty defense software.", 
+"Okay." 
+],
+
+#c2: [
+"wm: i'm putting the node on your map now.  I tried to get them myself, but i got rejected before i could boot up.  it's definitely nightfall though.", 
+"i'll handle it from here.",
+"great work, winter."
+],
+
+#D1: [
+"wm: thanx a lot.  kick butt!  go s.m.a.r.t.!",
+"ready to receive net data."
+],
+
+
+#d2: [
+"wm: sure thing.  kick his butt!  go s.m.a.r.t.!",
+"close."
+]
+
+]
+
+ 

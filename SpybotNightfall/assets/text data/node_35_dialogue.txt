@@ -1,0 +1,15 @@
+[
+
+#A1: [
+"DISARRAY: bravo, bravo!  you have honestly surprised me.  i never thought a newbie like you could get this far.",
+"you're next, disarray."
+],
+
+#b1: [
+"DISARRAY: i'm afraid not.  you see, you're too late.  my grand finale is already at hand.  IS EVERYBODY READY?  I HOPE YOU'RE NOT AFRAID OF THE DARK.  Three, two, one, NIGHTFALL!", 
+"No!" 
+]
+
+]
+
+ 

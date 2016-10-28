@@ -1,0 +1,12 @@
+GAME LIB FEATURE:
+codename 'Aero'
+(goal is to re-create the Aero glass* effect with the UI component system)
+*Windows Vista and Windows 7 had a beautiful theme called Aero, 
+one feature was a gradient pattern that appears on the titlebars, which made them look
+kinda of like glass.
+there's also some color filters in-progress.
+src: tech demo / prototype #6
+GAME LIB FEATURE:
+codename NONE
+color palettes and the fun stuff associated with them
+src : unlisted, apparently... tech demo "gamePalette"

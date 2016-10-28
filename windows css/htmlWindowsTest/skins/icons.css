@@ -1,0 +1,17 @@
+/*Windows Skins css3*/
+/*Icons*/
+
+/*to-do: figure-out correct way of implementing them...*/
+
+/*general icon styles*/
+.icon{
+  position:relative;
+  top:0px;
+  left:0px;
+  width:32px;
+  height:32px;
+}
+
+#icon-warning {
+  background-image:url("Common/ICON/warning.png");
+}

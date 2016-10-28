@@ -1,0 +1,47 @@
+[
+
+#A1: [
+"WM:  HEY DUDE. SORRY TO INTERRUPT An elite S.M.A.R.T.  AGENT like yoursELf.  IS IT OKAY IF WE CHAT FOR A SEC?", 
+"SURE THING.",
+"UMM...WHO ARE YOU?" 
+],
+
+#B1: [
+"WM:  THANX.  i noticed s.m.a.r.t. was down but you seem to be doing fine.  you must have some radical tricks up your sleeve. :)  Here to take care of the dr. donut problems?",
+"where did you hear about problems?",
+"what dr. donut problems?"
+],
+
+#B2: [
+"WM:  OH, I'M SORT OF A HACKER TOO. i mean i'd like to be one. i hope you don't mind that I'VE BEEN CHECKING OUT YOUR radical RUNS.  taking care of the dr. donut problems?", 
+"where did you hear about problems?",
+"what dr. donut problems?"
+],
+
+#C1: [
+"WM:  OH, I SAW S.M.A.R.T. HAD CRASHED AND I DECIDED TO DO SOME SNOOPING.  YEAH, THEY GOT HIT BY A RECENT HACK JOB AND THEIR SYSTEMS ARE ALL BUGGY.", 
+"GIVE ME THE INFO ABOUT THE SHOP.",
+"COULD YOU TELL ME WHERE THAT IS?" 
+],
+
+#C2: [
+"WM:  I GUESS THAT'S WAY BENEATH YOUR RADAR.  SOME HACKER SCREWED AROUND WITH THEIR SYSTEMS AND NOW THEY'RE ALL BUGGY.", 
+"GIVE ME THE INFO ABOUT THE NODE.",
+"COULD YOU TELL ME WHERE THE NODE IS?" 
+],
+
+#d1: [
+"WM:  sure, i'LL send it to you right away, i know i've got it around here somewhere. hang on a sec...",
+"Take your time.",
+"i'M waiting..."
+],
+
+
+#e1: [
+"WM:  GOT IT!  I'M UPLOADING THE NODE ON TO YOUR NETMAP NOW.  KEWL TALKIN  TO YOU.  CUL8R.",
+"READY TO UPLOAD NODE DATA."
+]
+
+]
+
+ 

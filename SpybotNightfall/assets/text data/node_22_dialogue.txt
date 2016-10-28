@@ -1,0 +1,38 @@
+[
+
+#A1: [
+"SuperPhreak:  ~~~ ~~ ~~~~ ~ ~~~~~ ~~~  Man, it's hard to stay connected.  nice work so far. ", 
+"what did you find out?",
+"Thanks." 
+],
+
+#A2: [
+"SuperPhreak:  i used a neural net sequencer to cross-reference all of the logs you've given me so far. i was able to trace the programs back to the node that originally spawned them onto the net.", 
+"Where is it?",
+"Any idea who's behind it?"
+],
+
+#B1: [
+"SuperPhreak:  It's a new node, so I'm not sure how it connects - maybe some backdoor somewhere.  anyway, i don't know who it belongs to, but I'll keep looking.", 
+"And Me?" 
+],
+
+#B2: [
+"SuperPhreak:  You're doing an excellent job.  keep on hacking and tell me what you find.  i'll load the new node on your netmap now.", 
+"close." 
+],
+
+
+#C1: [
+"SuperPhreak:  just suspicions for now, but i did find a central location, a new node.  Not sure how it connects - maybe a backdoor somewhere.", 
+"What do i do?" 
+],
+
+#C2: [
+"SuperPhreak:  You're doing an excellent job.  keep on hacking and tell me what you find.  i'll load the new node on your netmap now.", 
+"Ready to receive net data."
+]
+
+]
+
+ 

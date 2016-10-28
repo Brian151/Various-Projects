@@ -1,0 +1,42 @@
+[
+
+#A1: [
+"SuperPhreak:  Nice work.  You keep going at this rate, you may just be aN Elite agent yet.  Welcome to Level 3.", 
+"How's the  S.M.A.R.T. system?",
+"Thanks.  So what's up?" 
+],
+
+#B1: [
+"SuperPhreak:  I'm starting to see a strong pattern throughout the Net.  These intrusions and corruptions aren't isolated incidents. ", 
+"That doesn't sound good." 
+],
+
+#B2: [
+"SuperPhreak:  AND S.M.A.R.T. is still going down every few minutes.   It all adds up to some kind of big conspiracy.", 
+"What can I do to help?",
+"Like what?" 
+],
+
+#C1: [
+"SuperPhreak:  Still a wreck.  We're going off-line like every few minutes.  It's all I can do to keep communicating.  ", 
+"hang in there." 
+],
+
+#C2: [
+"SuperPhreak:  I'LL DO MY BEST. With all these corrupt programs squirming around, I've got a feeling something big is going on.", 
+"What can I do to help?",
+"Like what?"  
+],
+
+#d1: [
+"SuperPhreak:  lIKE SOMETHING THAT'S GOING TO DAMAGE THE WHOLE NET.  kEEP LOOKING AROUND.  i'll upgrade you to security level three now.", 
+"READY for security level upgrade." 
+],
+
+#d2: [
+"SuperPhreak:  STARTING SNOOPING AROUND.  WHATEVER THIS IS, IT'S GOING TO AFFECT THE entire NET.  i'LL i'll upgrade you to security level three now.", 
+"READY for security level upgrade." 
+]
+
+]
+ 

@@ -1,0 +1,1 @@
+Half of the program DisArray wants is here.  Collect the keys to temporarily shut down the node's surveillance and allow DisArray access. 

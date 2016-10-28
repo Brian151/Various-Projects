@@ -1,0 +1,44 @@
+[
+
+#A1: [
+"WM:  hey dude.  it's me again.", 
+"Hey, winter.",
+"what's up?" 
+],
+
+#A2: [
+"WM:  kewl  battle!   hey, i was lookin over some of the nodes you've been through and i found something funny.  whoever did the hack job through pharmhaus left something behind.", 
+"Left what behind?"
+],
+
+#B1: [
+"WM:  some kind of weird program.  i couldn't get a good look at it 'cause it DISAPPEARED before i could catch it.", 
+"What did it do?",
+"WHERE WAS IT FROM?" 
+],
+
+#C1: [
+"WM:  don't know, seemed to be A link.  Something about Nightfall.  it might be connected to whoever is corrupting these nodes.  I'll keep lookin into it though.", 
+"You do that.",
+"Thanks a lot." 
+],
+
+#C2: [
+"WM:  i'm not sure. MAYBE THE SAME HACKER THAT'S BEEN CORRUPTING THESE NODES.  I saw a link to Something called Nightfall..  i'll keep checking the logs and see if i can find anything else.", 
+"You do that.",
+"Thanks a lot."
+],
+
+#D1: [
+"WM:  oh, sure, nothin' you couldn't have done.  i'll c u l8r, partner.", 
+"LATER." 
+],
+
+#D2: [
+"WM:  yes, sir, always ready to help s.m.a.r.t., sir.  catch you later.", 
+"LATER." 
+]
+
+]
+
+ 

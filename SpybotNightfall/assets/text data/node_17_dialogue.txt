@@ -1,0 +1,31 @@
+[
+
+#A1: [
+"Disarray:  hello again.", 
+"oh, hey disarray." 
+],
+
+#b1: [
+"Disarray:  nice work on that last node.  i was just coming to check it out myself.  guess the work here is done.", 
+"what do you mean?" 
+],
+
+#b2: [
+"Disarray:  WHAT DO I MEAN? i just took care of the rest OF the nodes IN THIS AREA.  Everything's totally clean.", 
+"so what should i do?",
+"Are you sure about that?" 
+],
+
+#c1: [
+"Disarray:  just stay out of my way, small fry.  check you later.",
+"see you around."
+],
+
+#c2:[
+"Disarray:  look, kid, i'm a _much_ better hacker than you are.  if i tell you i THEY'RE CLEAN, THEY'RE CLEAN.  check you later.",
+"see you around."
+]
+
+]
+
+ 

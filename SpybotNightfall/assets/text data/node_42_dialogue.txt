@@ -1,0 +1,15 @@
+[
+
+#A1: [
+"wm: That battle was sooo kewl!  you rock!  and managed to retrieve that experimental wizard software.", 
+"how does it work?"
+],
+
+#B1: [
+"wm: the program should be ready to use, just plug and play.  oh, one more thing. i've been scanning these nodes.  be SURE to GET SOME LEVEL four SOFTWARE AND BE READY FOR SOME NASTY SECURITY.  go get 'em partner.", 
+"ready to receive software transfer." 
+]
+
+]
+
+ 

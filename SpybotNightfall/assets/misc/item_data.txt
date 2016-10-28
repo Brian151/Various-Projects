@@ -1,0 +1,35 @@
+[
+
+[ 
+	#NAME			:"PROGRAM DOCK",
+	#NAMETEXT	:"UPLOAD ZONE",
+	#ICON			:1,
+	#TYPE			:#DOCK, 
+	#STATS		:[],
+	#Description:"UPLOAD YOUR PROGRAMS HERE"
+],
+
+[ 
+	#NAME			:"BASIC CREDIT",
+	#NAMETEXT	:"CREDITS",
+	#ICON			:2,
+	#TYPE			:#CREDIT, 
+	#STATS		:[ #point:1000 ],
+	#Description:"PICK THIS UP FOR EXTRA CASH"
+],
+
+[ 
+	#NAME			:"WIN FLAG",
+	#NAMETEXT	:"DATA ITEM",
+	#ICON			:3,
+	#TYPE			:#FLAG, 
+	#STATS		:[],
+	#Description:"COLLECT THIS TO WIN THE BATTLE"
+],
+
+[ 
+	#NAME			:"MAX CREDIT",
+	#NAMETEXT	:"CREDITS",
+	#ICON			:4,
+	#TYPE			:#CREDIT, 
+...the rest is missing... 

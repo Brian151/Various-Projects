@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<img id="scream" src="img_the_scream.jpg" alt="sprite">
+<canvas id="myCanvas" width="64" height="64" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+<div id="data"></div>
+
+<script>
+var colors16 = [0, 17, 34, 51, 68, 85, 102, 119, 136, 153, 170, 187, 204, 221, 238, 255];
+//var colors16 = [0,34,68,102,136,170,204,255];
+
+function bit16(col,report){
+var col = col; 
+var test = {};
+ var out = null;
+ for (var i=0; i < colors16.length; i++){
+  var current = colors16[i];
+  if((col < current)){
+   var t = current - col;
+test[current] = t;
+  } else if ((col >  current)) {
+ var t = col - current;  
+test[current] = t;
+  } else {
+   test[current] = 0;
+  }
+ }
+ var least = 255;
+var out = 255;
+ for (var i2=0; i2<colors16.length; i2++){
+  var color = colors16[i2];
+  if(test[color] < least){
+   least = test[color];
+out = color;
+  }
+ }
+if(!report){
+ return out;
+} else {
+return col + " _ " + least + " _ " + JSON.stringify(test);
+}
+}
+document.getElementById("scream").onload = function() {
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    var img = document.getElementById("scream");
+    ctx.drawImage(img, 0, 0);
+    var imgData = ctx.getImageData(0, 0, c.width, c.height);
+    //24 > 16 color depth
+    var i;
+    for (i = 0; i < imgData.data.length; i++) {
+imgData.data[i] = bit16(imgData.data[i]);
+    }
+    ctx.putImageData(imgData, 0, 0);
+//document.getElementById("data").innerHTML = JSON.stringify(imgData.data[0]);
+};
+</script>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+[
+
+#A1: [
+"Spinner: hey, pal.  got another job for you.", 
+"who is it for?",
+"What's the job?" 
+],
+
+#B1: [
+"spinner: p.e.d. is reporting a malfunctioning sector in their privileged accounts node.  something there is destroying the surrounding memory units.", 
+"got it."
+],
+
+#B2: [
+"spinner: head there and clean up the problem quietly.  p.e.d. will provide you with a privileged reward.", 
+"sign me up.",
+"let me think about it." 
+],
+
+#C1: [
+"spinner: it's p.e.d. - they always offer sweet credit rewards.", 
+"okay."
+],
+
+#C2: [
+"spinner: a memory unit in their privileged accounts node went bluescreen and needs to be shut down, quietly.  should be a walk in the park for someone with your ability.", 
+"sign me up.",
+"let me think about it." 
+],
+
+#d1: [
+"spinner: i'll put the node up on your map.  And, between you and me, you may want to check out the rest of the connecting nodes too.  things seem a little screwy. ciao.",
+"ready to receive net data."
+]
+
+]
+
+ 

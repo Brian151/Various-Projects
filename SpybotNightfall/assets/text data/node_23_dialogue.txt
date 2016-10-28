@@ -1,0 +1,50 @@
+[
+
+#A1: [
+"SuperPhreak:  OK, I'M Finally BACK ON THE NET.   Hey, NEWS ON THE s.m.a.r.t. BUG.", 
+"gO FOR IT."
+],
+
+#a2: [
+"SuperPhreak:  lOOKS LIKE IT MUST HAVE BEEN AN INSIDE JOB.  just happened too quickly.  The Hacker had the passwords.", 
+"so what do we do?",
+"do you have any idea who's repsonsible?" 
+],
+
+#B1: [
+"SuperPhreak:  a couple ideas, but nothing definite.  I'll keep working on it.  Still, as the only S.M.A.R.T. agent left, you'll have to handle the net problems.", 
+"What about Disarray?",
+"actually, another agent wrote me." 
+],
+
+#B2: [
+"SuperPhreak:  I'll keep working on getting S.m.a.r.t. on its feet. since you're the only S.M.A.R.T. agent left, you'll have to handle the net problems.", 
+"What about Disarray?",
+"actually, I TALKED TO ANOTHER AGENT." 
+],
+
+
+#C1: [
+"SuperPhreak:  Disarray?  what do you know about Disarray?", 
+"NOTHING MUCH."
+],
+
+#C2: [
+"SuperPhreak:  hold on.  NoT possible.  S.m.a.r.t.'s down.  Who was this agent?", 
+"his name was disarray. "
+],
+
+#d1: [
+"SuperPhreak:  If you're talking about who I think you are, that's bad news.  I was training an agent named disarray a couple months ago.  he got thrown out for being THE reckless and greedy loser that he is.  Don't trust a word he says.",
+"He asked me to do A mission.",
+"what do we do about him?"
+],
+
+#d2: [
+"SuperPhreak:  ~~ ~~~ ~ Don't have a lot of time left.  i'll start tracing disarray.  go along with his idea so i can see what he's doing.  oh, and ~ ~~~ ~~~~ ~ ~~ ~",
+"Close."
+]
+
+]
+
+ 

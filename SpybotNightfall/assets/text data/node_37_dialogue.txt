@@ -1,0 +1,16 @@
+[
+
+#A1: [
+"SPINNER: Great work, agent.  p.e.d. thanks you.  so, mind letting little old spinner know what all the big, bad news is about?", 
+"later. i've got to work."
+],
+
+#B1: [
+"SPINNER: No problem, no problem.  duty first and all that.  just don't forget who's been your friend, okay?  HERE ARE YOUR CREDITS.  ciao, buddy.", 
+"READY TO RECEIVE CREDIT TRANSFER." 
+]
+
+
+]
+
+ 

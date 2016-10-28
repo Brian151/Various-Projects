@@ -1,0 +1,5 @@
+SUPERPHREAK: Slingshot is a ranged attack program.  
+I think we're in range now.  Click on the command to activate it.
+
+
+ 

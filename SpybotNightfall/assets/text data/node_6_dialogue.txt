@@ -1,0 +1,20 @@
+[
+
+#A1: [
+"superphreak:  newbie, are you reading me?", 
+"sure, go ahead."
+],
+
+#B1: [
+"superphreak:  GREAT.  I HAVE SOME INFORMATION FOR ~~~ ~~ ~~~~~~~ ~ ~~~~~~ ~~~ ~~~~ ~ ~~~ ~~~~~", 
+"YOU'RE BREAKING UP."
+],
+
+#C1: [
+"SUPERPHREAK:   ~~~ ~~ ~~~~~~~ ~ ~~~~~~ ~~~ ~~~~ ~ ~~~ ~~~~~ ~ ~~~~~~ ~~~ ~~~~ ~~~~~~ ~~~ ~~~", 
+"Close."
+]
+
+]
+
+ 

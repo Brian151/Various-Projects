@@ -1,0 +1,40 @@
+[
+
+#A1: [
+"DISARRAY: hello there, s.m.a.r.t. amateur.", 
+"What do you want?"
+],
+
+#B1: [
+"DISARRAY: what's the matter?  no time to chat with an old s.m.a.r.t. buddy?", 
+"s.m.a.r.t. kicked you out." 
+],
+
+#C1: [
+"DISARRAY: CLEARLY THEIR LOSS. so i guess by now you know the whole nightfall story, huh?", 
+"Why are you trying to crash the net?" 
+],
+
+#D1: [
+"DISARRAY: simple.  the nightfall software i set up is going to take every single node off-line.  that means i will control who gets access to the net and who doesn't.",
+"so?"
+],
+
+#d2: [
+"DISARRAY: people will be begging me to get back on-line.  And i'll let them, just as long as they're willing to pay for the privilege.  i'll make Billions.  what can i say - it's a brilliant plan.", 
+"that will never happen."
+],
+
+#E1: [
+"DISARRAY: Actually, it will.  you don't have the codes to access my private node, and even if you did, you'd never beat my security.  you're just a pathetic newbie.  so why don't you stop wasting your time fighting me and GO save up your credits to pay me off later?", 
+"You're going down, disarray." 
+],
+
+#f1: [
+"DISARRAY: suit yourself.  it'll be fun to show you just how inferior you are.   l8r, loser.",
+"we'll see."
+]
+
+]
+
+ 

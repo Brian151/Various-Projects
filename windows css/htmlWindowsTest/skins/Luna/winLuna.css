@@ -1,0 +1,52 @@
+/*Windows Skins css3*/
+/*Windows Luna*/
+
+/*default (blue)*/
+.Luna {
+  min-height:65px;
+  min-width:66px;
+  max-width:100%;
+  max-height:100%;
+  display:inline-block; /*fixes width spanning entire page*/
+  background:#ECE9D8;
+  /*dimmensions all set to preferred sizes individually, 
+  color "blue" has been defined as a fallback measure*/
+  border-top:29px solid blue;
+  border-right:5px solid blue;
+  border-bottom:5px solid blue;
+  border-left:5px solid blue;
+  padding: 10px 20px;
+  /*uses border image "Luna-Blue.png" 
+  slices it to the same dimmensions as the normal border (IMPORTANT that these match EXACTLY)
+  and does not retain the center, 
+  enabling the element's BG to be set independent of the border image
+  */
+  -webkit-border-image:url("Luna-Blue.png") 29 5 5 5; /* Safari */
+  -o-border-image:url("Luna-Blue.png") 29 5 5 5; /* Opera */
+  /*effects firefox*/
+  -moz-border-image:url("Luna-Blue.png") 29 5 5 5; /* Old */
+  border-image:url("Luna-Blue.png") 29 5 5 5;
+}
+
+/*Variants (IMPORTANT: built on top of default Luna Skin
+html usage: <div class="Luna" id="<Olive/Silver>"></div>)*/
+
+#LunaOlive {
+  border-color:#B0C088;
+  -webkit-border-image-source:url("Luna-OliveGreen.png"); /* Safari */
+  -o-border-image-source:url("Luna-OliveGreen.png"); /* Opera */
+  /*effects firefox*/
+  -moz-border-image-source:url("Luna-OliveGreen.png"); /* Old */
+  border-image-source:url("Luna-OliveGreen.png");
+}
+
+#LunaSilver{
+  border-color:#C4C7D5;
+  -webkit-border-image-source:url("Luna-Silver.png"); /* Safari */
+  -o-border-image-source:url("Luna-Silver.png"); /* Opera */
+  /*effects firefox*/
+  -moz-border-image-source:url("Luna-Silver.png"); /* Old */
+  border-image-source:url("Luna-Silver.png");
+}
+
+

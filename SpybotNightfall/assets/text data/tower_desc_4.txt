@@ -1,0 +1,1 @@
+This node has reported a security bug that has locked down its internal network.  Defeat the security software to proceed. 

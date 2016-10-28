@@ -1,0 +1,442 @@
+[
+[#ID:1, #TYPE: #SMART, #NAME: "S.M.A.R.T. HQ", 
+ #ORDER:[ 
+            [#WHO: 1, #TEXT:"A1", #OPTION: [[#ACTION:#dialogue, #ARG:3], [#ACTION:#dialogue, #ARG:2] ]], 
+            [#WHO: 1, #TEXT:"B1", #OPTION: [[#ACTION:#dialogue, #ARG:3], [#ACTION:#dialogue, #ARG:2] ]], 
+            [#WHO: 1, #TEXT:"B2", #OPTION: [[#ACTION:#close, #ARG:4] ]] 
+             
+]],
+
+[#ID:2, #TYPE: #WAREZ, #NAME: "Leo Leontis", 
+ #ORDER:[ 
+            [#WHO: 3, #TEXT:"A1", #OPTION: [[#ACTION:#close, #ARG:0], [#ACTION:#goShop, #ARG:0] ]]  
+]],
+
+[#ID:3, #TYPE: #BATTLE, #NAME: "DISARRAY", 
+ #ORDER:[ 
+            [#WHO: 6, #TEXT:"A1", #OPTION: [[#ACTION:#dialogue, #ARG:2], [#ACTION:#dialogue, #ARG:2] ]], 
+            [#WHO: 6, #TEXT:"B1", #OPTION: [[#ACTION:#dialogue, #ARG:3] ]], 
+            [#WHO: 6, #TEXT:"C1", #OPTION: [[#ACTION:#showNode, #ARG:2] ]]  
+]],
+
+[#ID:4, #TYPE: #BATTLE, #NAME: "Wintermutant", 
+ #ORDER:[ 
+            [#WHO: 5, #TEXT:"A1", #OPTION: [[#ACTION:#dialogue, #ARG:2], [#ACTION:#dialogue, #ARG:3] ]], 
+            [#WHO: 5, #TEXT:"B1", #OPTION: [[#ACTION:#dialogue, #ARG:4], [#ACTION:#dialogue, #ARG:5] ]], 
+            [#WHO: 5, #TEXT:"B2", #OPTION: [[#ACTION:#dialogue, #ARG:4], [#ACTION:#dialogue, #ARG:5] ]], 
+            [#WHO: 5, #TEXT:"C1", #OPTION: [[#ACTION:#dialogue, #ARG:6], [#ACTION:#dialogue, #ARG:6] ]], 
+            [#WHO: 5, #TEXT:"C2", #OPTION: [[#ACTION:#dialogue, #ARG:6], [#ACTION:#dialogue, #ARG:6] ]], 
+            [#WHO: 5, #TEXT:"D1", #OPTION: [[#ACTION:#dialogue, #ARG:7], [#ACTION:#dialogue, #ARG:7] ]], 
+            [#WHO: 5, #TEXT:"E1", #OPTION: [[#ACTION:#showNode, #ARG:14] ]]
+]],
+
+[#ID:5, #TYPE: #BATTLE, #NAME: "Spinner", 
+ #ORDER:[ 
+            [#WHO: 4, #TEXT:"A1", #OPTION: [[#ACTION:#dialogue, #ARG:3], [#ACTION:#dialogue, #ARG:2] ]], 
+            [#WHO: 4, #TEXT:"B1", #OPTION: [[#ACTION:#dialogue, #ARG:5], [#ACTION:#dialogue, #ARG:4] ]], 
+            [#WHO: 4, #TEXT:"B2", #OPTION: [[#ACTION:#dialogue, #ARG:2] ]], 
+            [#WHO: 4, #TEXT:"C1", #OPTION: [[#ACTION:#dialogue, #ARG:6], [#ACTION:#dialogue, #ARG:7] ]], 
+            [#WHO: 4, #TEXT:"C2", #OPTION: [[#ACTION:#dialogue, #ARG:6], [#ACTION:#dialogue, #ARG:7] ]], 
+            [#WHO: 4, #TEXT:"D1", #OPTION: [[#ACTION:#showNode, #ARG:10] ]], 
+            [#WHO: 4, #TEXT:"D2", #OPTION: [[#ACTION:#showNode, #ARG:10] ]]  
+
+]],
+
+[#ID:6, #TYPE: #BATTLE, #NAME: "SuperPhreak", 
+ #ORDER:[ 
+            [#WHO: 2, #TEXT:"A1", #OPTION: [[#ACTION:#dialogue, #ARG:2] ]], 
+            [#WHO: 2, #TEXT:"B1", #OPTION: [[#ACTION:#dialogue, #ARG:3] ]], 
+            [#WHO: 2, #TEXT:"C1", #OPTION: [[#ACTION:#close, #ARG:10] ]] 
+        
+]],
+
+[#ID:7, #TYPE: #BATTLE, #NAME: "SUPERPHREAK", 
+ #ORDER:[ 
+            [#WHO: 2, #TEXT:"A1", #OPTION: [[#ACTION:#dialogue, #ARG:2] ]], 
+            [#WHO: 2, #TEXT:"B1", #OPTION: [[#ACTION:#dialogue, #ARG:3], [#ACTION:#dialogue, #ARG:3] ]],
+            [#WHO: 2, #TEXT:"B2", #OPTION: [[#ACTION:#dialogue, #ARG:4], [#ACTION:#dialogue, #ARG:4] ]],
+            [#WHO: 2, #TEXT:"C1", #OPTION: [[#ACTION:#close, #ARG:0] ]]
+             
+]],
+
+[#ID:8, #TYPE: #BATTLE, #NAME: "SuperPhreak", 
+ #ORDER:[ 
+            [#WHO: 2, #TEXT:"A1", #OPTION: [[#ACTION:#dialogue, #ARG:2] ]],
+				[#WHO: 2, #TEXT:"A2", #OPTION: [[#ACTION:#dialogue, #ARG:3], [#ACTION:#dialogue, #ARG:3] ]], 
+            [#WHO: 2, #TEXT:"B1", #OPTION: [[#ACTION:#dialogue, #ARG:4], [#ACTION:#dialogue, #ARG:4] ]], 
+            [#WHO: 2, #TEXT:"C1", #OPTION: [[#ACTION:#dialogue, #ARG:5] ]], 
+            [#WHO: 2, #TEXT:"C2", #OPTION: [[#ACTION:#dialogue, #ARG:6], [#ACTION:#dialogue, #ARG:9] ]],             
+            [#WHO: 2, #TEXT:"D1", #OPTION: [[#ACTION:#dialogue, #ARG:7], [#ACTION:#dialogue, #ARG:7] ]], 
+            [#WHO: 2, #TEXT:"D2", #OPTION: [[#ACTION:#dialogue, #ARG:8] ]], 
+            [#WHO: 2, #TEXT:"D3", #OPTION: [[#ACTION:#levelUpgrade, #ARG:0] ]], 
+            [#WHO: 2, #TEXT:"E1", #OPTION: [[#ACTION:#dialogue, #ARG:10], [#ACTION:#dialogue, #ARG:10] ]],
+            [#WHO: 2, #TEXT:"E2", #OPTION: [[#ACTION:#dialogue, #ARG:11] ]],
+            [#WHO: 2, #TEXT:"E3", #OPTION: [[#ACTION:#levelUpgrade, #ARG:0] ]]
+            
+  
+]],
+
+[#ID:9, #TYPE: #BATTLE, #NAME: "SuperPhreak", 
+ #ORDER:[ 
+            [#WHO: 2, #TEXT:"A1", #OPTION: [[#ACTION:#dialogue, #ARG:2] ]], 
+            [#WHO: 2, #TEXT:"B1", #OPTION: [[#ACTION:#close, #ARG:0] ]]               
+
+]],
+
+[#ID:10, #TYPE: #BATTLE, #NAME: "Spinner", 
+ #ORDER:[ 
+            [#WHO: 4, #TEXT:"A1", #OPTION: [[#ACTION:#giveProgram, #ARG: "Clog.01"] ]]  
+]],
+
+[#ID:11, #TYPE: #BATTLE, #NAME: "SuperPhreak", 
+ #ORDER:[ 
+            [#WHO: 2, #TEXT:"A1", #OPTION: [[#ACTION:#dialogue, #ARG:3], [#ACTION:#dialogue, #ARG:2] ]], 
+            [#WHO: 2, #TEXT:"B1", #OPTION: [[#ACTION:#dialogue, #ARG:4] ]], 
+            [#WHO: 2, #TEXT:"B2", #OPTION: [[#ACTION:#dialogue, #ARG:4] ]], 
+            [#WHO: 2, #TEXT:"C1", #OPTION: [[#ACTION:#close, #ARG:0] ]] 
+            
+]],
+
+[#ID:12, #TYPE: #WAREZ, #NAME: "Tsumara285", 
+ #ORDER:[ 
+            [#WHO: 7, #TEXT:"A1", #OPTION: [[#ACTION:#close, #ARG:0], [#ACTION:#goShop, #ARG:0] ]] 
+]],
+
+[#ID:13, #TYPE: #BATTLE, #NAME: "Joana Boaventura", 
+ #ORDER:[ 
+            [#WHO: 8, #TEXT:"A1", #OPTION: [[#ACTION:#dialogue, #ARG:2], [#ACTION:#dialogue, #ARG:2] ]], 
+            [#WHO: 8, #TEXT:"A2", #OPTION: [[#ACTION:#dialogue, #ARG:5], [#ACTION:#dialogue, #ARG:3] ]],
+				[#WHO: 8, #TEXT:"B1", #OPTION: [[#ACTION:#dialogue, #ARG:4] ]], 
+            [#WHO: 8, #TEXT:"B2", #OPTION: [[#ACTION:#dialogue, #ARG:7], [#ACTION:#dialogue, #ARG:7] ]], 
+            [#WHO: 8, #TEXT:"C1", #OPTION: [[#ACTION:#dialogue, #ARG:6] ]], 
+            [#WHO: 8, #TEXT:"C2", #OPTION: [[#ACTION:#dialogue, #ARG:7], [#ACTION:#dialogue, #ARG:7] ]], 
+            [#WHO: 8, #TEXT:"D1", #OPTION: [[#ACTION:#showNode, #ARG:34] ]]  
+
+]],
+
+[#ID:14, #TYPE: #BATTLE, #NAME: "DisArray", 
+ #ORDER:[ 
+            [#WHO: 6, #TEXT:"A1", #OPTION: [[#ACTION:#dialogue, #ARG:2], [#ACTION:#dialogue, #ARG:2] ]], 
+            [#WHO: 6, #TEXT:"A2", #OPTION: [[#ACTION:#dialogue, #ARG:3], [#ACTION:#dialogue, #ARG:3] ]],
+            [#WHO: 6, #TEXT:"B1", #OPTION: [[#ACTION:#dialogue, #ARG:4], [#ACTION:#dialogue, #ARG:5] ]], 
+            [#WHO: 6, #TEXT:"C1", #OPTION: [[#ACTION:#dialogue, #ARG:6], [#ACTION:#dialogue, #ARG:6] ]], 
+            [#WHO: 6, #TEXT:"D1", #OPTION: [[#ACTION:#dialogue, #ARG:6], [#ACTION:#dialogue, #ARG:6] ]], 
+            [#WHO: 6, #TEXT:"E1", #OPTION: [[#ACTION:#dialogue, #ARG:7] ]],  
+            [#WHO: 6, #TEXT:"F1", #OPTION: [[#ACTION:#showNode, #ARG:24] ]]
+
+]],
+
+[#ID:15, #TYPE: #BATTLE, #NAME: "Wintermutant", 
+ #ORDER:[ 
+            [#WHO: 5, #TEXT:"A1", #OPTION: [[#ACTION:#dialogue, #ARG:2], [#ACTION:#dialogue, #ARG:2] ]], 
+            [#WHO: 5, #TEXT:"A2", #OPTION: [[#ACTION:#dialogue, #ARG:3] ]],
+            [#WHO: 5, #TEXT:"B1", #OPTION: [[#ACTION:#dialogue, #ARG:4], [#ACTION:#dialogue, #ARG:5] ]], 
+            [#WHO: 5, #TEXT:"C1", #OPTION: [[#ACTION:#dialogue, #ARG:7], [#ACTION:#close, #ARG:6] ]], 
+            [#WHO: 5, #TEXT:"C2", #OPTION: [[#ACTION:#dialogue, #ARG:7], [#ACTION:#close, #ARG:6] ]],  
+            [#WHO: 5, #TEXT:"D1", #OPTION: [[#ACTION:#close, #ARG:0] ]], 
+            [#WHO: 5, #TEXT:"D2", #OPTION: [[#ACTION:#close, #ARG:0] ]]  
+]],
+
+[#ID:16, #TYPE: #BATTLE, #NAME: "SuperPhreak", 
+ #ORDER:[ 
+            [#WHO: 2, #TEXT:"A1", #OPTION: [[#ACTION:#dialogue, #ARG:4], [#ACTION:#dialogue, #ARG:2] ]], 
+            [#WHO: 2, #TEXT:"B1", #OPTION: [[#ACTION:#dialogue, #ARG:3] ]], 
+            [#WHO: 2, #TEXT:"B2", #OPTION: [[#ACTION:#dialogue, #ARG:7], [#ACTION:#dialogue, #ARG:6] ]], 
+            [#WHO: 2, #TEXT:"C1", #OPTION: [[#ACTION:#dialogue, #ARG:5] ]], 
+            [#WHO: 2, #TEXT:"C2", #OPTION: [[#ACTION:#dialogue, #ARG:7], [#ACTION:#dialogue, #ARG:6] ]],
+            [#WHO: 2, #TEXT:"D1", #OPTION: [[#ACTION:#levelUpgrade, #ARG:10] ]], 
+            [#WHO: 2, #TEXT:"D2", #OPTION: [[#ACTION:#levelUpgrade, #ARG:10] ]]
+
+]],
+
+[#ID:17, #TYPE: #BATTLE, #NAME: "DisArray", 
+ #ORDER:[ 
+
+            [#WHO: 6, #TEXT:"A1", #OPTION: [[#ACTION:#dialogue, #ARG:2] ]], 
+            [#WHO: 6, #TEXT:"B1", #OPTION: [[#ACTION:#dialogue, #ARG:3] ]], 
+            [#WHO: 6, #TEXT:"B2", #OPTION: [[#ACTION:#dialogue, #ARG:4], [#ACTION:#dialogue, #ARG:5] ]],
+            [#WHO: 6, #TEXT:"C1", #OPTION: [[#ACTION:#close, #ARG:0] ]], 
+            [#WHO: 6, #TEXT:"C2", #OPTION: [[#ACTION:#close, #ARG:0] ]]  
+
+]],
+
+[#ID:18, #TYPE: #BATTLE, #NAME: "SuperPhreak", 
+ #ORDER:[ 
+            [#WHO: 2, #TEXT:"A1", #OPTION: [[#ACTION:#dialogue, #ARG:2] ]], 
+            [#WHO: 2, #TEXT:"A2", #OPTION: [[#ACTION:#dialogue, #ARG:3], [#ACTION:#dialogue, #ARG:5] ]],
+            [#WHO: 2, #TEXT:"B1", #OPTION: [[#ACTION:#dialogue, #ARG:4] ]], 
+            [#WHO: 2, #TEXT:"B2", #OPTION: [[#ACTION:#giveMessage, #ARG:"LOGS SENT"] ]], 
+            [#WHO: 2, #TEXT:"C1", #OPTION: [[#ACTION:#dialogue, #ARG:6] ]], 
+            [#WHO: 2, #TEXT:"C2", #OPTION: [[#ACTION:#giveMessage, #ARG:"LOGS SENT"] ]]  
+
+]],
+
+[#ID:19, #TYPE: #WAREZ, #NAME: "Kimoni Ameotung", 
+ #ORDER:[ 
+            [#WHO: 9, #TEXT:"A1", #OPTION: [[#ACTION:#close, #ARG:0], [#ACTION:#goShop, #ARG:0] ]] 
+]],
+
+[#ID:20, #TYPE: #BATTLE, #NAME: "DisArray", 
+ #ORDER:[ 
+            [#WHO: 6, #TEXT:"A1", #OPTION: [[#ACTION:#dialogue, #ARG:2], [#ACTION:#dialogue, #ARG:2] ]], 
+            [#WHO: 6, #TEXT:"B1", #OPTION: [[#ACTION:#dialogue, #ARG:3], [#ACTION:#dialogue, #ARG:3] ]], 
+            [#WHO: 6, #TEXT:"C1", #OPTION: [[#ACTION:#close, #ARG:0] ]] 
+ 
+]],
+
+[#ID:21, #TYPE: #BATTLE, #NAME: "SuperPhreak", 
+ #ORDER:[ 
+            [#WHO: 2, #TEXT:"A1", #OPTION: [[#ACTION:#dialogue, #ARG:2] ]], 
+            [#WHO: 2, #TEXT:"B1", #OPTION: [[#ACTION:#dialogue, #ARG:3] ]], 
+            [#WHO: 2, #TEXT:"C1", #OPTION: [[#ACTION:#levelUpgrade, #ARG:0] ]]  
+
+]],
+
+[#ID:22, #TYPE: #BATTLE, #NAME: "SuperPhreak", 
+ #ORDER:[ 
+            [#WHO: 2, #TEXT:"A1", #OPTION: [[#ACTION:#dialogue, #ARG:2], [#ACTION:#dialogue, #ARG:2] ]], 
+            [#WHO: 2, #TEXT:"A2", #OPTION: [[#ACTION:#dialogue, #ARG:3], [#ACTION:#dialogue, #ARG:5] ]], 
+            [#WHO: 2, #TEXT:"B1", #OPTION: [[#ACTION:#dialogue, #ARG:4] ]], 
+            [#WHO: 2, #TEXT:"B2", #OPTION: [[#ACTION:#showNode, #ARG:40] ]], 
+            [#WHO: 2, #TEXT:"C1", #OPTION: [[#ACTION:#dialogue, #ARG:6] ]], 
+            [#WHO: 2, #TEXT:"C2", #OPTION: [[#ACTION:#showNode, #ARG:40] ]]  
+  
+]],
+
+[#ID:23, #TYPE: #BATTLE, #NAME: "SuperPhreak", 
+ #ORDER:[ 
+            [#WHO: 2, #TEXT:"A1", #OPTION: [[#ACTION:#dialogue, #ARG:2] ]], 
+            [#WHO: 2, #TEXT:"A2", #OPTION: [[#ACTION:#dialogue, #ARG:4], [#ACTION:#dialogue, #ARG:3] ]], 
+            [#WHO: 2, #TEXT:"B1", #OPTION: [[#ACTION:#dialogue, #ARG:5], [#ACTION:#dialogue, #ARG:6] ]], 
+            [#WHO: 2, #TEXT:"B2", #OPTION: [[#ACTION:#dialogue, #ARG:5], [#ACTION:#dialogue, #ARG:6] ]],
+            [#WHO: 2, #TEXT:"C1", #OPTION: [[#ACTION:#dialogue, #ARG:7] ]],
+            [#WHO: 2, #TEXT:"C2", #OPTION: [[#ACTION:#dialogue, #ARG:7] ]],
+            [#WHO: 2, #TEXT:"D1", #OPTION: [[#ACTION:#dialogue, #ARG:8], [#ACTION:#dialogue, #ARG:8] ]],
+            [#WHO: 2, #TEXT:"D2", #OPTION: [[#ACTION:#close, #ARG:0] ]]  
+ 
+]],
+
+[#ID:24, #TYPE: #BATTLE, #NAME: "Wintermutant", 
+ #ORDER:[ 
+            [#WHO: 5, #TEXT:"A1", #OPTION: [[#ACTION:#dialogue, #ARG:2], [#ACTION:#dialogue, #ARG:2] ]], 
+            [#WHO: 5, #TEXT:"B1", #OPTION: [[#ACTION:#dialogue, #ARG:3], [#ACTION:#dialogue, #ARG:5] ]], 
+            [#WHO: 5, #TEXT:"C1", #OPTION: [[#ACTION:#dialogue, #ARG:4] ]], 
+            [#WHO: 5, #TEXT:"C2", #OPTION: [[#ACTION:#dialogue, #ARG:8], [#ACTION:#dialogue, #ARG:7] ]],  
+            [#WHO: 5, #TEXT:"D1", #OPTION: [[#ACTION:#dialogue, #ARG:6] ]], 
+            [#WHO: 5, #TEXT:"D2", #OPTION: [[#ACTION:#dialogue, #ARG:8], [#ACTION:#dialogue, #ARG:7] ]],  
+            [#WHO: 5, #TEXT:"E1", #OPTION: [[#ACTION:#showNode, #ARG:42] ]], 
+            [#WHO: 5, #TEXT:"E2", #OPTION: [[#ACTION:#showNode, #ARG:42] ]]  
+]],
+
+[#ID:25, #TYPE: #BATTLE, #NAME: "SuperPhreak", 
+ #ORDER:[ 
+            [#WHO: 2, #TEXT:"A1", #OPTION: [[#ACTION:#dialogue, #ARG:2] ]], 
+            [#WHO: 2, #TEXT:"B1", #OPTION: [[#ACTION:#dialogue, #ARG:3] ]], 
+            [#WHO: 2, #TEXT:"C1", #OPTION: [[#ACTION:#close, #ARG:0] ]]  
+
+]],
+
+[#ID:26, #TYPE: #BATTLE, #NAME: "DisArray/SuperPhreak", 
+#ORDER:[ 
+            [#WHO: 6, #TEXT:"A1", #OPTION: [[#ACTION:#dialogue, #ARG:2] ]], 
+            [#WHO: 6, #TEXT:"b1", #OPTION: [[#ACTION:#close, #ARG:0] ]]  
+
+]],
+
+[#ID:27, #TYPE: #BATTLE, #NAME: "Spinner", 
+ #ORDER:[ 
+            [#WHO: 4, #TEXT:"A1", #OPTION: [[#ACTION:#dialogue, #ARG:4], [#ACTION:#dialogue, #ARG:2] ]], 
+            [#WHO: 4, #TEXT:"B1", #OPTION: [[#ACTION:#dialogue, #ARG:3] ]], 
+            [#WHO: 4, #TEXT:"B2", #OPTION: [[#ACTION:#dialogue, #ARG:6], [#ACTION:#dialogue, #ARG:6] ]], 
+            [#WHO: 4, #TEXT:"C1", #OPTION: [[#ACTION:#dialogue, #ARG:5] ]], 
+            [#WHO: 4, #TEXT:"C2", #OPTION: [[#ACTION:#dialogue, #ARG:6], [#ACTION:#dialogue, #ARG:6] ]],  
+            [#WHO: 4, #TEXT:"D1", #OPTION: [[#ACTION:#showNode, #ARG:37] ]]
+
+]],
+
+[#ID:28, #TYPE: #BATTLE, #NAME: "Wintermutant", 
+ #ORDER:[ 
+            [#WHO: 5, #TEXT:"A1", #OPTION: [[#ACTION:#dialogue, #ARG:2], [#ACTION:#dialogue, #ARG:2] ]], 
+            [#WHO: 5, #TEXT:"A2", #OPTION: [[#ACTION:#dialogue, #ARG:3], [#ACTION:#dialogue, #ARG:5] ]],
+            [#WHO: 5, #TEXT:"B1", #OPTION: [[#ACTION:#dialogue, #ARG:4] ]], 
+            [#WHO: 5, #TEXT:"B2", #OPTION: [[#ACTION:#dialogue, #ARG:8], [#ACTION:#dialogue, #ARG:7] ]], 
+            [#WHO: 5, #TEXT:"C1", #OPTION: [[#ACTION:#dialogue, #ARG:6] ]], 
+            [#WHO: 5, #TEXT:"C2", #OPTION: [[#ACTION:#dialogue, #ARG:8], [#ACTION:#dialogue, #ARG:7] ]], 
+            [#WHO: 5, #TEXT:"D1", #OPTION: [[#ACTION:#showNode, #ARG:35] ]], 
+            [#WHO: 5, #TEXT:"D2", #OPTION: [[#ACTION:#showNode, #ARG:35] ]]  
+
+]],
+
+[#ID:29, #TYPE: #WAREZ, #NAME: "Minerva", 
+ #ORDER:[ 
+            [#WHO: 10, #TEXT:"A1", #OPTION: [[#ACTION:#close, #ARG:0], [#ACTION:#goShop, #ARG:0] ]] 
+]],
+
+[#ID:30, #TYPE: #BATTLE, #NAME: "SuperPhreak", 
+ #ORDER:[ 
+            [#WHO: 2, #TEXT:"A1", #OPTION: [[#ACTION:#dialogue, #ARG:2] ]], 
+            [#WHO: 2, #TEXT:"A2", #OPTION: [[#ACTION:#dialogue, #ARG:3], [#ACTION:#dialogue, #ARG:3] ]], 
+            [#WHO: 2, #TEXT:"B1", #OPTION: [[#ACTION:#dialogue, #ARG:4] ]], 
+            [#WHO: 2, #TEXT:"B2", #OPTION: [[#ACTION:#dialogue, #ARG:5] ]], 
+            [#WHO: 2, #TEXT:"B3", #OPTION: [[#ACTION:#dialogue, #ARG:6] ]],
+            [#WHO: 2, #TEXT:"B4", #OPTION: [[#ACTION:#close, #ARG:0] ]]  
+
+]],
+
+[#ID:31, #TYPE: #BATTLE, #NAME: "Spinner", 
+ #ORDER:[ 
+            [#WHO: 4, #TEXT:"A1", #OPTION: [[#ACTION:#dialogue, #ARG:2], [#ACTION:#dialogue, #ARG:3] ]], 
+            [#WHO: 4, #TEXT:"B1", #OPTION: [[#ACTION:#dialogue, #ARG:5], [#ACTION:#dialogue, #ARG:4] ]], 
+            [#WHO: 4, #TEXT:"B2", #OPTION: [[#ACTION:#dialogue, #ARG:5], [#ACTION:#dialogue, #ARG:4] ]], 
+            [#WHO: 4, #TEXT:"C1", #OPTION: [[#ACTION:#dialogue, #ARG:6], [#ACTION:#dialogue, #ARG:6] ]], 
+            [#WHO: 4, #TEXT:"C2", #OPTION: [[#ACTION:#dialogue, #ARG:6], [#ACTION:#dialogue, #ARG:6] ]],
+             [#WHO: 4, #TEXT:"D1", #OPTION: [[#ACTION:#close, #ARG:0] ]]
+
+]],
+
+[#ID:32, #TYPE: #BATTLE, #NAME: "Spinner", 
+ #ORDER:[ 
+            [#WHO: 4, #TEXT:"A1", #OPTION: [[#ACTION:#giveCredit, #ARG:500] ]] 
+]],
+
+[#ID:33, #TYPE: #BATTLE, #NAME: "Joana Boaventura", 
+ #ORDER:[ 
+            [#WHO: 8, #TEXT:"A1", #OPTION: [[#ACTION:#dialogue, #ARG:2] ]], 
+            [#WHO: 8, #TEXT:"B1", #OPTION: [[#ACTION:#dialogue, #ARG:3] ]], 
+            [#WHO: 8, #TEXT:"C1", #OPTION: [[#ACTION:#close, #ARG:0] ]] 
+            
+]],
+
+[#ID:34, #TYPE: #BATTLE, #NAME: "Joana Boaventura", 
+ #ORDER:[ 
+            [#WHO: 8, #TEXT:"A1", #OPTION: [[#ACTION:#giveProgram, #ARG:"Memory Hog"] ]] 
+]],
+
+[#ID:35, #TYPE: #BATTLE, #NAME: "Wintermutant/DisArray", 
+ #ORDER:[ 
+            [#WHO: 6, #TEXT:"A1", #OPTION: [[#ACTION:#dialogue, #ARG:2] ]], 
+            [#WHO: 6, #TEXT:"B1", #OPTION: [[#ACTION:#levelUpgrade, #ARG:0] ]] 
+             
+
+]],
+
+[#ID:36, #TYPE: #BATTLE, #NAME: "SuperPhreak", 
+ #ORDER:[ 
+            [#WHO: 2, #TEXT:"A1", #OPTION: [[#ACTION:#dialogue, #ARG:2] ]], 
+            [#WHO: 2, #TEXT:"B1", #OPTION: [[#ACTION:#dialogue, #ARG:3] ]], 
+				[#WHO: 2, #TEXT:"B2", #OPTION: [[#ACTION:#dialogue, #ARG:4] ]], 
+            [#WHO: 2, #TEXT:"C1", #OPTION: [[#ACTION:#dialogue, #ARG:5] ]], 
+            [#WHO: 2, #TEXT:"D1", #OPTION: [[#ACTION:#dialogue, #ARG:6], [#ACTION:#dialogue, #ARG:2] ]], 
+            [#WHO: 2, #TEXT:"E1", #OPTION: [[#ACTION:#close, #ARG:0] ]]  
+
+]],
+
+[#ID:37, #TYPE: #BATTLE, #NAME: "Spinner", 
+ #ORDER:[ 
+            [#WHO: 4, #TEXT:"A1", #OPTION: [[#ACTION:#dialogue, #ARG:2] ]], 
+            [#WHO: 4, #TEXT:"B1", #OPTION: [[#ACTION:#giveCredit, #ARG:2000] ]]  
+ 
+]],
+
+[#ID:38, #TYPE: #BATTLE, #NAME: "DisArray", 
+ #ORDER:[ 
+            [#WHO: 6, #TEXT:"A1", #OPTION: [[#ACTION:#dialogue, #ARG:2] ]], 
+            [#WHO: 6, #TEXT:"B1", #OPTION: [[#ACTION:#dialogue, #ARG:3] ]], 
+            [#WHO: 6, #TEXT:"C1", #OPTION: [[#ACTION:#dialogue, #ARG:4] ]],
+            [#WHO: 6, #TEXT:"D1", #OPTION: [[#ACTION:#dialogue, #ARG:5] ]],  
+				[#WHO: 6, #TEXT:"D2", #OPTION: [[#ACTION:#dialogue, #ARG:6] ]], 
+            [#WHO: 6, #TEXT:"E1", #OPTION: [[#ACTION:#dialogue, #ARG:7] ]], 
+            [#WHO: 6, #TEXT:"F1", #OPTION: [[#ACTION:#close, #ARG:0] ]]  
+  
+]],
+
+[#ID:39, #TYPE: #BATTLE, #NAME: "Joana Boaventura", 
+ #ORDER:[ 
+            [#WHO: 8, #TEXT:"A1", #OPTION: [[#ACTION:#dialogue, #ARG:2] ]], 
+            [#WHO: 8, #TEXT:"B1", #OPTION: [[#ACTION:#dialogue, #ARG:3] ]], 
+            [#WHO: 8, #TEXT:"C1", #OPTION: [[#ACTION:#close, #ARG:0] ]]  
+ 
+]],
+
+[#ID:40, #TYPE: #BATTLE, #NAME: "SuperPhreak", 
+ #ORDER:[ 
+            [#WHO: 2, #TEXT:"A1", #OPTION: [[#ACTION:#dialogue, #ARG:2] ]], 
+            [#WHO: 2, #TEXT:"B1", #OPTION: [[#ACTION:#dialogue, #ARG:3] ]], 
+            [#WHO: 2, #TEXT:"C1", #OPTION: [[#ACTION:#dialogue, #ARG:4] ]], 
+            [#WHO: 2, #TEXT:"D1", #OPTION: [[#ACTION:#dialogue, #ARG:5] ]],
+            [#WHO: 2, #TEXT:"E1", #OPTION: [[#ACTION:#close, #ARG:0] ]]  
+ 
+]],
+
+[#ID:41, #TYPE: #BATTLE, #NAME: "Joana Boaventura", 
+ #ORDER:[ 
+            [#WHO: 8, #TEXT:"A1", #OPTION: [[#ACTION:#dialogue, #ARG:2] ]], 
+            [#WHO: 8, #TEXT:"B1", #OPTION: [[#ACTION:#dialogue, #ARG:3] ]], 
+            [#WHO: 8, #TEXT:"C1", #OPTION: [[#ACTION:#dialogue, #ARG:4] ]], 
+            [#WHO: 8, #TEXT:"D1", #OPTION: [[#ACTION:#close, #ARG:0] ]]  
+
+ 
+]],
+
+
+[#ID:42, #TYPE: #BATTLE, #NAME: "Wintermutant", 
+ #ORDER:[ 
+            [#WHO: 5, #TEXT:"A1", #OPTION: [[#ACTION:#dialogue, #ARG:2] ]], 
+            [#WHO: 5, #TEXT:"B1", #OPTION: [[#ACTION:#giveProgram, #ARG:"Wizard"] ]]  
+
+]],
+
+
+[#ID:43, #TYPE: #INTRO, #NAME: "SuperPhreak", 
+ #ORDER:[ 
+            [#WHO: 2, #TEXT:"A1", #OPTION: [[#ACTION:#dialogue, #ARG:2], [#ACTION:#dialogue, #ARG:2] ]], 
+            [#WHO: 2, #TEXT:"B1", #OPTION: [[#ACTION:#dialogue, #ARG:3] ]], 
+            [#WHO: 2, #TEXT:"C1", #OPTION: [[#ACTION:#dialogue, #ARG:4], [#ACTION:#dialogue, #ARG:4] ]],
+            [#WHO: 2, #TEXT:"D1", #OPTION: [[#ACTION:#dialogue, #ARG:5], [#ACTION:#dialogue, #ARG:5] ]], 
+            [#WHO: 2, #TEXT:"E1", #OPTION: [[#ACTION:#dialogue, #ARG:6] ]], 
+            [#WHO: 2, #TEXT:"F1", #OPTION: [[#ACTION:#dialogue, #ARG:3], [#ACTION:#TUTORIAL, #ARG:0] ]]  
+            
+]],
+
+[#ID:44, #TYPE: #WAREZ, #NAME: "Leo's Shop", 
+ #ORDER:[ 
+           [#WHO: 3, #TEXT:"A1", #OPTION: [[#ACTION:#dialogue, #ARG:2] ]], 
+           [#WHO: 3, #TEXT:"B1", #OPTION: [[#ACTION:#dialogue, #ARG:3], [#ACTION:#goShop, #ARG:0] ]], 
+           [#WHO: 3, #TEXT:"C1", #OPTION: [[#ACTION:#close, #ARG:0] ]]  
+]],
+
+[#ID:45, #TYPE: #WAREZ, #NAME: "Network City", 
+ #ORDER:[ 
+           [#WHO: 7, #TEXT:"A1", #OPTION: [[#ACTION:#dialogue, #ARG:2] ]], 
+           [#WHO: 7, #TEXT:"B1", #OPTION: [[#ACTION:#dialogue, #ARG:3], [#ACTION:#goShop, #ARG:0] ]], 
+           [#WHO: 7, #TEXT:"C1", #OPTION: [[#ACTION:#close, #ARG:0] ]]   
+]],
+
+[#ID:46, #TYPE: #WAREZ, #NAME: "Ready to Ware", 
+ #ORDER:[ 
+           [#WHO: 9, #TEXT:"A1", #OPTION: [[#ACTION:#dialogue, #ARG:2] ]], 
+           [#WHO: 9, #TEXT:"B1", #OPTION: [[#ACTION:#dialogue, #ARG:3], [#ACTION:#goShop, #ARG:0] ]], 
+           [#WHO: 9, #TEXT:"C1", #OPTION: [[#ACTION:#close, #ARG:0] ]]   
+]],
+
+[#ID:47, #TYPE: #WAREZ, #NAME: "Agora", 
+ #ORDER:[ 
+           [#WHO: 10, #TEXT:"A1", #OPTION: [[#ACTION:#dialogue, #ARG:2] ]], 
+           [#WHO: 10, #TEXT:"B1", #OPTION: [[#ACTION:#dialogue, #ARG:3], [#ACTION:#goShop, #ARG:0] ]], 
+           [#WHO: 10, #TEXT:"C1", #OPTION: [[#ACTION:#close, #ARG:0] ]]   
+]],
+
+[#ID:48, #TYPE: #WAREZ, #NAME: "SuperPhreak", 
+ #ORDER:[ 
+           [#WHO: 2, #TEXT:"A1", #OPTION: [[#ACTION:#dialogue, #ARG:2] ]], 
+           [#WHO: 2, #TEXT:"B1", #OPTION: [[#ACTION:#dialogue, #ARG:3] ]], 
+           [#WHO: 2, #TEXT:"C1", #OPTION: [[#ACTION:#blackoutFix, #ARG:0] ]]   
+]],
+
+[#ID:49, #TYPE: #WAREZ, #NAME: "SuperPhreak", 
+ #ORDER:[ 
+           [#WHO: 2, #TEXT:"A1", #OPTION: [[#ACTION:#dialogue, #ARG:2] ]], 
+           [#WHO: 2, #TEXT:"B1", #OPTION: [[#ACTION:#showNode, #ARG:3] ]]   
+]]
+
+] 

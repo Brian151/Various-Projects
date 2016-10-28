@@ -1,0 +1,230 @@
+/*some awesomeness*/
+/*to-do: 
+icons
+change class names "Classic" , "Luna" , "Aero"
+add ID classes "classic[Classic,Standard,etc...]" "luna[Blue,Silver,Olive]" , "aero[Blue,Gray,<other defaults>]"
+drop nested rules in favor of content-wrapping divs
+add "normal" xp buttons (non-blocky ones)
+add skin varients
+new folders: skins\[Classic,Luna,Aero] 
+move .css files and graphics to corresponding folders 
+*/
+
+.window {
+  min-height:65px;
+  min-width:66px;
+  max-width:100%;
+  max-height:100%;
+  display:inline-block; /*fixes width spanning entire page*/
+  background:#ECE9D8;
+  /*dimmensions all set to preferred sizes individually, 
+  color "blue" has been defined as a fallback measure*/
+  border-top:29px solid blue;
+  border-right:5px solid blue;
+  border-bottom:5px solid blue;
+  border-left:5px solid blue;
+  padding: 10px 20px;
+  /*uses border image "windowsXPWindow" 
+  slices it to the same dimmensions as the normal border (IMPORTANT that these match EXACTLY)
+  and does not retain the center, 
+  enabling the element's BG to be set independent of the border image
+  */
+  -webkit-border-image:url("windowxXPWindow.png") 29 5 5 5; /* Safari */
+  -o-border-image:url("windowxXPWindow.png") 29 5 5 5; /* Opera */
+  /*effects firefox*/
+  -moz-border-image:url("windowxXPWindow.png") 29 5 5 5; /* Old */
+  border-image:url("windowxXPWindow.png") 29 5 5 5;
+}
+
+.window p , .window h4 , .window li{
+  display:inline-block;
+  margin:0px;
+  padding:0px;
+}
+
+.window h4 {
+  color:#ffffff;
+  font-weight:bold;
+  text-align:left;
+  position:relative;
+  top:-35px;
+  left:-15px;
+  text-shadow:1px 1px #000000;
+}
+
+/*
+.window p {
+  text-align:center;
+  position:relative;
+  top:0px;
+  left:0px;
+}
+*/
+
+.btnWrapper{
+  margin:0px;
+  padding:0px;
+}
+
+.btns {
+  position:relative;
+  top:7px;
+  left:0px;
+  padding-bottom:5px;
+  margin:0px;
+}
+
+.btnz li, btnz a {
+  display:inline-block;
+}
+
+.btn a {
+  border:4px solid #ffffff;
+  -webkit-border-image:url("btn.png") 4 4 4 4 fill;
+  -o-border-image:url("btn.png") 4 4 4 4 fill;
+  -moz-border-image:url("btn.png") 4 4 4 4 fill;
+  border-image:url("btn.png") 4 4 4 4 fill;
+  cursor:default;
+}
+
+.btn a:active{
+  border:4px solid #000000;
+  -webkit-border-image:url("btnP.png") 4 4 4 4 fill;
+  -o-border-image:url("btnP.png") 4 4 4 4 fill;
+  -moz-border-image:url("btnP.png") 4 4 4 4 fill;
+  border-image:url("btnP.png") 4 4 4 4 fill;
+}
+
+
+.btntxt {
+  color:#000000;
+  display:inline-block;
+}
+
+/*windows 7 Aero*/
+.window-7 {
+  min-height:31px;
+  min-width:56px;
+  max-width:100%;
+  max-height:100%;
+  display:inline-block; /*fixes width spanning entire page*/
+  background: #F0F0F0;
+  /*dimmensions all set to preferred sizes individually, 
+  color "black" has been defined as a fallback measure*/
+  border-top:27px solid black;
+  border-right:8px solid black;
+  border-bottom:4px solid black;
+  border-left:8px solid black;
+  padding: 10px 20px;
+  /*uses border image "win-7-aero-blue" 
+  slices it to the same dimmensions as the normal border (IMPORTANT that these match EXACTLY)
+  and does not retain the center, 
+  enabling the element's BG to be set independent of the border image
+  */
+  -webkit-border-image:url("win-7-aero-blue.png") 27 8 4 8; /* Safari */
+  -o-border-image:url("win-7-aero-blue.png") 27 8 4 8; /* Opera */
+  /*effects firefox*/
+  -moz-border-image:url("win-7-aero-blue.png") 27 8 4 8; /* Old */
+  border-image:url("win-7-aero-blue.png") 27 8 4 8;
+}
+
+.window-7 p , .window-7 h4 , .window-7 li{
+  display:inline-block;
+  margin:0px;
+  padding:0px;
+}
+
+.window-7 h4 {
+  color:#000000;
+  font-weight:bold;
+  text-align:left;
+  position:relative;
+  top:-34px;
+  left:-15px;
+}
+/*
+.window-7 p {
+  text-align:center;
+  position:relative;
+  top:0px;
+  left:0px;
+}
+*/
+
+.btn-7 a {
+  border:2px solid #8E8F8F;
+  -webkit-border-image:url("btn7.png") 2 2 2 2 fill;
+  -o-border-image:url("btn7.png") 2 2 2 2 fill;
+  -moz-border-image:url("btn7.png") 2 2 2 2 fill;
+  border-image:url("btn7.png") 2 2 2 2 fill;
+  cursor:default;
+}
+
+.btn-7 a:active{
+  border:2px solid #3C7FB1;
+  -webkit-border-image:url("btn7P.png") 2 2 2 2 fill;
+  -o-border-image:url("btn7P.png") 2 2 2 2 fill;
+  -moz-border-image:url("btn7P.png") 2 2 2 2 fill;
+  border-image:url("btn7P.png") 2 2 2 2 fill;
+}
+
+/*Windows Classic*/
+.window-c {
+  min-height:31px;
+  min-width:56px;
+  max-width:100%;
+  max-height:100%;
+  display:inline-block; /*fixes width spanning entire page*/
+  background: #D4D0C8;
+  /*dimmensions all set to preferred sizes individually, 
+  color #D4D0C8 has been defined as a fallback measure*/
+  border-top:41px solid #D4D0C8;
+  border-right:4px solid #D4D0C8;
+  border-bottom:4px solid #D4D0C8;
+  border-left:4px solid #D4D0C8;
+  padding: 10px 20px;
+  /*uses border image "skinClassic" 
+  slices it to the same dimmensions as the normal border (IMPORTANT that these match EXACTLY)
+  and does not retain the center, 
+  enabling the element's BG to be set independent of the border image
+  */
+  -webkit-border-image:url("skinClassic.png") 41 4 4 4; /* Safari */
+  -o-border-image:url("skinClassic.png") 41 4 4 4; /* Opera */
+  /*effects firefox*/
+  -moz-border-image:url("skinClassic.png") 41 4 4 4; /* Old */
+  border-image:url("skinClassic.png") 41 4 4 4;
+}
+
+.window-c p , .window-c h4 , .window-c li{
+  display:inline-block;
+  margin:0px;
+  padding:0px;
+}
+
+.window-c h4 {
+  color:#ffffff;
+  font-weight:bold;
+  text-align:left;
+  position:relative;
+  top:-48px;
+  left:-15px;
+}
+
+.windowTXT{
+margin:0px;
+padding:0px;
+text-align:center;
+}
+
+/*===DEBUG AND TESTS===*/
+
+/*size testing class*/
+#forced-size{
+  min-width:1px;
+  min-height:1px;
+  max-width:9999px;
+  max-height:9999px;
+  /*change as necesarry*/
+  width:2000px;
+  height:1000px;
+}

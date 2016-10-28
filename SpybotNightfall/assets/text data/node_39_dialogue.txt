@@ -1,0 +1,20 @@
+[
+
+#A1: [
+"boaventura:  Congratulations, agent.  you've opened up our system.  as you can observe, we've established a link to that mysterious node.  there is a problem, however.", 
+"what's wrong?" 
+],
+
+#B1: [
+"boaventura:  The node has an unknown security level.  We don't have the access codes to reach it.  Without those codes, the node is inaccessable.", 
+"Don't worry.  I'll get the codes."
+],
+
+#C1: [
+"boaventura:  We'll maintain the current link for you.  good luck and thank you, agent.", 
+"you're welcome." 
+]
+
+]
+
+ 

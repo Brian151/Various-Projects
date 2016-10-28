@@ -1,0 +1,67 @@
+/*Windows Skins css3*/
+/*Textual Elements*/
+
+/*general*/
+
+/*message*/
+.windowTXT{
+margin:0px;
+padding:0px;
+text-align:center;
+}
+
+/*skin-specific:
+[1] title
+*/
+
+/*classic*/
+.Classic-title{
+  display:inline-block;
+  margin:0px;
+  padding:0px;
+  color:#ffffff;
+  font-weight:bold;
+  text-align:left;
+  position:relative;
+  top:-48px;
+  left:-15px;
+}
+
+/*Luna*/
+/*default (blue,olive) [white]*/
+.Luna-title{
+  display:inline-block;
+  margin:0px;
+  padding:0px;
+  color:#ffffff;
+  font-weight:bold;
+  text-align:left;
+  position:relative;
+  top:-35px;
+  left:-15px;
+  text-shadow:1px 1px #000000;
+}
+
+/*other variants*/
+/*built on Luna-title
+html usage: <div class="Luna-title" , id="Luna-title-<black>">
+*/
+
+/*black text (silver)*/
+#Luna-title-black {
+color:#000000;
+text-shadow:1px 1px #C7C2D1;
+}
+
+/*Aero*/
+.Aero-title{
+  display:inline-block;
+  margin:0px;
+  padding:0px;
+  color:#000000;
+  font-weight:bold;
+  text-align:left;
+  position:relative;
+  top:-34px;
+  left:-15px;
+}

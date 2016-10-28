@@ -1,0 +1,36 @@
+[
+
+#A1: [
+"TSUMARA285: Welcome, consumer, to Network City, retailer for New Future Net Technologies, software for the here and beyond.", 
+"HI." 
+],
+
+#B1: [
+"TSUMARA285: I am your automated host.  Can I be of assistance?", 
+"No thanks.",
+"I'd like to purchase some software." 
+],
+
+#C1: [
+"TSUMARA285: Please search our software inventory for the items you desire.", 
+"BUY WAREZ"
+],
+
+#D1: [
+"TSUMARA285: Is there any other business in which I can assist you?", 
+"Let me take one last look.",
+"No thanks, I'm done." 
+],
+
+#E1: [
+"TSUMARA285: Please search our software inventory for the items you desire.", 
+"BUY WAREZ" 
+],
+
+#F1: [
+"TSUMARA285: Thank you for shopping at Network City, where the New Future is Your Future.", 
+"CLOSE" 
+]
+
+]
+ 

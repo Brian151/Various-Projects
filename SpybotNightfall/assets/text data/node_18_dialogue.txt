@@ -1,0 +1,37 @@
+[
+
+#A1: [
+"SuperPhreak:  wow.  good thing you checked out this node.  this whole area's a mess. ", 
+"What do you mean?"
+],
+
+#A2: [
+"SuperPhreak:  FROM WHAT I CAN TELL, THE PROBLEM WITH PROGRAM CORRUPTION IS ESCALATING.", 
+"what do we do?",
+"who's doing it?" 
+],
+
+#b1: [
+"SuperPhreak:  we get to work!  i'd do it myself, but i can barely stay on-line long enough to research those logs you picked up, let alone FIGHT a databattle.", 
+"so it's up to me."
+],
+
+#b2: [
+"SuperPhreak:  guess so.  this is the big time, newbie.  SOMEBODY'S TRYING TO HIDE SOMETHING FROM US.  work your way across these nodes and find ouT what IT IS.  but first send me those logs. ready to receive data.", 
+"send log data."
+],
+
+
+#c1: [
+"SuperPhreak:  I'm not sure, but there's got to be some USEFUL information in those logs you picked up.  since i can't seem to stay on the net for five minutes, i'll keep analyzing the logs.", 
+"what about me?"
+],
+
+#C2: [
+"SuperPhreak:  work your way across these nodes. SOMEBODY'S HIDING SOMETHING FROM US. SEE IF YOU CAN find ouT what IT IS.  welcome to the big time, newbie.  send me THOSE logs so i can get started.  ready to receive data.", 
+"send log data." 
+]
+
+]
+
+ 

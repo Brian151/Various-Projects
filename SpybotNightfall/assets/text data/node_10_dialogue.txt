@@ -1,0 +1,10 @@
+[
+
+#A1: [
+"Spinner:  Hey,  knew I could count on you!  PharmHaus is reporting everything all clear.  Here's the software they promised.", 
+"ready to receive software transfer."
+]
+
+]
+
+ 

@@ -1,0 +1,35 @@
+[
+
+[ 
+	#NAME			:"GIGAMESH",
+	#NAMETEXT	:"GIGAMESH",
+	#ICON			:1,
+	#action		:"FLASHGROW", 
+	#Target		:#PLAYER , 
+	#Required	:[#greater,1],
+	#Description:"ADDS 1 SECTOR TO ALL OF YOUR PROGRAMS"
+],
+[ 
+	#NAME			:"SHADOWSTRIKE",
+	#NAMETEXT	:"SHADOWSTRIKE",
+	#ICON			:2,
+	#action		:"DARKSTORM", 
+	#Target		:#ALL , 
+	#Required	:[#greater,1],
+	#Description:"DELETES 1 SECTOR FROM ALL PROGRAMS INCLUDING YOURS"
+],
+[ 
+	#NAME			:"SNAPTRAX",
+	#NAMETEXT	:"SNAPTRAX",
+	#ICON			:3,
+	#action		:"OVERCLOCK", 
+	#Target		:#ALL , 
+	#Required	:[#greater,1],
+	#Description:"ADDS 1 TO MOVEMENT RATE OF ALL PROGRAMS, INCLUDING ENEMIES"
+],
+[ 
+	#NAME			:"TECHNOJAW",
+	#NAMETEXT	:"TECHNOJAW",
+	#ICON			:4,
+	#action		:"CRUNCHTIME", 
+	#Target		:#COM ,  

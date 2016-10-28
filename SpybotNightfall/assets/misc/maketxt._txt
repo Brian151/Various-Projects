@@ -1,0 +1,9 @@
+@echo off
+color 1f
+:start
+cls
+set /p Fname=Enter a File Name:
+echo. > %Fname%.txt
+notepad %Fname%.txt
+goto start
+pause

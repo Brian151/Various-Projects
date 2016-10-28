@@ -1,0 +1,20 @@
+[
+
+#A1: [
+"bOAVENTURA: Agent.  I can see you're about to enter our SysAdmin archives.  thank you for handling this mission.  I wanted to give you some advice.", 
+"go ahead."
+],
+
+#B1: [
+"bOAVENTURA:  if you are successful, we will reward you with a copy of some new software that we just developed.  i'm told that's the proper way to motivate people such as yourself.", 
+"thanks... i guess." 
+],
+
+#C1: [
+"bOAVENTURA: good luck, agent.", 
+"over and out." 
+]
+
+]
+
+ 

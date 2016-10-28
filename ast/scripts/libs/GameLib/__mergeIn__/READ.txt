@@ -1,0 +1,6 @@
+These are all various conceptual things I'm working on for the library, 
+or that could be an advantage to add to it.
+They are in various states of development, most all are buggy (even if seeming ok).
+Some are being developed together with the library, and others are entirely separate
+from it. All are to be considered experimental. Use at own risk, they are not officially
+supported until full implementation.

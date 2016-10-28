@@ -1,0 +1,21 @@
+[
+
+#A1: [
+"S.M.A.R.T.: Welcome back, agent.  Most of our network is still down, but is there aything I can do for you?", 
+"Nothing. Thanks.",
+"I need a new Spybot." 
+],
+
+#B1: [
+"S.M.A.R.T.: Sure thing.  This is where I would give you a choice of Spybots.  Anything else I can do?", 
+"No thanks.",
+"Let me see that list again." 
+],
+
+#B2: [
+"S.M.A.R.T.: Hopefully, we'll be back to normal operation soon.  Good luck out there.", 
+"Done" 
+]
+
+
+] 

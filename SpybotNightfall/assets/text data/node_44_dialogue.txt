@@ -1,0 +1,35 @@
+[
+
+#A1: [
+"LEO:  Hey, you must be that new S.M.A.R.T. AGENT I HEARD ABOUT.  Welcome to Leo's Shop.  ", 
+"HI."
+],
+
+#B1: [
+"LEO:  We only got the best in wares, but for a up-and-comer like yourself, maybe AN  ex-agent like me can give YOU a break.  You want to do some business?", 
+"No thanks.",
+"Sure, show me what you've got." 
+],
+
+#C1: [
+"LEO:  SUIT YOURSELF. COME BACK WHEN YOU'RE READY TO BUY.", 
+"LATER." 
+],
+
+#D1: [
+"LEO:  Anything else I can do you for?", 
+"Let me take one last look",
+"No thanks, I'm done." 
+],
+
+#E1: [
+"LEO:  Sure thing.  Take all the time you need.", 
+"BUY WAREZ" 
+],
+
+#F1: [
+"LEO:  No problem, kid.  Come back anytime.", 
+"CLOSE" 
+]
+
+] 

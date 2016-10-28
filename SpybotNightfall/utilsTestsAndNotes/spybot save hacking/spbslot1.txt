@@ -1,0 +1,1 @@
+[#SPYBOT: 1, #sLevel: 1, #credits: 1000, #agents: ["Hack", "Slingshot"], #nodes: [#WIN, #on, #on, #off, #on, #off, #off, #off, #off, #off, #off, #off, #off, #off, #off, #off, #off, #off, #off, #off, #off, #off, #off, #off, #off, #off, #off, #off, #off, #off, #off, #off, #off, #off, #off, #off, #off, #off, #off, #off, #off, #off]]

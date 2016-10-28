@@ -1,0 +1,28 @@
+[
+
+#A1: [
+"SUPERPHREAK:  HEY.  Not bad ~~ ~~ so far ~~ you're almost ~~~~ ready for leveL two ~~~~~~ access.",
+"thanks."
+],
+
+
+#b1:[
+"SUPERPHREAK:  hmm ~ something ~ ~~~ weird's going on. I think i ~~ breaking up. ~~~~ look, you've got ~~ get the Access codes. we've put ~ program there ~~ help ~~~ out. ",
+"WHAT'S WRONG?",
+"WHERE DO I FIND THE CODES?"
+],
+
+#B2:[
+"SUPERPHREAK:  You ~~~ Can Find ~~~ ~ ~~~~ ~~ ~~~~ ~~ ~~~~~",
+"WHERE DO I FIND THE CODES?",
+"Superphreak?  Hello?" 
+],
+
+#C1:[
+"sUPERPHREAK:  ~~~~~~ ~~~ ~~~ ~~~~~ ~ ~~~ ~~~~~>BRK",
+"CLOSE."
+]
+
+]
+
+ 

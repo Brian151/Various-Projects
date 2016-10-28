@@ -1,0 +1,36 @@
+[
+
+#A1: [
+"SuperPhreak:  ~~~ ~~~ ~ ~~~   it's ~~~~~~ harder and harder to ~~~~ ~~ but i'VE GOT important information ~~~ ~~~  ready?", 
+"go ahead." 
+],
+
+#A2: [
+"SuperPhreak:  i finished my trace on disarray.  surprise surprise, HE'S THE SOURCE ~~ ~~~ ~~~ corrupt programs and security screw-ups.  disarray's been infiltrating ~~~~~ ~~~~ ~~ the web.  I don't know why.", 
+"what about the node he's in?",
+"What about that program he took?" 
+],
+
+#B1: [
+"SuperPhreak:  ~~~ ~~~~~ a well-guarded COMMUNICATIONS HUB.  he's using the stolen PROGRAM ~~ ~~~~ access to all the nodes on the net ~~ ~~~~  i just don't understand the point.  any ideas?", 
+"does nightfall mean anything to you?"
+],
+
+#B2: [
+"SuperPhreak:  nightfall?  what does that mean?", 
+"disarray's secret project?"
+],
+
+#B3: [
+"SuperPhreak:  nightfall...that's it!  disarray's ~~~~~ ~~ use his nightfall program to black out the net.  total midnight!  ~~~ ~~~~~ ~~ crash the entire system!  You have to stop him!", 
+"How?"
+],
+
+#B4: [
+"SuperPhreak:  Get ~~~~~~ ~~ his personal node, defeat the security, ~~~ deactivate the  nightfall program.  and hurry, ~~ ~~~~ have much time!", 
+"i'm on it!"
+]
+
+]
+
+ 

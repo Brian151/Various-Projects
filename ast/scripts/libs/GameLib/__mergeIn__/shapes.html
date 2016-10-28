@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<canvas id="myCanvas" width="800" height="600"></canvas>
+		<script>
+		/*
+			DO NOT CLAIM AS YOUR OWN
+			ALSO, HIGHLY WIP
+			
+			INTENDED LIBRARY FEATURE:
+			STATIC VECTOR ENGINE CLASS
+			(WORKS BY INTERFACING WITH A GRAPHICSHANDLER)
+			MAY BE EXTENDABLE
+			EXACT USAGE AND IMPLEMENTATION MAY VARY
+		*/
+			Math.radians = function(degrees) {
+				return degrees * Math.PI / 180;
+			};
+			Math.degrees = function(radians) {
+				return radians * 180 / Math.PI;
+			};
+			var canvas = document.getElementById('myCanvas');
+			var context = canvas.getContext('2d');
+			var x = canvas.width / 2;
+			var y = canvas.height / 2;
+			context.saveColor = function() {
+				context.backupColor = context.fillStyle;
+			}
+			context.restoreColor = function() {
+				context.fillStyle = context.backupColor;
+			}
+			
+			
+			function drawCircle(x,y,radius,alphaMask) {
+				var startAngle = Math.radians(0);
+				var endAngle = Math.radians(360);
+				context.beginPath();
+				context.arc(x, y, radius, startAngle, endAngle, false);
+				if (!alphaMask) {
+				context.stroke();
+				} else {
+					context.globalCompositeOperation = 'destination-out';
+					context.fill();
+					context.globalCompositeOperation = 'source-over';
+				}
+			}
+			
+			function drawNGon(x,y,sides,radius,angle) {
+				var increment = Math.radians((360/sides));
+				var theAngle = angle;
+				var size = radius;
+				var baseX = x;
+				var baseY = y;
+				context.beginPath();
+				var x = baseX + Math.round(size * Math.cos(theAngle));
+				var y = baseY + Math.round(size * Math.sin(theAngle));
+				context.moveTo(x,y);
+				theAngle += increment;
+				for (var i = 1; i < sides; i++) {
+					x = baseX + Math.round(size * Math.cos(theAngle));
+					y = baseY + Math.round(size * Math.sin(theAngle));
+					context.lineTo(x,y);
+					theAngle += increment;
+				}
+				context.closePath();
+				context.stroke();
+			}
+			
+			function drawNStar(x,y,points,radius,radius2,angle,angle2){
+				var increment = Math.radians((360/points));
+				var increment2 = angle2;
+				var theAngle = angle;
+				var baseX = x;
+				var baseY = y;
+				var size = radius;
+				var size2 = radius2;
+				context.beginPath();
+				for (var i=0; i < points; i++) {
+					var x = baseX + Math.round(size * Math.cos(theAngle));
+					var y = baseY + Math.round(size * Math.sin(theAngle));
+					var x2 = baseX + Math.round(size2 * Math.cos((theAngle + increment2)));
+					var y2 = baseY + Math.round(size2 * Math.sin((theAngle + increment2)));
+					if(i == 0) {
+						context.moveTo(x,y);
+						context.lineTo(x2,y2);
+					} else if (i == (points - 1)) {
+						context.lineTo(x,y);
+						context.lineTo(x2,y2);
+						context.closePath();
+					} else {
+						context.lineTo(x,y);
+						context.lineTo(x2,y2);
+					}
+					theAngle += increment;
+				}
+				context.stroke();
+			}
+			
+			function drawNDiamondStar(x,y,points,radius,radius2,radius3,angle,angle2,angle3,fill){
+				var increment = Math.radians((360/points));
+				var increment2 = angle2;
+				var increment3 = angle3;
+				var theAngle = angle;
+				var baseX = x;
+				var baseY = y;
+				var size = radius;
+				var size2 = radius2;
+				var size3 = radius3;
+				context.beginPath();
+				for (var i=0; i < points; i++) {
+					var x = baseX + Math.round(size * Math.cos(theAngle));
+					var y = baseY + Math.round(size * Math.sin(theAngle));
+					var x2 = baseX + Math.round(size2 * Math.cos((theAngle + increment2)));
+					var y2 = baseY + Math.round(size2 * Math.sin((theAngle + increment2)));
+					var x2l = baseX + Math.round(size2 * Math.cos((theAngle - increment2)));
+					var y2l = baseY + Math.round(size2 * Math.sin((theAngle - increment2)));
+					var x3 = baseX + Math.round(size3 * Math.cos((theAngle + increment3)));
+					var y3 = baseY + Math.round(size3 * Math.sin((theAngle + increment3)));
+					var x3l = baseX + Math.round(size3 * Math.cos((theAngle - increment3)));
+					var y3l = baseY + Math.round(size3 * Math.sin((theAngle - increment3)));
+					if(i == 0) {
+						context.moveTo(x3l,y3l);
+						context.lineTo(x2l,y2l);
+						context.lineTo(x,y);
+						context.lineTo(x2,y2);
+						context.lineTo(x3,y3);
+					} else if (i == (points - 1)) {
+						context.lineTo(x3l,y3l);
+						context.lineTo(x2l,y2l);
+						context.lineTo(x,y);
+						context.lineTo(x2,y2);
+						context.lineTo(x3,y3);
+						context.closePath();
+					} else {
+						context.lineTo(x3l,y3l);
+						context.lineTo(x2l,y2l);
+						context.lineTo(x,y);
+						context.lineTo(x2,y2);
+						context.lineTo(x3,y3);
+					}
+					theAngle += increment;
+				}
+				context.stroke();
+			}
+			
+			function drawSpiral(x,y,layers,width,gap,widthAdd) {
+				var angle = Math.radians(270);
+				var increment = Math.radians(1);
+				var baseX = x;
+				var baseY = y;
+				var size = layers;
+				var size2 = 0;
+				var size3 = width;
+				var speed = 360;
+				var max = size3 * (gap * 4);
+				var increment2 = max / speed;
+				var increment3 = widthAdd / speed;
+				for(var i=0; i < size; i++) {
+					var max = size3 * (gap * 4);
+					var increment2 = max / speed;
+					angle = Math.radians(270);
+					for(var i2=0; i2 <= speed; i2++) {
+						var x = baseX + Math.round(size2 * Math.cos(angle));
+						var y = baseY + Math.round(size2 * Math.sin(angle));
+						drawCircle(x,y,size3);
+						context.fill();
+						angle += increment;
+						size2 += increment2;
+						size3 += increment3;
+					}
+				}
+			}
+			
+			function drawGear(x,y,teeth,radius,centerRadius,toothHeight,toothWidth,toothTipWidth,middleRadius,spokes,spokeLength,spokeOffset,spokeTipWidth,spokeWidth,fill) {
+				var increment = Math.radians((360/teeth));
+				var theAngle = Math.radians(270);
+				var mRad = centerRadius + middleRadius;
+				var sLength = radius - spokeLength;
+				var initialAngle = theAngle;
+				if (toothTipWidth == "default") {
+					var increment2 = Math.radians((360/teeth)/(6 * 2));
+				} else {
+					var increment2 = Math.radians(toothTipWidth);
+				}
+				if (toothWidth == "default") {
+					var increment3 = Math.radians((360/teeth)/(2 * 2));
+				} else {
+					var increment3 = Math.radians(toothWidth);
+				}
+				if(fill) { 
+					context.saveColor();
+					context.fillStyle = fill;
+				}
+				var baseX = x;
+				var baseY = y;
+				var size = radius;
+				var size2 = radius + toothHeight;
+				var size3 = radius;
+				context.beginPath();
+				for (var i=0; i < teeth; i++) {
+					var x2 = baseX + Math.round(size2 * Math.cos((theAngle + increment2)));
+					var y2 = baseY + Math.round(size2 * Math.sin((theAngle + increment2)));
+					var x2l = baseX + Math.round(size2 * Math.cos((theAngle - increment2)));
+					var y2l = baseY + Math.round(size2 * Math.sin((theAngle - increment2)));
+					var x3 = baseX + Math.round(size3 * Math.cos((theAngle + increment3)));
+					var y3 = baseY + Math.round(size3 * Math.sin((theAngle + increment3)));
+					var x3l = baseX + Math.round(size3 * Math.cos((theAngle - increment3)));
+					var y3l = baseY + Math.round(size3 * Math.sin((theAngle - increment3)));
+					var a3 = theAngle - increment3;
+					if(i == 0) {
+						context.moveTo(x3l,y3l);
+						context.lineTo(x2l,y2l);
+						context.lineTo(x2,y2);
+						context.lineTo(x3,y3);
+					} else if (i == (teeth - 1)) {
+						context.arc(baseX, baseY, radius, a2, a3, false);
+						context.lineTo(x3l,y3l);
+						context.lineTo(x2l,y2l);
+						context.lineTo(x2,y2);
+						context.lineTo(x3,y3);
+						var a2 = theAngle + increment3;
+						var a3 = initialAngle - increment3;
+						context.arc(baseX, baseY, radius, a2, a3, false);
+						context.closePath();
+					} else {
+						context.arc(baseX, baseY, radius, a2, a3, false);
+						context.lineTo(x3l,y3l);
+						context.lineTo(x2l,y2l);
+						context.lineTo(x2,y2);
+						context.lineTo(x3,y3);
+					}
+					var a2 = theAngle + increment3;
+					theAngle += increment;
+					//size2 += (size2 * .10); //messin' around
+					//size2++;
+				}
+				if(!fill) context.stroke();
+				if (fill) {
+					context.fill();
+					context.globalCompositeOperation = 'destination-out';
+					drawCircle(baseX,baseY,centerRadius);
+					context.fill();
+					//context.globalCompositeOperation = 'source-over';
+					//drawCircle(baseX,baseY,centerRadius);
+				}
+				drawCircle(baseX,baseY,centerRadius);
+				
+				
+				if(spokes > 0) {
+					theAngle = initialAngle;
+					increment = Math.radians((360/spokes));
+					if(spokeOffset == "default") {
+						theAngle += increment / 2;
+					} else {
+						theAngle += Math.radians(spokeOffset);
+					}
+					if (spokeTipWidth == "default") {
+						increment2 = Math.radians((360/spokes)/(2.2 * 2));
+					} else {
+						increment2 = Math.radians(spokeTipWidth);
+					}
+					if (spokeWidth == "default") {
+						increment3 = Math.radians((360/spokes)/(1.2 * 2));
+					} else {
+						increment3 = Math.radians(spokeWidth);
+					}
+					for (var i=0; i < spokes; i++) {
+						context.beginPath();
+						var a3 = theAngle + increment2;
+						var a4 = theAngle - increment2;
+						var a5 = theAngle + increment3;
+						var a6 = theAngle - increment3;
+						context.arc(baseX, baseY, mRad, a3, a4, true);
+						context.arc(baseX, baseY, sLength, a6, a5, false);
+						theAngle += increment;
+						context.closePath();
+						context.stroke();
+						if (fill) {
+							context.fill();
+							context.globalCompositeOperation = 'source-over';
+							context.globalCompositeOperation = 'destination-out';
+						}
+					}
+				}
+				context.globalCompositeOperation='source-over';
+				context.restoreColor();
+			}
+			
+			function drawCircleRing(x,y,circles,radius,radius2,alphaMask,fill) {
+				var increment = Math.radians((360/circles));
+				var theAngle = Math.radians(270);
+				var size = radius;
+				var size2 = radius2;
+				var baseX = x;
+				var baseY = y;
+				for (var i = 0; i < circles; i++) {
+					x = baseX + Math.round(size * Math.cos(theAngle));
+					y = baseY + Math.round(size * Math.sin(theAngle));
+					drawCircle(x,y,size2,alphaMask);
+					if(fill) context.fill();
+					theAngle += increment;
+				}
+				
+			}
+			//drawCircle(x,y,70);
+			//drawCircle(x,y,40);
+			//drawGear(x,y,6,100,30,40,"default","default");
+			drawGear(x,y,6,100,10,40,"default","default",10,9,10,"default","default","default","#000000");//pre
+			//drawGear(x,y,6,150,5,40,"default","default",10,3,20,"default",(360/60) / 2 * 4,"default","#000000");
+			//drawCircleRing(x,y,12,140,5);
+			//drawCircleRing(x,y,3,165,10);
+			//drawCircleRing(x,y,3,-75,65,false,true);
+			//drawCircleRing(x,y,3,-75,50,true);
+			//drawCircleRing(x,y,3,15,6,true);
+			//drawCircleRing(x,y,3,45,7,true);
+			//drawCircleRing(x,y,3,75,8,true);
+			//drawCircleRing(x,y,3,115,9,true);
+			
+			
+			//context.fill();
+			//drawCircle(x,y,40);
+			drawCircleRing(x,y,3,15,3,true);//pre
+			//drawCircleRing(x,y,6,30,5);
+			//drawCircleRing(x,y,3,55,35,true);
+			//REF: drawGear(x,y,teeth,radius,centerRadius,toothHeight,toothWidth,toothTipWidth,middleRadius,spokes,spokeLength)
+			//drawNGon(x,y,3,70,Math.radians(270));
+			//drawNStar(x,y,5,80,40,Math.radians(270),Math.radians(((360/5)/2)));
+			//drawNDiamondStar(x,y,10,120,40,0,Math.radians(270),Math.radians(((360/10)/3)),Math.radians(((360/10)/4)));
+			//drawSpiral(x,y,9,5,1,.5);
+			//drawNStar(x,y,5,80,-70,Math.radians(270),-Math.radians(((360/5)/2)));
+			//drawNDiamondStar(x,y,9,120,40,20,Math.radians(270),Math.radians(((360/5)/10)),Math.radians(((360/5)/15)));
+		</script>
+		<br/><a id="myFile" href="" target="_blank">your shape!</a>
+		<script>
+			var fileLink = document.getElementById("myFile");
+			fileLink.setAttribute("href",canvas.toDataURL());
+			
+			function shapeMaker() {
+				context.clearRect(0,0,canvas.width,canvas.height);
+				var chooseShape = prompt("shape?","N-Gon");
+				switch(chooseShape) {
+					case "N-Gon" : {
+						var sides = Number(prompt("number of sides?","3"));
+						var size = Number(prompt("size?","70"));
+						drawNGon(x,y,sides,size,Math.radians(270));
+						break;
+					}
+					case "N-Star" : {
+						var points = Number(prompt("number of points?","5"));
+						var size = Number(prompt("size?","80"));
+						var size2 = Number(prompt("size 2?","40"));
+						drawNStar(x,y,points,size,size2,Math.radians(270),Math.radians(((360/5)/2)));
+						break;
+					}
+					case "N-DiamondStar" : {
+						var points = Number(prompt("number of points?","10"));
+						var size = Number(prompt("size?","120"));
+						var size2 = Number(prompt("size 2?","40"));
+						var size3 = Number(prompt("size 3?","0"));
+						drawNDiamondStar(x,y,points,size,size2,size3,Math.radians(270),Math.radians(((360/points)/3)),Math.radians(((360/points)/4)));
+						break;
+					}
+					case "Spiral" : {
+						var layers = Number(prompt("how many iterations?","9"));
+						var size = Number(prompt("line thickness?","5"));
+						var size2 = Number(prompt("line gap? x","1"));
+						var size3 = Number(prompt("thickness increment?","0"));
+						drawSpiral(x,y,layers,size,size2,size3);
+						break;
+					}
+					case "Gear" : {
+						var teeth = Number(prompt("how many teeth?","6"));
+						var size = Number(prompt("radius?","100"));
+						var size2 = Number(prompt("radius of center?","10"));
+						var size3 = Number(prompt("tooth length?","40"));
+						var size4 = Number(prompt("thickness of middle?","10"));
+						var spokes = Number(prompt("spokes?","9"));
+						var size5 = Number(prompt("thickness of edge?","10"));
+						drawGear(x,y,teeth,size,size2,size3,"default","default",size4,spokes,size5,"default","default","default");
+						break;
+					}
+					case "CircleRing" : {
+						var circles = Number(prompt("how many circles?","3"));
+						var size = Number(prompt("radius?","55"));
+						var size2 = Number(prompt("radius of cirles?","40"));
+						drawCircleRing(x,y,circles,size,size2);
+						break;
+					}
+				}
+			}
+			
+			function shapePresets() {
+				var pres = "preset shapes: ";
+				pres += "\n1: Gear(x,y,6,100,10,40,\"default\",\"default\",10,0,10,\"default\",\"default\",\"default\")";
+				pres += "\nCircleRing(x,y,3,55,40);";
+				pres += "\n2: Gear(x,y,6,100,20,40,\"default\",\"default\",10,0,10,\"default\",\"default\",\"default\")";
+				pres += "\nCircle(x,y,40)";
+				pres += "\nCircleRing(x,y,6,30,5)";
+				pres += "\n3: Gear(x,y,6,100,10,40,\"default\",\"default\",10,9,10,\"default\",\"default\",\"default\")";
+				pres += "drawCircleRing(x,y,3,15,3)";
+				alert(pres);
+			}
+			
+		</script>
+		<button onclick="">save!</button>
+		<button onclick="shapeMaker()">create shape!</button>
+		<button onClick="shapePresets()">presets</button>
+</body>
+</html>
+
+

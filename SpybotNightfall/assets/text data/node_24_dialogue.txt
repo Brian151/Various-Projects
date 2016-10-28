@@ -1,0 +1,50 @@
+[
+
+#A1: [
+"WM:  hey partner!  you really cleaned up those dr. d nodes! ", 
+"what's up?",
+"Thanks, winter." 
+],
+
+#B1: [
+"WM:  i went sneaking around there after you left, and guess what?  I found MORE  traces OF that weird program.", 
+"know what it's for yet?",
+"any idea where it came from?" 
+],
+
+#c1: [
+"WM:  nope.  it's _really_ slippery, but I did get a clue about what nightfall might mean.  i did this special kind of search i made up, and i found something.", 
+"What did you find?" 
+],
+
+#C2: [
+"WM:  a nice piece of software.  it's stashed away deep in sector 4 in a lucky monkey node, not that they know it's there of course.", 
+"did you find anything else?",
+"where is the node?" 
+],
+
+#D1: [
+"WM:  totally! The traces had the same nightfall signature, so i did this special kind of search i made up, and i found something.", 
+"What did you find?" 
+],
+
+#D2: [
+"WM:  a nice piece of software somebody made.  it's stashed away deep in sector 4 in a lucky monkey node, not that they know it's there of course.", 
+"did you find anything else?",
+"where is the node?"
+],
+
+
+#e1: [
+"WM:  It'll be on your map in a sec, partner.  anyway, i'm gonna keep on searching for the nightfall hacker and see what i find.  c u.", 
+"ready to receive node data." 
+],
+
+#e2: [
+"WM:  not yet, but i'm gonna keep searching for the nightfall hacker and see what else i find + i'll put the monkey node up on your map.  c u partner.", 
+"ready to receive node data." 
+]
+
+]
+
+ 

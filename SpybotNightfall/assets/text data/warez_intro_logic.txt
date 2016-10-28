@@ -1,0 +1,43 @@
+[
+[#ID:44, #TYPE: #WAREZ, #NAME: "Leo's Shop", 
+ #ORDER:[ 
+		   [#WHO: 3, #TEXT:"A1", #OPTION: [[#ACTION:#dialogue, #ARG:2], [#ACTION:#dialogue, #ARG:5]]], 
+			[#WHO: 3, #TEXT:"B1", #OPTION: [[#ACTION:#dialogue, #ARG:3], [#ACTION:#dialogue, #ARG:6]]], 
+			[#WHO: 3, #TEXT:"C1", #OPTION: [[#ACTION:#goShop, #ARG:5], [#ACTION:#goShop, #ARG:4]]], 
+			[#WHO: 3, #TEXT:"D1", #OPTION: [[#ACTION:#dialogue, #ARG:5], [#ACTION:#dialogue, #ARG:6]]], 
+			[#WHO: 3, #TEXT:"E1", #OPTION: [[#ACTION:#goShop, #ARG:10], [#ACTION:#goShop, #ARG:10]]], 
+			[#WHO: 3, #TEXT:"F1", #OPTION: [[#ACTION:#close, #ARG:0], [#ACTION:#close, #ARG:0]]]  
+]],
+
+[#ID:45, #TYPE: #WAREZ, #NAME: "Network City", 
+ #ORDER:[ 
+			[#WHO: 7, #TEXT:"A1", #OPTION: [[#ACTION:#dialogue, #ARG:2], [#ACTION:#dialogue, #ARG:5]]], 
+			[#WHO: 7, #TEXT:"B1", #OPTION: [[#ACTION:#dialogue, #ARG:3], [#ACTION:#dialogue, #ARG:6]]], 
+			[#WHO: 7, #TEXT:"C1", #OPTION: [[#ACTION:#goShop, #ARG:5], [#ACTION:#goShop, #ARG:4]]], 
+			[#WHO: 7, #TEXT:"D1", #OPTION: [[#ACTION:#dialogue, #ARG:5], [#ACTION:#dialogue, #ARG:6]]], 
+			[#WHO: 7, #TEXT:"E1", #OPTION: [[#ACTION:#goShop, #ARG:10], [#ACTION:#goShop, #ARG:10]]], 
+			[#WHO: 7, #TEXT:"F1", #OPTION: [[#ACTION:#close, #ARG:0], [#ACTION:#close, #ARG:0]]]  
+]],
+
+[#ID:46, #TYPE: #WAREZ, #NAME: "Ready to Ware", 
+ #ORDER:[ 
+			[#WHO: 9, #TEXT:"A1", #OPTION: [[#ACTION:#dialogue, #ARG:2], [#ACTION:#dialogue, #ARG:5]]], 
+			[#WHO: 9, #TEXT:"B1", #OPTION: [[#ACTION:#dialogue, #ARG:3], [#ACTION:#dialogue, #ARG:6]]], 
+			[#WHO: 9, #TEXT:"C1", #OPTION: [[#ACTION:#goShop, #ARG:5], [#ACTION:#goShop, #ARG:4]]], 
+			[#WHO: 9, #TEXT:"C2", #OPTION: [[#ACTION:#close, #ARG:0], [#ACTION:#close, #ARG:0]]], 
+			[#WHO: 9, #TEXT:"D1", #OPTION: [[#ACTION:#dialogue, #ARG:5], [#ACTION:#dialogue, #ARG:6]]], 
+			[#WHO: 9, #TEXT:"E1", #OPTION: [[#ACTION:#goShop, #ARG:10], [#ACTION:#goShop, #ARG:10]]], 
+			[#WHO: 9, #TEXT:"F1", #OPTION: [[#ACTION:#close, #ARG:0], [#ACTION:#close, #ARG:0]]]  
+]],
+
+[#ID:47, #TYPE: #WAREZ, #NAME: "Agora", 
+ #ORDER:[ 
+			[#WHO: 10, #TEXT:"A1", #OPTION: [[#ACTION:#dialogue, #ARG:2], [#ACTION:#dialogue, #ARG:5]]], 
+			[#WHO: 10, #TEXT:"B1", #OPTION: [[#ACTION:#dialogue, #ARG:3], [#ACTION:#dialogue, #ARG:6]]], 
+			[#WHO: 10, #TEXT:"C1", #OPTION: [[#ACTION:#goShop, #ARG:5], [#ACTION:#goShop, #ARG:4]]], 
+			[#WHO: 10, #TEXT:"C2", #OPTION: [[#ACTION:#close, #ARG:0], [#ACTION:#close, #ARG:0]]], 
+			[#WHO: 10, #TEXT:"D1", #OPTION: [[#ACTION:#dialogue, #ARG:5], [#ACTION:#dialogue, #ARG:6]]], 
+			[#WHO: 10, #TEXT:"E1", #OPTION: [[#ACTION:#goShop, #ARG:10], [#ACTION:#goShop, #ARG:10]]], 
+			[#WHO: 10, #TEXT:"F1", #OPTION: [[#ACTION:#close, #ARG:0], [#ACTION:#close, #ARG:0]]]  
+]],
+ 

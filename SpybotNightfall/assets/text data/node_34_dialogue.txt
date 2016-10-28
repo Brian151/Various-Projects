@@ -1,0 +1,10 @@
+[
+
+#A1: [
+"bOAVENTURA: well done, agent.  you have accomplished your task, and i am happy to fulfill the terms of our agreement.  Prepare to receive the software we promised.", 
+"ready to receive software transfer."
+]
+
+]
+
+ 

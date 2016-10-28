@@ -1,0 +1,22 @@
+[
+
+#A1: [
+"Disarray:  Hey.   What are you doing here?  Didn't I tell you i cleaned this area up already?", 
+"well, there are still problems.",
+"did you miss that last databattle?" 
+],
+
+#B1: [
+"Disarray:  why don't you scram and let me take care of these nodes?", 
+"superphreak told me to check it out.",
+"looks like you need some help."
+],
+
+#C1: [
+"Disarray:  HEY, if you want, GO AHEAD, KEEP hacking.  YOU WON'T GET VERY FAR BEFORE SECURITY BEATS YOU BACK TO LEVEL ONE.  CONTACT ME WHEN YOU get stuck.", 
+"cLOSE."
+]
+
+]
+
+ 

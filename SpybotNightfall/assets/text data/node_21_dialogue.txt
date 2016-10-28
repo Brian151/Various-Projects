@@ -1,0 +1,20 @@
+[
+
+#A1: [
+"SuperPhreak:  Excellent work.   Welcome to level four.", 
+"Thanks."
+],
+
+#B1: [
+"SuperPhreak:  No problem.  You earned it.  Now try to get to that mysterious node I showed you.  Something big is going down, and it looks like it's up to you to stop it.", 
+"do you think i can handle it?" 
+],
+
+#C1: [
+"SuperPhreak:  i know you can.  and s.m.a.r.t. is counting on you.  Get ready for the level four upgrade, and Good luck.", 
+"READY for security level upgrade." 
+]
+
+]
+
+ 

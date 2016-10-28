@@ -1,0 +1,15 @@
+[
+
+#A1: [
+"disarray: terrific.  thanks for handling that security.  I could've done it myself, but that saved me some time.", 
+"no problem."
+],
+
+#B1: [
+"disarray: well, once the program is put together, everything will be set for s.m.a.r.t. see you soon.", 
+"close" 
+]
+
+]
+
+ 

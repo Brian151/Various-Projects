@@ -1,0 +1,19 @@
+[
+
+#A1: [
+"KIMONI: Hmm, I didn't think you would make it this far.  Only the best agents have the talent to reach my shop. ", 
+"THANKS" 
+],
+
+#B1: [
+"KIMONI: I deal exclusively in top-of-the-line software options for the serious Spybot user.  Of course, that kind of quality does not come cheaply.  Are you sure you're ready to shop at this level?", 
+"No thanks.",
+"Show me what you've got." 
+],
+
+#C1: [
+"KIMONI: Remember, Ready to Ware is the premiere software shop on the Net.  Come back when you're ready to do business.",
+"CLOSE"
+]
+
+] 

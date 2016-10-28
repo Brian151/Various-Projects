@@ -1,0 +1,10 @@
+[ 
+	#NAME			:"text here"
+
+	#Movement	:3, 
+	#MoveCount	:3, 
+
+	#MaxSize		:5, 
+
+	#actions		:["name of action","name of action"]
+] 

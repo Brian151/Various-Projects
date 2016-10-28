@@ -1,0 +1,2 @@
+SUPERPHREAK: The highlighted grid squares show how far this program can move.  Before we move it, let's see what it can do. 
+Hack is a simple battle program with only one command.  Click on the command to see what it does. 

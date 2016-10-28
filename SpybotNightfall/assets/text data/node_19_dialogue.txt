@@ -1,0 +1,33 @@
+[
+
+#A1: [
+"Kimoni:  I see you've returned.  be assured that you will find no better than Kimoni's shop anywhere on the Net.  The question is, do you have the credits to make this worth our while?", 
+"No thanks.",
+"Show me what you've got." 
+],
+
+#B1: [
+"Kimoni:  Of course.  Peruse at your leisure.", 
+"Buy Warez" 
+],
+
+#C1: [
+"Kimoni:  Are you sure there's nothing further you need?", 
+"Let me take one last look.",
+"No thanks, I'm done." 
+],
+
+#D1: [
+"Kimoni:  Look carefully.  Don't let yourself get caught without a vital piece of software.", 
+"Buy Warez"
+],
+
+#E1: [
+"Kimoni:  Well, when you have more credits to spend, we'll see you again.", 
+"Close" 
+]
+
+]
+
+
+ 

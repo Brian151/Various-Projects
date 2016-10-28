@@ -1,0 +1,45 @@
+[
+
+#A1: [
+"disarray:  Still up out there?", 
+"Still here.",
+"Hey, Disarray. hOW ABOUT YOU?" 
+],
+
+#a2: [
+"disarray:  OF COURSE I'M STILL ONLINE. NOTHING THIS PUNY IS GOING TO TAKE A HACKER OF MY SKILLS DOWN.  ANYWAY, I've been DIGGING AROUND and I found something.  Do you have time to check it out?", 
+"Sure.",
+"I don't know.  What is it?" 
+],
+
+#b1: [
+"disarray:  S.m.a.R.T. hAS a special PROGRAM THAT would really help with the crashing and all. TO GET IT RUNNING I NEED A COUPLE OF FILES THAT ARE HIDDEN IN SOME  CORPORATE NODES AROUND HERE, TWO NODES TO BE EXACT.", 
+"HOW DO I FIT IN?",
+"WHAT'S THE PROGRAM?" 
+],
+
+#C1: [
+"disarray:  WELL, THE PROGRAM'S ENCRYPTED, SO i NEED TO SPEND A lot of TIME JUST FINDING IT.  cAN YOU hold DOWN SECURITY SO I CAN GET IN THERE and do the real work?", 
+"Sure thing.",
+"lET ME THINK ABOUT IT." 
+],
+
+#d1: [
+"disarray:  NETWORK SOFTWARE, IT'S COMPLICATED.  aNYWAY, THE PROGRAM IS ENCRYPTED, SO I'm GOING TO NEED A LOT OF TIME TO DECIPHER IT.  cAN YOU SHUT DOWN SECURITY SO I CAN GET IN THERE and concentrate on the real work?", 
+"Sure thing.",
+"LET ME THINK ABOUT IT." 
+],
+
+#E1: [
+"disarray:  oKAY.  YOU CAN GET TO THE NODES THROUGH THIS ONe.  They're all LEVEL THREE, so YOU'LL NEED TO get the ACCESS code for that level FIRST.",
+"got it."
+],
+
+#F1: [
+"DISARRAY:  I'LL LOAD THE FIRST node ONTO YOUR MAP NOW.  hack that to access the nodes that contain the program.  i'll catch up with you when you've taken care of the security.  LATER NEWBIE.",
+"READY TO RECEIVE NODE DATA."
+]
+
+]
+
+ 

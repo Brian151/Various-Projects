@@ -1,0 +1,27 @@
+[
+
+#A1: [
+"SuperPhreak:  hey, newbie.  Still working on getting s.m.a.r.t. on its feet.  WHAT ARE YOU UP TO?", 
+"DO YOU KNOW WINTERMUTANT?",
+"GONNA HIT THIS WAREZ NODE." 
+],
+
+#B1: [
+"SuperPhreak:  AH, NETWORK CITY.  GOOD IDEA. there are a couple more WAREZ NODES hidden out on the net.", 
+"NICE." 
+],
+
+#B2: [
+"SuperPhreak:  he's a good kid.  BY THE WAY, THAT NODE UP THERE IS NETWORK CITY.  AND there are a couple more WAREZ NODES hidden out on the net.", 
+"NICE." 
+],
+
+#C1: [
+"SuperPhreak:  And while you're looking at software, DON'T JUST LOAD UP ON ATTACK PROGRAMS. you should CHECK ouT SOME META PROGRAMS LIKE MEDIC AND TURBO.  THERE MAY COME A TIME WHEN YOU NEED to BOOST UP YOUR HACK TO HANDLE AN ~~~ ENEMY. ~~~ ~~ oops gotta go", 
+"close."
+]
+
+
+]
+
+ 

@@ -1,0 +1,41 @@
+[snd_netload_1]
+music_databattle_2
+{
+random 4
+m.z1
+m.z2
+m.z3
+}
+
+[snd_netload_2]
+music_databattle_3
+{
+random 4
+m.y1
+m.y2
+}
+
+[snd_netload_3]
+music_databattle_4
+{
+random 4
+m.x1
+m.x2
+m.x3
+}
+
+[snd_netload_4]
+music_databattle_5
+{
+random 4
+m.w1
+m.w2
+}
+
+[snd_netload_5]
+music_databattle_6
+{
+random 4
+m.v1
+}
+

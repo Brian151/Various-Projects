@@ -1,0 +1,55 @@
+/*Windows Skins css3*/
+/*Windows Classic*/
+
+/*Classic Classic (basic)*/
+.Classic {
+  min-height:31px;
+  min-width:56px;
+  max-width:100%;
+  max-height:100%;
+  display:inline-block; /*fixes width spanning entire page*/
+  background: #D4D0C8;
+  /*dimmensions all set to preferred sizes individually, 
+  color #D4D0C8 has been defined as a fallback measure*/
+  border-top:41px solid #D4D0C8;
+  border-right:4px solid #D4D0C8;
+  border-bottom:4px solid #D4D0C8;
+  border-left:4px solid #D4D0C8;
+  padding: 10px 20px;
+  /*uses border image "skinClassic" 
+  slices it to the same dimmensions as the normal border (IMPORTANT that these match EXACTLY)
+  and does not retain the center, 
+  enabling the element's BG to be set independent of the border image
+  */
+  -webkit-border-image:url("Classic.png") 41 4 4 4; /* Safari */
+  -o-border-image:url("Classic.png") 41 4 4 4; /* Opera */
+  /*effects firefox*/
+  -moz-border-image:url("Classic.png") 41 4 4 4; /* Old */
+  border-image:url("Classic.png") 41 4 4 4;
+  
+  /*Classic Standard*/
+  #classicStandard {
+  min-height:31px;
+  min-width:56px;
+  max-width:100%;
+  max-height:100%;
+  display:inline-block; /*fixes width spanning entire page*/
+  background: #D4D0C8;
+  /*dimmensions all set to preferred sizes individually, 
+  color #D4D0C8 has been defined as a fallback measure*/
+  border-top:41px solid #D4D0C8;
+  border-right:4px solid #D4D0C8;
+  border-bottom:4px solid #D4D0C8;
+  border-left:4px solid #D4D0C8;
+  padding: 10px 20px;
+  /*uses border image "skinClassic" 
+  slices it to the same dimmensions as the normal border (IMPORTANT that these match EXACTLY)
+  and does not retain the center, 
+  enabling the element's BG to be set independent of the border image
+  */
+  -webkit-border-image:url("Classic-Standard.png") 41 4 4 4; /* Safari */
+  -o-border-image:url("Classic-Standard.png") 41 4 4 4; /* Opera */
+  /*effects firefox*/
+  -moz-border-image:url("Classic-Standard.png") 41 4 4 4; /* Old */
+  border-image:url("Classic-Standard.png") 41 4 4 4;
+}

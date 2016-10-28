@@ -1,0 +1,23 @@
+[
+
+[ 
+    #Programs    :["Hack","Bug","Slingshot","Data Doctor","Frag-Man"],
+    #data         :[]
+],
+
+[ 
+    #Programs    :["Hack 2.0","Golem.mud","Wolf Spider","Seeker","Silo","Medic","Ms.Frag-Man","Turbo"],
+    #data         :[]
+],
+
+[ 
+    #Programs    :["Hack 3.0","Golem.clay","Black Widow","MandelBug","Buzzbomb","Fiddle", "Seeker 2.0","SCUD","Satellite","Ballista", "Data Doctor Pro","Clog.02", "Turbo Deluxe"],
+    #data         :[]
+],
+
+[ 
+    #Programs    :["Golem.stone","Tarantula","HeisenBug","LogicBomb","Sumo","Seeker 3.0", "Laser Satellite","Catapult", "Clog.03", "Guru"],
+    #data         :[]
+]
+
+] 

@@ -1,0 +1,28 @@
+/*Windows Skins css3*/
+/*testing and debug*/
+
+/*size testing class*/
+#forced-size{
+  min-width:1px;
+  min-height:1px;
+  max-width:9999px;
+  max-height:9999px;
+  /*change as necesarry*/
+  width:2000px;
+  height:1000px;
+}
+
+/*caption button (close,maximize/restore,minimize) test*/
+#capBTN-test{
+  display:inline-block;
+  margin:0px;
+  padding:0px;
+  position:relative;
+  top:-203px;
+  right:40px;
+}
+
+/*for jokes and complete ridiculousness only*/
+#btnJUMBO a{
+  padding:100px;
+}

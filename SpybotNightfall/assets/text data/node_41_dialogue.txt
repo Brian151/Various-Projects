@@ -1,0 +1,25 @@
+[
+
+#A1: [
+"boaventura: Agent.   i'm glad i found you.   we've got a big problem here.", 
+"what is it?" 
+],
+
+#B1: [
+"boaventura:  we've found an undocumented node rerouting data to our system core.  a security breach at this level is completely unacceptable.  what are you going to do about it?", 
+"i'm a little busy right now." 
+],
+
+#C1: [
+"boaventura:  If you can bypass our security, we'll set up a link to the undocumented node for you.  that should give you access to whoever is causing this chaos.", 
+"fine." 
+],
+
+#d1:[
+"boaventura:  be warned, agent.  the security measures in our core are particularly fierce.  good luck.",
+"good luck to you too."
+]
+
+]
+
+ 

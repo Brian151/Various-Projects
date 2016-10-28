@@ -1,0 +1,36 @@
+[
+
+#A1: [
+"SuperPhreak:  hey.  i guess you found out ~~~~~ ~~ get the access codes for disarray's node.  good work.  I'm looking into how to stall the nightfall software.  you go GET THE ~~~~~~ CODES and THEN de-activate the program.   but first ~~~ ~~ ~~~~ ~~~ what i know about this jerk.", 
+"tell me."
+],
+
+#B1: [
+"SuperPhreak:   i'm sure disarray ~~~ boobytrapped THE NODE THAT HAS HIS ACCESS CODES.  i don't know ~~~~ ~~~~ ~~~~~~ whEN you access that node.", 
+"Okay."
+],
+
+#b2: [
+"SUPERPHREAK: iF you've got aNY UNFINISHED missionS, COMPLETE THEM to ~~~ ~~~~~ extra cash.  ~~~~ ~~~~ back to minerva's and STOCK UP ON WAREZ.",
+"Got it."
+],
+
+#C1: [
+"SuperPhreak:  Disarray's tactics: i know that ~~~~~~~~ ~ COWARD and will USE RANGED PROGRAMs TO KEEP YOU ~~ ~ DISTANCE.  be prepared to see LOTS OF RADAR and SONAR along with ~~~~~~~~~~ ~~~~ ~~~~ fought.  I ALSO KNOW HE DELETES MEMORY CELLS AS A DEFENSE, SO BE SURE ~~ ~~~~ SOMETHING THAT CAN RESTORE THE GRID, LIKE MS. Bit-MAN.", 
+"thanks." 
+],
+
+#D1: [
+"SuperPhreak:  NO PROBLEM. DID ALL OF THAT make sense?  ~ ~~~~ ~~~  pretty soon theRE WILL be no turning back.", 
+"I'm ready.",
+"go over that AGAIN." 
+],
+
+#e1: [
+"SuperPhreak: ALRIGHT, I'LL BE OFF-LINE FOR A WHILE.  GOOD LUCK ~~~~~~~ ~~~ CODES, AND BE SURE ~~ SHOW DISARRAY WHAT IT MEANS TO MESS WITH S.M.A.R.T.  ",
+"i'll do my best."
+]
+
+]
+
+ 

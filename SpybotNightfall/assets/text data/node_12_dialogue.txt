@@ -1,0 +1,14 @@
+[
+
+#A1: [
+"Tsumara285:  Welcome back, consumer, to Network City, retailer for New Future Net Technologies, software for the here and beyond.  Can I be of assistance?", 
+"No thanks.",
+"I'd like to purchase some software." 
+],
+
+#B1: [
+"Tsumara285:  Thank you for shopping at Network City, where the New Future is Your Future.", 
+"Done" 
+]
+
+] 

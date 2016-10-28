@@ -1,0 +1,37 @@
+[
+
+#A1: [
+"mINERVA:  I KNEW YOU'D BE BACK - Glad to see youR ENERGY IS STILL FLOWING.  I HAVE THAT SOFTWARE YOU'VE BEEN DREAMING ABOUT.  ARE YOU READY TO ENTER THE MAGIC CIRCLE?", 
+"No thanks.",
+"Show me what you've got." 
+],
+
+#B1: [
+"mINERVA:All the best of the Net, from the strongest Sumo to the smoothest Guru.  Take your pick.", 
+"Buy Warez" 
+],
+
+#B2: [
+"mINERVA:Suit yourself.  I'll catch you later.",
+"Close."
+],
+
+#C1: [
+"mINERVA:Anything else before you get back to the corporate runs?", 
+"Let me take one last look.",
+"No thanks, I'm done." 
+],
+
+#D1: [
+"mINERVA:Go ahead.  You can never have too many tools.", 
+"Buy Warez" 
+],
+
+#E1: [
+"mINERVA:Good luck out there.  I'll see you soon.", 
+"Close" 
+]
+
+]
+
+ 

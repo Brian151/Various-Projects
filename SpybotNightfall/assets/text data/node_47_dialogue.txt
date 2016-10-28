@@ -1,0 +1,20 @@
+[
+
+#A1: [
+"MINERVA:  So, you passed the test in getting here, and I checked your trail - no one followed you.  Well done.", 
+"HI." 
+],
+
+#B1: [
+"MINERVA:  as I'm sure you know, I deal in some of the more - esoteric - software out on the Net.  karmic warez for the enlightened hacker.  It may cost plenty, but what are credits, really, when you think about it?  are you ready for net nirvana?", 
+"No thanks.",
+"Show me what you've got." 
+],
+
+#C1: [
+"MINERVA:  NOW You know where to find me.  Come back when you're ready to transcend.", 
+"CLOSE"  
+]
+
+]
+ 

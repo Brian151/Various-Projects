@@ -1,0 +1,20 @@
+[
+
+#A1:  [
+"Superphreak:  hey, I can see which program disarray's getting.  It has to do with rapid simultaneous network communication - flooding a huge number of nodes at once.",
+"why would he want that?"
+],
+
+#b1: [
+"Superphreak:  I don't know.  what would disarray be doing that would affect the whole net?  he'd still have to have hacked every node individually to be able to do anything.", 
+"what's the next step?" 
+],
+
+#C1: [
+"Superphreak:  keep following him, and watch what he says.  i'll keep up my trace and get back to you when I have more.  l8r.", 
+"close." 
+]
+
+]
+
+ 

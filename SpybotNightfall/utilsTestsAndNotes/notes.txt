@@ -1,0 +1,35 @@
+map width: 16tx X 13tx (might be wrong)
+tile dimens= 32x32
+tx0= NOTHING, it is the blank tile (a blank 30x30 image could be used as a placeholder if needed)
+tx's (tiles) = 28 x 28 , offset should be 2px,2px
+programs = 30 x 30, offest should be 1px,1px
+
+item 2 (credits) = 14 x 14, offset should be 9px,9px
+item 3 (logs) = 21 x 25, offset should be 3px,2px
+
+map items:
+"PROGRAM DOCK" = <texture in spriter's resource rips>
+"BASIC CREDIT" = item 2
+"WIN FLAG" = <unknown> (assumed item 3)
+
+evil programs (textures in spriter's resource rips):
+"Frag-Man" = bit-man 
+"Sentinel" = sentinel
+"Sentinel 2.0" = sentinel 2.0
+"Sentinel 3.0" = sentinel 3.0
+"Guard Pup" = guard pup
+"Guard Dog" = guard dog
+"Attack Dog" =attack dog
+"Watchman" = watchman
+"Watchman X" = watchman x
+"watchman SP" = watchman sp
+"Sensor" = sensor
+"Sonar" = sonar
+"Radar" = radar
+"Warden" = warden
+"Warden+" = warden+
+"Warden++" = warden++
+"Sumo" = sumo
+"MandleBug" = mandlebug
+"Boss" = boss
+"Fire Wall" = fire wall

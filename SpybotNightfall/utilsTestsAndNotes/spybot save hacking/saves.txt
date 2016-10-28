@@ -1,0 +1,7 @@
+slot1
+[#SPYBOT: 1, #sLevel: 2, #credits: 8710, #agents: ["Hack", "Slingshot", "Hack", "Hack", "Frag-Man", "Hack", "Clog.01", "Hack 2.0", "Golem.mud", "Medic", "Hack 2.0", "Seeker"], #nodes: [#WIN, #WIN, #WIN, #WIN, #WIN, #WIN, #WIN, #WIN, #WIN, #WIN, #WIN, #WIN, #on, #on, #off, #off, #WIN, #on, #off, #off, #off, #off, #off, #off, #off, #off, #off, #off, #off, #off, #off, #off, #off, #off, #off, #off, #off, #off, #off, #off, #off, #off]]
+
+slot2
+[#SPYBOT: 1, #sLevel: 1, #credits: 1000, #agents: ["Boss", "Watchman","Sentinel","Guard Pup","Guard Dog","Attack Dog","Warden","Frag-Woman], #nodes: [#WIN, #on, #on, #on, #on, #on, #on, #on, #on, #on, #on, #on, #on, #on, #on, #on, #on, #on, #on, #on, #on, #on, #on, #on, #on, #on, #on, #on, #on, #on, #on, #on, #on, #on, #on, #on, #on, #on, #on, #on, #on, #on]]
+
+

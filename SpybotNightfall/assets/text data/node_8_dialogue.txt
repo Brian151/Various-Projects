@@ -1,0 +1,67 @@
+[
+
+#A1: [
+"SuperPhreak:   ~~~ ~~ ~~~~~ HOLD ON ~~~~ ~~ ~~~ ~~~~~~ TRYING TO CONNECT ~~ ~~~~",
+"superphreak?"
+], 
+
+#a2: [
+"SUPERPHREAK:  Yeah, I'm back.  I see you got the access codes.  i'll think i'll have time to upgrade your status and show you a new warez node  before i GET CUT OFF again.", 
+"Why did you get cut off before?",
+"so what's up?" 
+],
+
+#B1: [
+"SuperPhreak:  Someone's been screwing around with S.M.A.R.T.  Some kind of corrupt program got loose in our network and I got cut off.   For a second, I thought it was 12am out here.", 
+"What was going on?",
+"12am?" 
+],
+
+
+#C1: [
+"SuperPhreak:  12am = midnight. that's WHAT WE CALL A TOTAL NETWORK BLackout — no access for anybody.  It happened once a while ago during the worldwide power crisis. You wouldn't believe how bad it got before the network came back online.", 
+"GOT IT." 
+],
+
+#c2: [
+"SuperPhreak:  Anyway, someone directly sabotaged  S.M.A.R.T. and it's crippling our agents.  BUT IT'S NOT AFFECTING YOU BECAUSE we haven't put your INFO inTO the S.M.A.R.T. system yet.", 
+"What can I do to help?",
+"Who's responsible for this?" 
+],
+
+
+#d1: [
+"SuperPhreak:  Well, all of our agents KEEP GETTING SHUT OUT OF THE NETWORK. i'm busy just trying to stay on line,  so you'll need to get to work.  ", 
+"DO YOU HAVE ANY MORE INFO?",
+"I'M READY." 
+],
+
+#d2: [
+"SuperPhreak:  I ran a trace on the problem that led back to the Lucky Monkey Eastern Distribution Site.  Someone must have sent the corrupt program from there.", 
+"OKAY." 
+],
+
+#D3: [
+"SuperPhreak:  I guess you should see if you can pick up the local records.  I'll get back to you when I can.", 
+"READY for security level upgrade." 
+],
+
+#E1: [
+"SuperPhreak:  I'm not sure yet, I'm going to keep looking into it.  But with all of us popping in and out, I guess that leaves you as the only functional agent.  ", 
+"GREAT.",
+"I'M READY." 
+],
+
+#E2: [
+"SuperPhreak:  I ran a trace on the problem that led back to the Lucky Monkey Eastern Distribution Site.  Someone must have sent the corrupt program from there.  ", 
+"OKAY." 
+],
+
+#E3: [
+"SuperPhreak:  I guess you should see if you can pick up the local records.  I'll get back to you when I can.", 
+"READY for security level upgrade."  
+]
+
+]
+
+ 

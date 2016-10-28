@@ -1,0 +1,45 @@
+[
+
+#A1: [
+"Boaventura:  Hello, agent.  I SUPPOSE I SHOULD THANK YOU FOR ASSISTING MY COMPANY.", 
+"YOU'RE WELCOME.",
+"ALL IN A DAY'S WORK."
+],
+
+#A2:[
+"BOAVENTURA:  GOOD TO SEE THAT S.M.A.R.T. IS FULFILLING ITS PROFESSIONAL RESPONSBILITIES.  ALONG THOSE LINES, I HAVE A task FOR YOU TO PERFORM.",
+"What are you offering?",
+"Sure.  What's the _task_?" 
+],
+
+#B1: [
+"Boaventura:  The SysAdmin Archives have been locked down after an aborted crash attempt.   It's going to take us a while to get it up and running, but we need a file from there yesterday.", 
+"What do you need me to do?" 
+],
+
+
+#B2: [
+"Boaventura:  We Need you to get that file.  I have a backdoor route plotted out through a P.E.D. node.  If you succeed, you get an experimental piece of software.", 
+"Alright, I'm game.",
+"Let me think about it." 
+],
+
+#C1: [
+"Boaventura:  An experimental piece of software, along with whatever credits you can find During the MISSION.", 
+"WHAT IS THE MISSION?" 
+],
+
+#C2: [
+"Boaventura:  USe a backdoor through the P.E.D. Feduciary node to access our SysAdmin Archives.  The Archives Node locked down after an aborted crash attempt, and we need a file from there immediately.", 
+"Sure thing.",
+"let me think about it." 
+],
+
+#D1: [
+"Boaventura:  I'm adding the Archives Node to your Netmap.  I'll contact you WHEN YOU ARE IN THE VICINITY OF THE NODE.", 
+"Ready to receive net data." 
+]
+
+]
+
+ 

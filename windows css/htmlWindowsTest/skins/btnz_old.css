@@ -1,0 +1,135 @@
+/*Windows Skins css3*/
+/*buttons*/
+
+/*button container and general setup*/
+.btnWrapper{
+  margin:0px;
+  padding:0px;
+}
+
+.btnz {
+  position:relative;
+  top:-10px;
+  left:-10px;
+  padding-bottom:5px;
+  margin:0px;
+}
+
+.btnz li{
+  display:inline-block;
+}
+
+.btnz li{
+  margin:0px;
+  padding:0px;
+}
+
+.btntxt {
+  color:#000000;
+  display:inline-block;
+}
+
+/*classic*/
+.btn-Classic a {
+  padding-left:5px;
+  padding-right:5px;
+  border:4px solid #ffffff;
+  -webkit-border-image:url("Classic/btnClassic.png") 4 4 4 4 fill;
+  -o-border-image:url("Classic/btnClassic.png") 4 4 4 4 fill;
+  -moz-border-image:url("Classic/btnClassic.png") 4 4 4 4 fill;
+  border-image:url("Classic/btnClassic.png") 4 4 4 4 fill;
+  cursor:default;
+}
+
+.btn-Classic a:active{
+  border:4px solid #000000;
+  -webkit-border-image:url("Classic/btnClassic-P.png") 4 4 4 4 fill;
+  -o-border-image:url("Classic/btnClassic-P.png") 4 4 4 4 fill;
+  -moz-border-image:url("Classic/btnClassic-P.png") 4 4 4 4 fill;
+  border-image:url("Classic/btnClassic-P.png") 4 4 4 4 fill;
+}
+
+/*Luna (xp) */
+.btn-Luna a {
+  padding-left:5px;
+  padding-right:5px;
+  border:2px solid #003C74;
+  -webkit-border-image:url("Luna/btnLuna.png") 2 2 2 2 fill;
+  -o-border-image:url("Luna/btnLuna.png") 2 2 2 2 fill;
+  -moz-border-image:url("Luna/btnLuna.png") 2 2 2 2 fill;
+  border-image:url("Luna/btnLuna.png") 2 2 2 2 fill;
+  cursor:default;
+}
+
+.btn-Luna a:hover{
+  border:2px solid #003C74;
+  -webkit-border-image:url("Luna/btnLuna-H.png") 2 2 2 2 fill;
+  -o-border-image:url("Luna/btnLuna-H.png") 2 2 2 2 fill;
+  -moz-border-image:url("Luna/btnLuna-H.png") 2 2 2 2 fill;
+  border-image:url("Luna/btnLuna-H.png") 2 2 2 2 fill;
+}
+
+.btn-Luna a:active{
+  border:2px solid #003C74;
+  -webkit-border-image:url("Luna/btnLuna-P.png") 2 2 2 2 fill;
+  -o-border-image:url("Luna/btnLuna-P.png") 2 2 2 2 fill;
+  -moz-border-image:url("Luna/btnLuna-P.png") 2 2 2 2 fill;
+  border-image:url("Luna/btnLuna-P.png") 2 2 2 2 fill;
+}
+
+
+/*Aero (Vista,7) */
+.btn-Aero a {
+  padding-left:5px;
+  padding-right:5px;
+  border:2px solid #8E8F8F;
+  -webkit-border-image:url("Aero/btnAero.png") 2 2 2 2 fill;
+  -o-border-image:url("Aero/btnAero.png") 2 2 2 2 fill;
+  -moz-border-image:url("Aero/btnAero.png") 2 2 2 2 fill;
+  border-image:url("Aero/btnAero.png") 2 2 2 2 fill;
+  cursor:default;
+}
+
+.btn-Aero a:hover {
+  border:2px solid #8E8F8F;
+  -webkit-border-image:url("Aero/btnAero-H.png") 2 2 2 2 fill;
+  -o-border-image:url("Aero/btnAero-H.png") 2 2 2 2 fill;
+  -moz-border-image:url("Aero/btnAero-H.png") 2 2 2 2 fill;
+  border-image:url("Aero/btnAero-H.png") 2 2 2 2 fill;
+  cursor:default;
+}
+
+.btn-Aero a:active{
+  border:2px solid #3C7FB1;
+  -webkit-border-image:url("Aero/btnAero-P.png") 2 2 2 2 fill;
+  -o-border-image:url("Aero/btnAero-P.png") 2 2 2 2 fill;
+  -moz-border-image:url("Aero/btnAero-P.png") 2 2 2 2 fill;
+  border-image:url("Aero/btnAero-P.png") 2 2 2 2 fill;
+}
+
+.AeroCAPbtnz{
+
+}
+
+.ClassicCAPbtnz{
+
+}
+
+.LunaCAPbtnz{
+  display:inline-block;
+  margin:0px;
+  padding:0px;
+  position:relative;
+  top:-193px;
+  right:70px;
+}
+
+#LunaCAPbtnz-2{
+  display:inline-block;
+  margin:0px;
+  padding:0px;
+  position:relative;
+  top:-193px;
+  right:85px;
+}
+

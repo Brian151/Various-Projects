@@ -1,0 +1,15 @@
+[
+
+#A1: [
+"SuperPhreak:  Hey, GOOD WORK.  THE LOGS YOU JUST FOUND WILL BE REALLY HELPFUL.  WE NEED ALL THE DATA WE CAN GET TO FIGURE OUT what's going on. ", 
+"What SHOULD I DO NEXT?" 
+],
+
+#B1: [
+"SuperPhreak:  hmm, JUST KEEP HACKING ~ ~~~ nodes to see if you can ~~~~ some more logs.   wATCH OUT FOR CORPORATE ~~~~~~~~~, AND DON'T FORGET WHAT YOU LEARNED USING BIT-MAN.  L8R .", 
+"LATER." 
+]
+
+]
+
+ 
