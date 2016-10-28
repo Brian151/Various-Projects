@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Map Thingy</title>
+		<style type="text/css">
+			body {
+				font-family: "Courier New", monospace;
+			}
+			td {
+				width: 32px;
+				height: 32px;
+				text-align: center;
+				color: white;
+				border: 1px solid black;
+			}
+			.cell {
+				width: 18px;
+				height: 18px;
+				text-align: center;
+				color: white;
+				border: 1px solid black;
+				margin: 1px 0 0 1px;
+				display: inline-block;
+			}
+		</style>
+	</head>
+	<body>
+		<h4>Map (Forward Iteration):</h4>
+		<table>
+			<tbody id="map">
+				
+			</tbody>
+		</table>
+		<h4>Visual dump of array (No set size)</h4>
+		<div id="map2">
+			
+		</div>
+		<!--
+		<h4>Method 3:</h4>
+		<div id="map3">
+			
+		</div>
+		-->
+		<script type="text/javascript">
+			"use strict";
+			
+			var array = ["tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx5", "tx5", "tx5", "tx5", "tx5", "tx5", "tx5", "tx5", "tx5", "tx5", "tx5", "tx0", "tx0", "tx5", "tx4", "tx4", "tx4", "tx4", "tx4", "tx4", "tx4", "tx4", "tx4", "tx5", "tx0", "tx0", "tx5", "tx4", "tx4", "tx4", "tx4", "tx4", "tx4", "tx4", "tx4", "tx4", "tx5", "tx0", "tx0", "tx5", "tx4", "tx4", "tx4", "tx4", "tx4", "tx4", "tx4", "tx4", "tx4", "tx5", "tx0", "tx0", "tx5", "tx4", "tx4", "tx4", "tx4", "tx4", "tx4", "tx4", "tx4", "tx4", "tx5", "tx0", "tx0", "tx5", "tx4", "tx4", "tx4", "tx4", "tx4", "tx4", "tx4", "tx4", "tx4", "tx5", "tx0", "tx0", "tx5", "tx5", "tx5", "tx5", "tx5", "tx5", "tx5", "tx5", "tx4", "tx4", "tx5", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx5", "tx4", "tx4", "tx5", "tx0", "tx0", "tx0", "tx2", "tx0", "tx2", "tx0", "tx0", "tx0", "tx5", "tx4", "tx4", "tx5", "tx0", "tx0", "tx5", "tx5", "tx5", "tx5", "tx5", "tx0", "tx0", "tx5", "tx4", "tx4", "tx5", "tx0", "tx0", "tx5", "tx4", "tx4", "tx4", "tx5", "tx2", "tx0", "tx5", "tx4", "tx4", "tx5", "tx0", "tx0", "tx5", "tx4", "tx4", "tx4", "tx5", "tx0", "tx0", "tx5", "tx4", "tx4", "tx5", "tx0", "tx0", "tx5", "tx4", "tx4", "tx4", "tx5", "tx2", "tx0", "tx5", "tx4", "tx4", "tx5", "tx0", "tx0", "tx5", "tx5", "tx5", "tx5", "tx5", "tx0", "tx0", "tx5", "tx5", "tx5", "tx5", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0"];
+						/*["tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0",
+						 "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0",
+						 "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx1", "tx8", "tx1", "tx8", "tx1",
+						 "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx1", "tx8", "tx1", "tx8", "tx1", "tx8", "tx1", "tx0", "tx0",
+						 "tx0", "tx0", "tx0", "tx0", "tx8", "tx1", "tx8", "tx1", "tx8", "tx1", "tx8", "tx0", "tx0", "tx0", "tx0", "tx0",
+						 "tx0", "tx1", "tx8", "tx1", "tx8", "tx1", "tx8", "tx1", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx8", "tx1",
+						 "tx8", "tx1", "tx8", "tx1", "tx8", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx1", "tx8", "tx1", "tx8", "tx1",
+						 "tx8", "tx1", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx8", "tx1", "tx8", "tx1", "tx8", "tx1", "tx8", "tx0",
+						 "tx0", "tx0", "tx0", "tx0", "tx0", "tx1", "tx8", "tx1", "tx8", "tx1", "tx8", "tx1", "tx0", "tx0", "tx0", "tx0",
+						 "tx0", "tx0", "tx8", "tx1", "tx8", "tx1", "tx8", "tx1", "tx8", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0",
+						 "tx8", "tx1", "tx8", "tx1", "tx8", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0",
+						 "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0",
+						 "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0"];*/
+			var table = "";
+			var j = 0;
+			for (var y = 0; y < 16; y++) {
+				table += "<tr>";
+				for (var x = 0; x < 13; x++) {
+					var tilenum = array[j].substr(2);
+					var bgcolor;
+					switch (tilenum) {
+						case 1:
+						case "1":
+							bgcolor = "00FF00";
+							break;
+						case 2:
+						case "2":
+							bgcolor = "FF00FF";
+							break;
+						case 4:
+						case "4":
+							bgcolor = "FFFF00";
+							break;
+						case 5:
+						case "5":
+							bgcolor = "00FFFF";
+							break;
+						case 8:
+						case "8":
+							bgcolor = "0000FF";
+							break;
+						case 9:
+						case "9":
+							bgcolor = "FF0000";
+							break;
+						default:
+							bgcolor = "000";
+							break;
+					}
+					table += "<td style='background-color: #" + bgcolor + "'>" + tilenum + "</td>";
+					j++;
+				}
+				table += "</tr>";
+			}
+			document.getElementById("map").innerHTML = table;
+			
+			var map2 = "";
+			var x = 0;
+			for (var t in array) {
+				var tilenum = array[t].substr(2);
+				var bgcolor;
+				switch (tilenum) {
+					case "1":
+						bgcolor = "00FF00";
+						break;
+					case "2":
+						bgcolor = "FF00FF";
+						break;
+					case "4":
+						bgcolor = "FFFF00";
+						break;
+					case "5":
+						bgcolor = "00FFFF";
+						break;
+					case "8":
+						bgcolor = "0000FF";
+						break;
+					case "9":
+						bgcolor = "FF0000";
+						break;
+					default:
+						bgcolor = "000";
+						break;
+				}
+				map2 += "<div class='cell' style='background-color: #" + bgcolor + "'>" + tilenum + "</div>";
+				x++;
+				if (x >= 13) {
+					//map2 += "<br />";
+					x = 0;
+				}
+			}
+			document.getElementById("map2").innerHTML = map2;
+			
+			/*
+			var map3 = "";
+			var x = 0;
+			var c = 0;
+			for (var t in array) {
+				if (c == 0) {
+					var tilenum = array[t].substr(2);
+					var bgcolor;
+					switch (tilenum) {
+						case "1":
+							bgcolor = "00FF00";
+							break;
+						case "2":
+							bgcolor = "FF00FF";
+							break;
+						case "4":
+							bgcolor = "FFFF00";
+							break;
+						case "5":
+							bgcolor = "00FFFF";
+							break;
+						case "8":
+							bgcolor = "0000FF";
+							break;
+						case "9":
+							bgcolor = "FF0000";
+							break;
+						default:
+							bgcolor = "000";
+							break;
+					}
+					map3 += "<div class='cell' style='background-color: #" + bgcolor + "'>" + tilenum + "</div>";
+					x++;
+					if (x >= 10) {
+						map3 += "<br />";
+						x = 0;
+					}
+					c = 2;
+				} else {
+					c--;
+				}
+			}
+			document.getElementById("map3").innerHTML = map3;
+			*/
+		</script>
+	</body>
+</html>
