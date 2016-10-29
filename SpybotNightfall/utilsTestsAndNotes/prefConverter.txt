@@ -1,0 +1,8 @@
+WIP
+having some slight problems with arrays...
+
+test output:
+{"SPYBOT":1,"sLevel":1,"credits":1000,"agents":["Hack","Slingsho"],"nodes":["#WIN","#on","#on","#off","#on","#off","#off","#off","#off","#off","#off","#off","#off","#off","#off","#off","#off","#off","#off","#off","#off","#off","#off","#off","#off","#off","#off","#off","#off","#off","#off","#off","#off","#off","#off","#off","#off","#off","#off","#off","#off","#o"]}
+
+from:
+spybot save hacking > sbslot1.txt
