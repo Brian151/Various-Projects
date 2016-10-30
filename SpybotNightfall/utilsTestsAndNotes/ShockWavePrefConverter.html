@@ -2,11 +2,17 @@
 	<head>
 		<meta name="charset" content="UTF-8"/>
 		<title>Shockwave Preference Converter</title>
+		<style type="text/css">
+			textarea {
+				resize: none;
+			}
+		</style>
 	</head>
 	<body>
-		<textarea rows="16" cols="106" id="in"></textarea>
-		<textarea rows="16" cols="106" id="out"></textarea>
-	</body>
+		<strong>INPUT:</strong><br/>
+		<textarea rows="15" cols="106" id="in"></textarea>
+		<br/><strong>CONVERTED OUTPUT:</strong><br/>
+		<textarea rows="15" cols="106" id="out"></textarea>
 	<script>
 		var input = document.getElementById("in");
 		var output = document.getElementById("out");
@@ -38,6 +44,7 @@
 		
 		function getChildren(txt){
 			out = [];
+			//console.log(txt);
 			var end = txt.length - 2;
 			var temp = "";
 			var inString = false;
@@ -61,6 +68,7 @@
 				if (i == end) {
 					temp += curr;
 					out.push(temp);
+					//console.log("$[ " + out.join(" , ") + " ]$");
 					break;
 				}
 				temp += curr;
@@ -85,7 +93,6 @@
 					break;
 				default :
 					break;
-				
 			}
 			return out;
 		}
@@ -113,6 +120,7 @@
 			var foundQuotes = false;
 			var foundIDChar = false;
 			var foundAttr = false;
+			var foundAttr2 = false;
 			for (var i=0; i< txt.length; i++) {
 				var curr = txt.charAt(i);
 				switch (curr) {
@@ -126,7 +134,10 @@
 						break;
 					case "#" : 
 						foundIDChar = true;
-						if (!foundAttr) foundAttr = isAttribute(txt.substr(i));
+						if (!foundAttr) {
+							foundAttr = isAttribute(txt.substr(i));
+							if (i == 0) foundAttr2 = true;
+						}
 						if(isAttribute(txt.substr(i)) && indentLevel == 1) {
 							out = "obj";
 						}
@@ -153,6 +164,8 @@
 				if (out != "obj") {
 					out = "array";
 					if (foundAttr) out = "attribute";
+				} else {
+					if (foundAttr2) out = "attribute"; //catch nested objects
 				}
 			}
 			if (lBracketTotal != rBracketTotal) console.log("WARNING : UNEVEN BRACKETS DETECTED!");
@@ -166,7 +179,7 @@
 			var objType = getType(txt);
 			if (objType == "obj" || objType == "array") hasChildren = true;
 			if (hasChildren) {
-				children = getChildren(txt.substr(1,txt.length-2));
+				children = getChildren(txt.substr(1,txt.length-1));
 				if (objType == "array") {
 					out = [];
 					for (var i=0; i< children.length; i++) {
@@ -234,5 +247,6 @@
 			output.value = JSON.stringify(out);
 		}
 	</script>
-	<button onclick="convertToJSON()">TEST!</button>
+		<br/><button onclick="convertToJSON()">Convert!!</button>
+	</body>
 </html>
