@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<audio autoplay controls loop id="testMusic">
+  <source src="m.v101.mp3" type="audio/mpeg">
+  Your browser does not support the audio tag.
+</audio>
+
+<p><strong>Note:</strong> The audio tag is not supported in Internet Explorer 8 and earlier versions.</p>
+<script>
+/*var audio_file = new Audio('m.v101.mp3')
+audio_file.addEventListener('timeupdate', function(){
+                var buffer = .05224555;
+                if(this.currentTime > this.duration - buffer){
+                    this.currentTime = 0
+                    this.play()
+                }}, false);
+audio_file.play();*/
+var myAudio = document.getElementById("testMusic");
+myAudio.playbackRate = 1.2;
+</script>
+
+</body>
+</html>

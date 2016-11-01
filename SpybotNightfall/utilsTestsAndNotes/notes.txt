@@ -19,7 +19,7 @@ evil programs (textures in spriter's resource rips):
 "Sentinel 3.0" = sentinel 3.0
 "Guard Pup" = guard pup
 "Guard Dog" = guard dog
-"Attack Dog" =attack dog
+"Attack Dog" = attack dog
 "Watchman" = watchman
 "Watchman X" = watchman x
 "watchman SP" = watchman sp
@@ -33,3 +33,30 @@ evil programs (textures in spriter's resource rips):
 "MandleBug" = mandlebug
 "Boss" = boss
 "Fire Wall" = fire wall
+
+sound stuff:
+as of Oct 30, 2016, I have actually determined a few things about how the sound data files work:
+random [loopCount]:
+when this line appears, it means to select a random track from the following list
+if loopCount is set, this is how many times the track will play. default is one.
+Music tracks are the only sounds that appear to use it
+playlist
+When this line appears, the following tracks play in order.
+Far as I know, this is only used on snd_rollover_battle
+Only one track plays each time the sound is told to play
+I am still unsure about howthe sound engine overall worked
+there's still an unknown bit of data, too
+obviously, a track name is required, but...
+they can be followed by three numbers, and Try as I might, IDK
+what they are for.
+The middle, in all examples is 255
+I'm guessing the left and right have to do with bass and treble, or
+some other pitch/tone-related adjustments, seeing as when snd_rollover_battle
+plays, the sound gets higher in pitch
+
+audio track file format:
+technically, these are all MP3's.
+However, they're a vairant used inside of shockwave called SWA
+It basically contains some extra data.
+From what I can tell, this extra data is beng played as sound,
+that could be problematic...

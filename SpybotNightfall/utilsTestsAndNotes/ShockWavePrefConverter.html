@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<meta name="charset" content="UTF-8"/>
+		<meta charset="UTF-8"/>
 		<title>Shockwave Preference Converter</title>
 		<style type="text/css">
 			textarea {
@@ -44,7 +44,7 @@
 		
 		function getChildren(txt){
 			out = [];
-			//console.log(txt);
+			console.log(txt);
 			var end = txt.length - 2;
 			var temp = "";
 			var inString = false;
@@ -59,16 +59,16 @@
 				}
 				if (curr == "[") indentLevel++;
 				if (curr == "]") indentLevel--;
-				if (curr == "," && !inString && indentLevel == 0) {
+				if (curr == "," && !inString && indentLevel <= 0) {
 					out.push(temp);
 					temp = "";
 					inString = false;
 					continue;
 				}
 				if (i == end) {
-					temp += curr;
+					if (!isWhiteSpace(curr)) temp += curr;
 					out.push(temp);
-					//console.log("$[ " + out.join(" , ") + " ]$");
+					console.log("$[ " + out.join(" , ") + " ]$");
 					break;
 				}
 				temp += curr;

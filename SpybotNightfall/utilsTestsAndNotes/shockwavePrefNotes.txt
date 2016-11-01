@@ -35,3 +35,21 @@ rules:
 ":" ... <string, WILL have quotes> = string
 whitespace = ignore, except when inside string
 "," = delimiter, unless inside string
+
+update on format:
+stumbled upon a preview of a book explaining how to use Director 8
+[] = list (basically an array)
+#prop: = property (basically a named list element)
+#value = symbol (
+name == value, 
+supposed to have the speed of numbers, 
+and the readability of a string, or something like that
+the value it holds is its name
+Not really sure there's any way to emulate this,
+I can't wrap my head around how these actually would work.
+They're supposed to be faster than using a string, though...
+)
+Really, this doesn't change that the format is definitely similar to JSON.
+But, it's a more accurate interpretation of the format.
+It might impact the process for how these are converted to JSON, though.
+everything may just become an array, and i'll add code for reading from that array.
