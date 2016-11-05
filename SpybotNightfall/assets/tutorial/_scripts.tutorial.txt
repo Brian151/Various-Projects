@@ -1,1 +1,9 @@
-[Return To Map, behavior]
+all lost
+
+ex: [name,type]
+
+[53, behavior script]
+[54, behavior script]
+[goFrame+, behavior script]
+[56, behavior script]
+[Return To Map, behavior script]
