@@ -1,0 +1,39 @@
+processed casts:
+
+*excludes some asset types:
+shape
+field
+scripts cannot be recovered currently, but their name and script type can
+
+[guide]
+X done
+? unknown, but pretty sure
+
+[internal]
+Internal - 
+visual - 
+tiles - X
+misc - X
+sound - X
+worldMap - X
+text data - X
+levelData - X
+sound_level_1 - X
+sound_level_2 - X
+sound_level_3 - X
+sound_level_4 - X
+sound_level_5 - X
+tutorial - ?
+animations - 
+
+[external]
+sound_level_1 - X
+sound_level_2 - X
+sound_level_3 - X
+sound_level_4 - X
+sound_level_5 - X
+snd_netload_1 - X
+snd_netload_2 - X
+snd_netload_3 - X
+snd_netload_4 - X
+snd_netload_5 - X

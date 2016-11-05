@@ -1,0 +1,9 @@
+The normal and normal_over phases of the SMART node actually do not exist
+The normal_selected version isn't actually ever used, since the default
+state of that node is #WIN
+
+The original 0_normal_selected file actually had a significantly smaller
+version of the smart node, so I completely re-did that frame as well
+During this process, I've decided at some point, all node graphics might 
+see a re-do. There's simply no way to really edit them due to an extremely
+heavy use of Anti-Aliasing.

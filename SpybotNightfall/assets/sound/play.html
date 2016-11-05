@@ -1,11 +1,43 @@
 <!DOCTYPE html>
 <html>
 <body>
-
-<audio autoplay controls loop id="testMusic">
+<!-- 
+	These were various tests to see what kind of hurdles are present if HTML5 audio
+	were to be used. Result is a definitive "there are SEVERAL challenges to overcome
+	if using the HTML5 audio systems..." (that i might add aren't present in plugins... >.<)
+-->
+<audio controls loop id="testMusic">
   <source src="m.v101.mp3" type="audio/mpeg">
   Your browser does not support the audio tag.
 </audio>
+<br/>
+<!-- 
+	This specific section was an attempt to change the pitch of s.cancel
+	programmatically. Supposedly, the only way shockwave had to do this
+	was with a rateShift property (that's very poorly documented). I am not sure
+	if Gamelab used this, or if they actually wrote a proper audio system to alter 
+	how a particular track sounded. Attempts to alter the .swa's in aduacity have
+	been quite fruitless (in fact, they don't even play right). If it's possible,
+	I could sacrifice a bit of filesize to just create the pitch-changed versions as files,
+	but I'd really rather not do that. (Mainly because if I want to create even MORE variations 
+	later down the road, that starts wasting space, and really just becomes chaotic to manage
+	in the code)
+-->
+<audio controls id="testMusic2">
+  <source src="s.cancel.mp3" type="audio/mpeg">
+  Your browser does not support the audio tag.
+</audio>
+<br/>
+<audio controls mozPreservesPitch id="testMusic3">
+  <source src="s.cancel.mp3" type="audio/mpeg">
+  Your browser does not support the audio tag.
+</audio>
+<br/>
+<audio controls mozPreservesPitch id="testMusic4">
+  <source src="s.cancel.mp3" type="audio/mpeg">
+  Your browser does not support the audio tag.
+</audio>
+<br/>
 
 <p><strong>Note:</strong> The audio tag is not supported in Internet Explorer 8 and earlier versions.</p>
 <script>
@@ -18,7 +50,13 @@ audio_file.addEventListener('timeupdate', function(){
                 }}, false);
 audio_file.play();*/
 var myAudio = document.getElementById("testMusic");
-myAudio.playbackRate = 1.2;
+myAudio.playbackRate = 1.2; //oh, and by default, some/all of these files don't play at correct speed...
+//no luck...
+var cancel1 = document.getElementById("testMusic2");
+var cancel2 = document.getElementById("testMusic3");
+var cancel3 = document.getElementById("testMusic4");
+cancel2.playbackRate = 1.3;
+cancel3.playbackRate = 1.5;
 </script>
 
 </body>

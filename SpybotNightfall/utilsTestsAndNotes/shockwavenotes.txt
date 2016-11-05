@@ -1,0 +1,80 @@
+RIFF: http://www.johnloomis.org/cpe102/asgn/asgn1/riff.html
+
+(
+basically, 
+4 bytes chunkID
+4 bytes chunklength
+<chunklength> bytes chunkdata (plus extra byte if not even length)
+)
+
+special chunks (like "RIFF") have one extra field
+(
+4 bytes chunkID
+4 bytes chunklength
+4 bytes formtype ("WAVE", for example)
+<chunklength> bytes chunkdata (plus extra byte if not even length)
+	(
+	sub-chunks
+	)
+)
+
+RIFX:
+network byte order / big-endian
+
+XFIR:
+network byte order / big-endian
+EXCEPT
+(
+chunkID
+chunklength
+formtype (???)
+), which are little-endian
+
+SHOCKWAVE FORMAT:
+two FIRX/RIFX chunks, second is probably invalid
+
+FIRX [01]
+(
+chunklength x
+formtype "MV93"
+data (entire file, minus chunkID & chunklength), chunklength bytes long
+)
+
+sub-chunks:
+free
+(
+	length always 0
+	//but entire entry is always 0x14 in size
+	these are basically just free space, and seem to serve no real purpose
+)
+
+shockwave format types:
+DXR : protected/encrypted
+DCR : compressed (via zlib???)
+DIR : doesn't seem to be encrypted or compressed
+CXT : protected/encrypted
+CCT : compressed
+CST : nothing special... 
+
+purposes:
+D*R : movie, runs stand-alone, may load C*T's as dependencies
+C*T : 
+(
+external"cast" , basically an external library of stuff. 
+D*R's are made of multiple internal casts, and will attempt to
+load external casts if any have been linked.
+Some movies can play without the external casts
+External casts are essentially the same structure as a movie,
+except they only contain one cast, and cannot run as a stand-alone application.
+)
+
+extra notes:
+Spybotics, does not actually require its external casts to run.
+However, this might impact the music*
+
+*All remaining copies/archives of Spybotics: The Nightfall Incident
+do not have the sound_level_<1-5>.cct, and the snd_netload_<1-5>.cct files.
+It's quite possible official releases never actually did use them.
+the sound_level_<x> files are all empty, and the snd_netload_<x> files
+contain alternative soundtracks. These tracks probably are for databattles.
+

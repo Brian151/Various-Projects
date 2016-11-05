@@ -539,10 +539,78 @@
 	#cost 		:3500,
 	#Description:"Brings hostile programs to a halt"
 ],
+[ 	
+	#NAME			:"Turbo Deluxe",
+	#NAMETEXT 	:"Turbo Deluxe",	
+	#icon			:42,	
+	#Movement	:4, 	#MoveCount	:4, 	
+	#MaxSize		:4, 	
+	#actions		:["MEGABOOST"],	
+	#cost 		:1750,	
+	#Description:"Slow and steady is for losers"
+],
+[ 	
+	#NAME			:"Fiddle",	
+	#NAMETEXT 	:"Fiddle",	
+	#icon			:52,	
+	#Movement	:3, 	
+	#MoveCount	:3, 	
+	#MaxSize		:3, 	
+	#actions		:["tweak","twiddle"],	
+	#cost 		:2400,	
+	#Description:"Twiddle and tweak the power of your programs"
+],
+[ 	
+	#NAME			:"Guru",	
+	#NAMETEXT 	:"Guru",	#icon			:36,	
+	#Movement	:2, 	
+	#MoveCount	:2, 	
+	#MaxSize		:3, 	
+	#actions		:["FIRE","ICE"],	
+	#cost 		:4500,	
+	#Description:"Multipurpose software for the l33tist of the l33t"],[ 	
+	#NAME			:"Wizard",	
+	#NAMETEXT 	:"Wizard",	
+	#icon			:37,	
+	#Movement	:3, 	
+	#MoveCount	:3, 	
+	#MaxSize		:4, 	
+	#actions		:["SCORCH","STRETCH"],	
+	#cost 		:300,	
+	#Description:"Pay no attention to the man behind the curtain"
+],
+[ 	
+	#NAME			:"Memory Hog",
+	#NAMETEXT 	:"Memory Hog",
+	#icon			:40,	
+	#Movement	:5, 	
+	#MoveCount	:5, 	
+	#MaxSize		:30, 	
+	#actions		:[],	
+	#cost 		:300,	
+	#Description:"Massive memory-filling bloatware"
+],
 [ 
-	#NAME			:"Turbo",
-	#NAMETEXT 	:"Turbo",
-	#icon			:32,
-	#Movement	:3, 
-	#MoveCount	:3, 
-...the rest is missing... 
+	#NAME			:"LogicBomb",	
+	#NAMETEXT 	:"LogicBomb",	
+	#icon			:22,	
+	#Movement	:3, 	
+	#MoveCount	:3, 	
+	#MaxSize		:6, 
+	#actions		:["selfdestruct"],	
+	#cost 		:3500,
+	#Description:"Self-destructing attack program"
+],
+[ 	
+	#NAME			:"Edit Tester",	
+	#NAMETEXT 	:"Edit Tester",	
+	#icon			:32,	
+	#Movement	:0, 	
+	#MoveCount	:0, 	
+	#MaxSize		:1, 	
+	#actions		:["HANG"],	
+	#cost 		:300,	
+	#Description:"USE FOR LEVEL DESIGN"
+]
+
+]
