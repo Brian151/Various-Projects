@@ -1,1 +1,0 @@
-SUPERPHREAK: Welcome to your first DataBattle. Here your programs duke it out with the enemy programs for control of a node. 

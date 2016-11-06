@@ -1,0 +1,49 @@
+[
+#type         : "attack",
+#nameText     : "text",
+#name         : "text",
+
+#requiredSize : 0,		
+#cost         : 0,
+#range        : 1,
+#areaOfEffect : 0,
+#targetLimit  : 0,
+#numOfUse     : #infinity,
+#global       : [#state: #off, #sizeOver: 0, #sizeUnder: 0, #enemyOnly: #on] ,
+
+#damage       : 0,
+#grow         : 0,
+
+#speedMod     : [#speedChange   : 0      ,#duration: #infinity] ,
+
+#sizeMod      : [#maxSizeChange : 0      ,#duration: #infinity] ,	
+
+#damageMod    : [#damageBoost   : 0      ,#duration: #infinity] ,
+	
+#shieldMod    : [#damageBoost   : 0      ,#duration: #infinity] ,	
+
+#virusMod     : [#virusDamage   : 0      ,#duration: #infinity] ,
+
+#stealthMod   : [#stealth       : #off   ,#duration: #infinity] ,	
+  
+#scrambleMod  : [#scramble      : #off   ,#duration: #infinity] ,
+
+#freezeMod    : [#freeze        : #off   ,#duration: #infinity] ,
+
+#convertMod   : [#convert       : #off   ,#duration: #infinity] ,
+
+#clearMod     : #off ,
+
+
+#reboot       : #off ,
+
+#clone        : #off ,
+#duplicate    : #off ,
+#emulate      : #off ,
+
+#defreg       : #off ,
+#frag         : #off ,
+
+#description  : "This is action"
+
+]

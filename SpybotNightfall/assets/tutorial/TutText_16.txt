@@ -1,4 +1,0 @@
-SUPERPHREAK: To execute an attack command, click on any sector of an enemy program that is within range.
-Click here to execute this command.
-
- 

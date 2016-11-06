@@ -1,3 +1,12 @@
+this is a compilation of every cast member in levelData
+They all are "text" types
+
+format:
+<original name>
+{
+<contents>
+}
+
 1.databattle
 {
 [#name: "untitled", #tile: [#width: "32", #height: "32"], #objs: [[#type: #item, #stats: [#name: "PROGRAM DOCK", #NAMETEXT: "xPROGRAM DOCK", #icon: 1, #type: #DOCK, #stats: [], #description: "Uploading Position for the Player's program"], #mem: 1, #pos: [5, 6]], [#type: #item, #stats: [#name: "PROGRAM DOCK", #NAMETEXT: "xPROGRAM DOCK", #icon: 1, #type: #DOCK, #stats: [], #description: "Uploading Position for the Player's program"], #mem: 1, #pos: [5, 8]], [#team: #com, #type: #agent, #stats: [#name: "Sentinel", #NAMETEXT: "Sentinel", #icon: 110, #Movement: 1, #MoveCount: 1, #maxSize: 3, #Actions: ["CUT"], #cost: 300, #description: "Corporate data defender"], #mem: 110, #pos: [12, 7], #body: []]], #map: ["tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx1", "tx8", "tx1", "tx8", "tx1", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx1", "tx8", "tx1", "tx8", "tx1", "tx8", "tx1", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx8", "tx1", "tx8", "tx1", "tx8", "tx1", "tx8", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx1", "tx8", "tx1", "tx8", "tx1", "tx8", "tx1", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx8", "tx1", "tx8", "tx1", "tx8", "tx1", "tx8", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx1", "tx8", "tx1", "tx8", "tx1", "tx8", "tx1", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx8", "tx1", "tx8", "tx1", "tx8", "tx1", "tx8", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx1", "tx8", "tx1", "tx8", "tx1", "tx8", "tx1", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx8", "tx1", "tx8", "tx1", "tx8", "tx1", "tx8", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx8", "tx1", "tx8", "tx1", "tx8", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0", "tx0"]]

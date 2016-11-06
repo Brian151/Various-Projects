@@ -1,5 +1,0 @@
-all lost
-
-ex: [name, type]
-
-[sound code, movie script]

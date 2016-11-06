@@ -1,3 +1,14 @@
+this is a compilation of every  text cast member 
+found within the external snd_netload_<x> casts 
+
+format:
+[<cast name>]
+<original member name>
+{
+<contents>
+}
+...
+
 [snd_netload_1]
 music_databattle_2
 {

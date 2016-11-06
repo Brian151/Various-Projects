@@ -1,0 +1,48 @@
+[
+#type				: @type ,
+#name				: @name ,
+#nameText		: @nameText ,
+
+#requiredSize	: @requiredSize ,		
+#cost				: @cost ,
+#range			: @range ,
+#areaOfEffect	: @areaOfEffect ,
+#targetLimit	: @targetLimit ,
+#numOfUse		: @numOfUse ,
+#global			: @global ,
+
+#damage			: @damage ,
+#grow				: @grow ,
+
+#speedMod		: @speedMod ,
+
+#sizeMod			: @sizeMod ,	
+
+#damageMod		: @damageMod ,
+	
+#shieldMod		: @shieldMod ,	
+
+#virusMod		: @virusMod ,
+
+#stealthMod		: @stealthMod ,	
+
+#scrambleMod	: @scrambleMod ,
+
+#freezeMod		: @freezeMod ,
+
+#convertMod		: @convertMod ,
+
+#clearMod		: @clearMod ,
+
+#reboot			: @reboot ,
+
+#clone			: @clone ,
+#duplicate		: @duplicate ,
+#emulate			: @emulate ,
+
+#defreg			: @defreg ,
+#frag				: @frag ,
+
+#description   : @description
+
+]

@@ -1,3 +1,0 @@
-SUPERPHREAK: When a program moves through memory, it expands. Each square of a program is called a sector.
-The Max Size shows how much a program will expand as it moves. When a program reaches its max size, it can still move but the older sectors will disappear.
- 

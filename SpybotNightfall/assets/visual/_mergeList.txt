@@ -1,0 +1,22 @@
+format:
+file1, file2 ,... >>> final
+
+236.bmp, 237.bmp, 238.bmp >>> 236.png
+263.bmp, 264.bmp, 265.bmp >>> 263.png
+270.bmp, 271.bmp, 272.bmp >>> 270.png
+big_responce.bmp, big_responce_down.bmp, big_responce_up.bmp >>> big_response.png
+but_command_go.bmp, but_command_go_down.bmp, but_command_go_up.bmp >>> but_command_go.png
+but_command_noAct.bmp, but_command_noAct_down.bmp, but_command_noAct_up.bmp, >>> but_command_noAct.png
+but_delete.bmp, but_delete_down.bmp, but_delete_up.bmp >>> but_delete.png
+but_exit.bmp, but_exit_down.bmp, but_exit_up.bmp >>> but_exit.png
+but_mid_long.bmp, but_mid_long_down.bmp, but_mid_long_up.bmp >>> but_mid_long.png
+but_reg_blue.bmp, but_reg_blue_down.bmp, but_reg_blue_up.bmp, >>> but_reg_blue.png
+but_reg_red.bmp, but_reg_red_down.bmp, but_reg_red_up.bmp >>> but_reg_red.png
+but_spybot.bmp, but_spybot_down.bmp, but_spybot_up.bmp >>> but_spybot.png
+but_start_go.bmp, but_start_go_down.bmp, but_start_go_up.bmp >>> but_start_go.png
+butMenu_select.bmp, butMenu_select_down.bmp, butMenu_select_up.bmp >>> butMenu_select.png
+save_slot1_button.bmp, save_slot1_button_down.bmp, save_slot1_button_up.bmp >>> save_slot1_button.png
+save_slot2_button.bmp, save_slot2_button_down.bmp, save_slot2_button_up.bmp >>> save_slot2_button.png
+scroll.bmp, scroll_down.bmp, scroll_up.bmp >>> scroll.png
+small_blue.bmp, small_blue_down.bmp, small_blue_up.bmp >>> small_blue.png
+small_red.bmp, small_red_down.bmp, small_red_up.bmp >>> small_red.png

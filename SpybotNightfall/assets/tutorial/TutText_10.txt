@@ -1,2 +1,0 @@
-SUPERPHREAK: The red squares show you the range for this command. This program has to move next to an enemy program to attack. So let's move it first. 
-Click on undo to cancel the command. 

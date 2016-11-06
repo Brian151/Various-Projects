@@ -1,1 +1,0 @@
-SUPERPHREAK: All of your programs move and execute commands first, and then all of the enemy programs get their chance. 

@@ -1,0 +1,252 @@
+this is a compilation of every text cast member in tutorial
+
+format:
+<original name>
+{
+<contents>
+}
+
+36
+{
+I ALREADY KNOW THIS STUFF. 
+}
+
+37
+{
+TELL ME MORE. 
+}
+
+39
+{
+DONE 
+}
+
+40
+{
+REPEAT 
+}
+
+actionDesc_Tut(2)
+{
+BASIC RANGED ATTACK PROGRAM 
+}
+
+actionDesc_Tut(3)
+{
+STONE
+RANGE:3 DELETES:1
+SECTOR FROM TARGET 
+
+}
+
+actionDesc_Tut(4)
+{
+SLICE
+DELETES 2 SECTORS FROM TARGET 
+
+}
+
+actionDesc_Tut
+{
+BASIC ATTACK PROGRAM 
+
+}
+
+cmd_list_button_text_1_Tut(2)
+{
+STONE 
+
+}
+
+cmd_list_button_text_1_Tut
+{
+SLICE
+}
+
+cmd_list_button_text_2_Tut
+{
+
+}
+
+cmd_list_button_text_3_Tut
+{
+NO ACTION 
+}
+
+name
+{
+SUPERPHREAK
+}
+
+objInfoBox_Tut(2)
+{
+Move:2
+Max Size:2
+}
+
+objInfoBox_Tut
+{
+Move:2
+Max Size:4
+}
+
+objInfoCmdLabel_Tut(2)
+{
+COMMANDS
+}
+
+objInfoCmdLabel_Tut
+{
+COMMANDS
+}
+
+objInfoName_Tut(2)
+{
+Slingshot
+}
+
+objInfoName_Tut
+{
+Hack
+}
+
+playerOwnedList_Tut(2)
+{
+Hack x0
+Slingshot x1
+}
+
+playerOwnedList_Tut(3)
+{
+Hack x0
+Slingshot x0
+}
+
+playerOwnedList_Tut
+{
+Hack x1
+Slingshot x1
+}
+
+tut_answer_
+{
+NEXT
+}
+
+TutText_1
+{
+SUPERPHREAK: Welcome to your first DataBattle. Here your programs duke it out with the enemy programs for control of a node.
+}
+
+TutText_2
+{
+SUPERPHREAK: First you have to upload your programs.  Start by clicking on this upload spot.
+}
+
+TutText_3
+{
+SUPERPHREAK: Now click on this program to upload it.
+}
+
+TutText_4
+{
+SUPERPHREAK: Now click on the next upload spot.
+}
+
+TutText_5
+{
+SUPERPHREAK: Upload this program.
+}
+
+TutText_6
+{
+SUPERPHREAK: Alright.  Let's get this battle started.
+}
+
+TutText_7
+{
+SUPERPHREAK: All of your programs move and execute commands first, and then all of the enemy programs get their chance.
+}
+
+TutText_8
+{
+SUPERPHREAK: Click on this program to select it.
+}
+
+TutText_9
+{
+SUPERPHREAK: The highlighted grid squares show how far this program can move.  Before we move it, let's see what it can do. 
+Hack is a simple battle program with only one command.  Click on the command to see what it does. 
+}
+
+TutText_10
+{
+SUPERPHREAK: The red squares show you the range for this command. This program has to move next to an enemy program to attack. So let's move it first. 
+Click on undo to cancel the command. 
+}
+
+TutText_12
+{
+SUPERPHREAK: Now click on this square to move the program.
+}
+
+TutText_13
+{
+SUPERPHREAK: When a program moves through memory, it expands. Each square of a program is called a sector.
+The Max Size shows how much a program will expand as it moves. When a program reaches its max size, it can still move but the older sectors will disappear.
+}
+
+TutText_14
+{
+SUPERPHREAK: We're still out of range. Click this square to move the program again.
+}
+
+TutText_15
+{
+SUPERPHREAK: Okay, now that we're next to the program, let's use that attack command.  
+Click on the command button.
+}
+
+TutText_16
+{
+SUPERPHREAK: To execute an attack command, click on any sector of an enemy program that is within range.
+Click here to execute this command.
+}
+
+TutText_17
+{
+SUPERPHREAK: Nice. Now let's move our other program.  Click here to select it. 
+}
+
+TutText_18
+{
+SUPERPHREAK: Nice. Now let's move our other program.  Click here to select it. 
+}
+
+TutText_19
+{
+SUPERPHREAK: Slingshot is a ranged attack program.  
+I think we're in range now.  Click on the command to activate it.
+}
+
+TutText_20
+{
+SUPERPHREAK: Good. Now click on the enemy program to execute the command.
+}
+
+TutText_21
+{
+SUPERPHREAK: Way to go. You just won your first databattle.
+}
+
+TutText_22(2)
+{
+SUPERPHREAK: Ok, those are the basics.  Do you want me to go over it again?
+WHEN YOU GET BACK TO THE NETMAP, YOU'LL BE ON YOUR OWN. CLICK ON A NODE AND SEE WHAT YOU CAN FIND OUT THERE. GOOD LUCK!
+}
+
+TutText_22
+{
+SUPERPHREAK: Of course, most databattles won't be as easy as this one.  You'll need to pick up more powerful programs from warez nodes on the network.
+Some advanced programs have more than one command. Special commands can be used to increase the power of your own programs or even change the Grid.
+}

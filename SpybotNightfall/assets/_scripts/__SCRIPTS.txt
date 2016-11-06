@@ -1,0 +1,13 @@
+all scripts cannot be recovered at this time
+To do so requires the original .dir surfacing,
+or a functional shockwave decompiler to exist.
+
+However, I figured it would still be useful to have the script names & types,
+as a reference point for what kind of tasks any port/clone would need to
+accomplish, besides the ones that are evident from gameplay, alone.
+
+script listing files are named as
+"_scripts." + <castName>
+
+entry format: [name, type]
+
