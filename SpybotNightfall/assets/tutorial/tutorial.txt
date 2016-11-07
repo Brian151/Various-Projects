@@ -54,8 +54,7 @@ BASIC ATTACK PROGRAM
 
 cmd_list_button_text_1_Tut(2)
 {
-STONE 
-
+STONE
 }
 
 cmd_list_button_text_1_Tut
@@ -179,10 +178,10 @@ SUPERPHREAK: The highlighted grid squares show how far this program can move.  B
 Hack is a simple battle program with only one command.  Click on the command to see what it does. 
 }
 
-TutText_10
+TutText_11
 {
 SUPERPHREAK: The red squares show you the range for this command. This program has to move next to an enemy program to attack. So let's move it first. 
-Click on undo to cancel the command. 
+Click on undo to cancel the command.
 }
 
 TutText_12
@@ -220,7 +219,7 @@ SUPERPHREAK: Nice. Now let's move our other program.  Click here to select it.
 
 TutText_18
 {
-SUPERPHREAK: Nice. Now let's move our other program.  Click here to select it. 
+Move the program closer to your target.
 }
 
 TutText_19
@@ -239,14 +238,14 @@ TutText_21
 SUPERPHREAK: Way to go. You just won your first databattle.
 }
 
-TutText_22(2)
-{
-SUPERPHREAK: Ok, those are the basics.  Do you want me to go over it again?
-WHEN YOU GET BACK TO THE NETMAP, YOU'LL BE ON YOUR OWN. CLICK ON A NODE AND SEE WHAT YOU CAN FIND OUT THERE. GOOD LUCK!
-}
-
 TutText_22
 {
 SUPERPHREAK: Of course, most databattles won't be as easy as this one.  You'll need to pick up more powerful programs from warez nodes on the network.
 Some advanced programs have more than one command. Special commands can be used to increase the power of your own programs or even change the Grid.
+}
+
+TutText_22(2)
+{
+SUPERPHREAK: Ok, those are the basics.  Do you want me to go over it again?
+WHEN YOU GET BACK TO THE NETMAP, YOU'LL BE ON YOUR OWN. CLICK ON A NODE AND SEE WHAT YOU CAN FIND OUT THERE. GOOD LUCK!
 }
