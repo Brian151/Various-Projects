@@ -24,7 +24,7 @@ sound_level_3 - X
 sound_level_4 - X
 sound_level_5 - X
 tutorial - X
-animations - 
+animations - X
 
 [external]
 sound_level_1 - X
