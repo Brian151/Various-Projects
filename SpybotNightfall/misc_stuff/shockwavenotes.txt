@@ -31,9 +31,8 @@ formtype (???)
 ), which are little-endian
 
 SHOCKWAVE FORMAT:
-two FIRX/RIFX chunks, second is probably invalid
 
-FIRX [01]
+FIRX
 (
 chunklength x
 formtype "MV93"
@@ -41,12 +40,80 @@ data (entire file, minus chunkID & chunklength), chunklength bytes long
 )
 
 sub-chunks:
+imap 
+{
+	chunklength
+	data (format unknown)
+	//probably an insignificant mapping chunk
+}
+
+mmap
+{
+	length
+	data (first 0x18 bytes are unknown)
+	/*following those bytes is a list of chunks
+	That's where this gets good
+	this is the signifnicant mapping chunk*/
+	entry
+	{
+		fourcc chunkID
+		uint32 length (not sure why include this, since these entries are nothing but pointers to the chunk)
+		unit32 offset (0-based)
+		//remaining 8 bytes are unknown, and always seem to be set to 0
+		//in total, each entry is 0x14 in length
+	}
+
+}
+
+KEY*
+{
+	length
+	data
+	/*
+	similar to mmap, this lists chunks found in the file
+	unlike mmap, this doesn't include EVERYTHING. Entries in this 
+	chunk all seem to be indentical if the chunk type they refer to is 
+	indentical. It probably has something to do with format of different
+	chunks, or possibly cast members, in specific. The exact way this
+	even works is unknown, there are no length or offset fields in any
+	of the entries. More research is required
+	*/
+}
+
 free
 (
 	length always 0
 	//but entire entry is always 0x14 in size
-	these are basically just free space, and seem to serve no real purpose
+	//these are basically just free space, and seem to serve no real purpose
+	//this part of docu is now outdated
 )
+
+XMED
+(
+	length
+	followed immediatly by data <length> in size
+	//these seem to contain texts and flash SWF, from current observations
+)
+
+snd 
+{
+	length (always 0)
+	//purpose unknown, seems to trail SWA audio
+}
+
+ediM
+{
+	length
+	data <length> in size
+	//contains SWA audio
+}
+
+BITD
+{
+	length
+	data
+	//definitely bitmap cast members, but i am unsure how to parse them
+}
 
 shockwave format types:
 DXR : protected/encrypted
