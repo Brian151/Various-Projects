@@ -43,8 +43,11 @@ sub-chunks:
 imap 
 {
 	chunklength
-	data (format unknown)
-	//probably an insignificant mapping chunk
+	8 bytes unknown
+	4 bytes mapOffset 
+	//points to the currently valid mapp chunk
+	//as it turns-out, re-saving a .dir just appends data, including
+	//a new mmap chunk (o...k...)
 }
 
 mmap
@@ -58,7 +61,7 @@ mmap
 	{
 		fourcc chunkID
 		uint32 length (not sure why include this, since these entries are nothing but pointers to the chunk)
-		unit32 offset (0-based)
+		unit32 offset
 		//remaining 8 bytes are unknown, and always seem to be set to 0
 		//in total, each entry is 0x14 in length
 	}
@@ -112,7 +115,30 @@ BITD
 {
 	length
 	data
-	//definitely bitmap cast members, but i am unsure how to parse them
+	//bitmap data, but i am unsure how to parse them
+}
+
+CASt
+{
+	length
+	data
+	//cast member
+}
+
+CAS*
+{
+	length
+	data 
+	//a Unit32 array length/4 long, containing indices in the mapping table
+	//cast member list for a given cast	
+}
+
+CLUT
+{
+	length
+	data
+	//color palettes? , probably RGB24, still researching...
+	//data is simply an array of 24-bit RGB colors, but more research is needed
 }
 
 shockwave format types:
