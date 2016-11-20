@@ -121,8 +121,26 @@ BITD
 CASt
 {
 	length
-	data
-	//cast member
+	<length> bytes data
+		{
+			0x2A bytes unknown
+			0x40 bytes Uint32 array mapIndex (same value is repeated, IDK why. this is the index in the mapping table for the offset of the actual cast member data)
+			0x14 bytes unknown
+			byte nameLength
+			<nameLength> bytes name
+			4 bytes UTCdate dateCreated
+			4 bytes UTCdate dateLastModified
+			byte compression [0xFB : movie setting, 0XFE : standard, 0xFD: JPEG]
+			byte compressionQuality [default: 0x50 (80%)] (ONLY used if JPEG, but always present)
+			8 bytes unknown
+			2 bytes short width
+			2 bytes short height
+			4 bytes unknown (0x10000000 only observed value so far)
+			[4 bytes unknown = 0x00000000 (old format)]
+			4 bytes color palette index/ID??? (need more research)
+			
+		}
+	//cast member, currently focusing on bitmap members...
 }
 
 CAS*
@@ -165,9 +183,14 @@ extra notes:
 Spybotics, does not actually require its external casts to run.
 However, this might impact the music*
 
+the format of the CASt chunks in spybotics seems just 
+slightly different from the format of the example .dir's
+I am using...
+compression data directly follows the name, timestamps not yet located, 
+they may not exist...
+
 *All remaining copies/archives of Spybotics: The Nightfall Incident
 do not have the sound_level_<1-5>.cct, and the snd_netload_<1-5>.cct files.
 It's quite possible official releases never actually did use them.
 the sound_level_<x> files are all empty, and the snd_netload_<x> files
 contain alternative soundtracks. These tracks probably are for databattles.
-
