@@ -74,12 +74,8 @@ KEY*
 	data
 	/*
 	similar to mmap, this lists chunks found in the file
-	unlike mmap, this doesn't include EVERYTHING. Entries in this 
-	chunk all seem to be indentical if the chunk type they refer to is 
-	indentical. It probably has something to do with format of different
-	chunks, or possibly cast members, in specific. The exact way this
-	even works is unknown, there are no length or offset fields in any
-	of the entries. More research is required
+	unlike mmap, this doesn't include EVERYTHING. 
+	MUCH MORE RESEARCH REQUIRED TO FIND HOW THIS WORKS
 	*/
 }
 
@@ -148,7 +144,7 @@ CAS*
 	length
 	data 
 	//a Unit32 array length/4 long, containing indices in the mapping table
-	//cast member list for a given cast	
+	//cast member list for a given cast, empty casts do not have one
 }
 
 CLUT
@@ -157,6 +153,43 @@ CLUT
 	data
 	//color palettes? , probably RGB24, still researching...
 	//data is simply an array of 24-bit RGB colors, but more research is needed
+}
+
+MCsL
+{
+	length
+	4 bytes unknown (0x0c)
+	4 bytes castCount
+	2 bytes short unknown (4)
+	4 bytes arraySize
+	[4 bytes unknown] (0)
+	<arraySize * 4> - 4 bytes unknownDataEntries (one entry per cast) {
+		4 bytes unknown
+		4 bytes unknown
+		4 bytes unknown
+		4 bytes unknown
+	}
+	4 bytes castEntriesLength
+	<castCount> entries
+	{
+		byte nameLength
+		<nameLength> bytes name
+		1 byte null
+		2 bytes short preloadSettings (0:when needed, 1: after frame one, before frame one)
+		2 bytes short storageType (0:external,1:internal)
+		[1 byte unknown] (if external cast)
+		2 bytes short membersCount
+		2 bytes short numID
+		byte unknown (4)
+		byte unknown (0)
+	}
+	/*
+	cast list
+	all attempts to figure-out how these actually link to a cast have been fruitless
+	only remaining option thus far is that this happens automatically, meaning
+	the cast names and their member lists(if present) are stored in the same
+	order
+	*/
 }
 
 shockwave format types:
@@ -171,7 +204,7 @@ purposes:
 D*R : movie, runs stand-alone, may load C*T's as dependencies
 C*T : 
 (
-external"cast" , basically an external library of stuff. 
+external "cast" , basically an external library of stuff. 
 D*R's are made of multiple internal casts, and will attempt to
 load external casts if any have been linked.
 Some movies can play without the external casts
