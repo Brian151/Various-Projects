@@ -1,0 +1,143 @@
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title>.fla shape breaker</title>
+	<style type="text/css">
+		h1,h2,h3,h4,h5,h6 {
+			margin : 0px;
+		}
+		.wrapper {
+			display : inline-block;
+		}
+		textarea {
+			resize : none;
+		}
+	</style>
+</head>
+	<body>
+	<h1 align="center">.fla shape cracker</h1>
+	<canvas id="myCanvas" width="600" height="400" style="border:1px solid #d3d3d3;">
+		Your browser does not support the HTML5 canvas tag.
+	</canvas>
+	<div>
+		<div class="wrapper">
+			<h4>shape:</h4>
+			<textarea rows ="8" cols="48" id="in">SHAPE PARSING CURRENTLY BROKEN</textarea></div>
+		<div class="wrapper">
+			<h4>converted shape:</h4>
+			<textarea rows="8" cols="64" id="out"></textarea>
+		</div>
+	</div>
+	<br/>
+	<button onclick="getShape()">parse edges</button>
+	<button onclick="drawShape()">draw</button>
+	<button onclick="readXML()">convert from XML</button>
+	<button onclick="convertShape()">convert</button>
+	--<script type="text/javascript" src="js/setup.js"></script>
+	<script type="text/javascript" src="js/fla_shape_cracker.js"></script>
+	<script type="text/javascript" src="js/shape_xml.js"></script>
+	<script type="text/javascript" src="js/jszip-utils.min.js"></script>
+	<script type="text/javascript" src="js/jszip.min.js"></script>
+	<script>
+	/*
+		this blank script tag shall stand as an ETERNAL reminder of the wasted hour or so trying
+		to get JSzip to actually load a post-XFL .fla file. Said attempt failed because I can't even
+		seem to get the binary data LOADED into jszip in the first place. Most of this rests on absolutely unsufficient
+		documentation on how to even USE jszip... >.>
+	*/
+	</script>
+	<script>
+	/*var domD = null;
+	function loadXML(XML){
+	var xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange = function() {
+    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+      domDocu(xmlhttp.responseXML);
+    }
+  };
+  xmlhttp.open("GET", XML, true);
+  xmlhttp.send();
+}
+loadXML("test/sprite676/DOMDocument.xml");
+
+function domDocu(domXML) {
+console.log("DOM DOCU LOAD!");
+//alert("DOM DOCU LOAD!");
+var dDoc = domXML.getElementsByTagName("DOMDocument")[0];
+var symTable = dDoc.getElementsByTagName("symbols")[0];
+var symbols = symTable.getElementsByTagName("Include");
+for (var i=0; i < symbols.length; i++) {
+console.log(symbols[i].getAttribute("href"));
+}
+}*/ //temp disabled
+	</script>
+	<script>
+	var myZip = new JSZip();
+	JSZipUtils.getBinaryContent('test/shapeTests.zip', function(err, data) {
+    if(err) {
+        throw err; // or handle err
+    }
+    myZip.loadAsync(data).then(function () {
+		myZip.file("DOMDocument.xml").async("string").then(function(data){
+			var out = "===DOCUMENT HEADER===";
+			var parser = new DOMParser();
+			xmlDoc = parser.parseFromString(data,"text/xml");
+			var dDoc = xmlDoc.getElementsByTagName("DOMDocument")[0];
+			out += "\ncreator tool : " + dDoc.getAttribute("creatorInfo");
+			out += "\nversion info : " + dDoc.getAttribute("versionInfo");
+			out += "\nXFL version : " + dDoc.getAttribute("xflVersion");
+			out += "\nplatform : " + dDoc.getAttribute("platform");
+			out += "\nmajor version : " + dDoc.getAttribute("majorVersion");
+			out += "\nminor version : " + dDoc.getAttribute("minorVersion");
+			out += "\nbuild number : " + dDoc.getAttribute("buildNumber");
+			out += "\nauto-save : " + dDoc.getAttribute("autoSaveEnabled");
+			out += "\nauto-save interval (minutes) : " + dDoc.getAttribute("autoSaveIntervalMinutes");
+			out += "\nwidth : " + dDoc.getAttribute("width");
+			out += "\nheight : " + dDoc.getAttribute("height");
+			out += "\nframe rate : " + dDoc.getAttribute("frameRate");
+			out += "\nbackground color : " + dDoc.getAttribute("backgroundColor");
+			//folders
+			out += "\n===FOLDERS===";
+			var hasFolders = dDoc.getElementsByTagName("folders").length;
+			var hasSymbols = dDoc.getElementsByTagName("symbols").length;
+			var hasMedia = dDoc.getElementsByTagName("media").length;
+			if (hasFolders > 0) {var foldList = dDoc.getElementsByTagName("folders")[0];
+			var folders = foldList.getElementsByTagName("DOMFolderItem");
+			for (var i=0; i < folders.length; i++) {
+				out += "\nFOLDER[" + folders[i].getAttribute("name") + "]";
+			}} else {
+				out += "\nNONE";
+			}
+			//symbols
+			out += "\n===SYMBOL LIBRARY===";
+			if (hasSymbols > 0) {var symTable = dDoc.getElementsByTagName("symbols")[0];
+			var symbols = symTable.getElementsByTagName("Include");
+			for (var i=0; i < symbols.length; i++) {
+				out += "\nLIBRARY ITEM[" + symbols[i].getAttribute("href") + "]";
+			}} else {
+				out += "\nNONE";
+			}
+			//media
+			out += "\n===MEDIA LIBRARY===";
+			if (hasMedia > 0) {var medTable = dDoc.getElementsByTagName("media")[0];
+			var mediaImg = medTable.getElementsByTagName("DOMBitmapItem");
+			var mediaSnd = medTable.getElementsByTagName("DOMSoundItem");
+			var mediaVid = medTable.getElementsByTagName("DOMVideoItem ");
+			for (var i=0; i < mediaImg.length; i++) {
+				out += "\nIMAGE[" + mediaImg[i].getAttribute("href") + "]";
+			}
+			for (var i=0; i < mediaSnd.length; i++) {
+				out += "\nSOUND[" + mediaSnd[i].getAttribute("href") + "]";
+			}
+			for (var i=0; i < mediaVid.length; i++) {
+				out += "\nVIDEO[" + mediaVid[i].getAttribute("href") + "]";
+			}} else {
+				out += "\nNONE";
+			}
+			outbox.value = out;
+		});
+    });
+});
+	</script>
+	</body>
+</html>

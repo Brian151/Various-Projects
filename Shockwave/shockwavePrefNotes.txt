@@ -27,14 +27,16 @@ obj
 		}
 }
 rules:
-"[" ... "#" = object
-"#" ... ":" = attribute
-":" ... "#" = pointer/state, enclose in quotes
-"[" ... "]" = array, must account for objects...
-":" ... <number, won't have quotes> = number 
-":" ... <string, WILL have quotes> = string
-whitespace = ignore, except when inside string
-"," = delimiter, unless inside string
+"[" ... "#" = object >> "#" .. ":" AND NOT nested = object
+"#" ... ":" = property >> same
+"#" = 'symbol' >> same
+"[" ... "]" = array >> "[" "]" AND NOT CHILD ATTRIBUTES
+":" ... <number, won't have quotes> = number >> same
+":" ... <string, WILL have quotes> = string >> same
+whitespace = ignore, except when inside string >> same
+"," = delimiter, unless inside string >> same
+""" = string control char >> new
+"\" = escape character, not observed thus far >> new
 
 update on format:
 stumbled upon a preview of a book explaining how to use Director 8

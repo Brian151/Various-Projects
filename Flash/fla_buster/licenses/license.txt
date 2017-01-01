@@ -1,0 +1,12 @@
+All parts of the software, excluding JsZip and JsZipUtils fall 
+under this license which I may revoke at any time... (when A more properly
+worded license is applied) 
+
+This software is to remain Open Source
+Attribution is to be provided where due
+
+the included shapeTests.zip is public domain, do whatever you want to it...
+It's a file I (@Brian151(github)) specifically requested from a friend 
+to test how Flash saves shapes in certain circumstances. 
+It's also updated at my request.
+

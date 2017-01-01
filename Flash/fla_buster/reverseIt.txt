@@ -1,0 +1,63 @@
+square:
+!947 947S6|0 947 
+!0 947|0 0 
+!0 0|947 0 
+!947 0|947 947
+
+tri:
+!0 1170S5
+|2340 1170 ! 2340 1170
+|1170 0 ! 1170 0
+|0 1170
+
+circle:
+!960 480S6 [ 960 679 819 819 
+!819 819 [ 679 960 480 960 
+!480 960 [ 281 960 140 819 
+!140 819 [ 0 679 0 480 
+!0 480 [ 0 281 140 140 
+!140 140 [ 281 0 480 0 
+!480 0 [ 679 0 819 140 
+!819 140 [ 960 281 960 480
+from 960 480 as ptOrig quadCurveTo 960 679 819 819
+from 819 819 quadCurveTo 679 960 480 960
+from 480 960 quadCurveTo 281 960 140 819
+from 140 819 quadCurveTo 0 679 0 480
+from 0 480 quadCurveTo 281 140 140
+from 140 140 quadCurveTo 281 0 480 0 
+from 480 0 quadCurveTo 679 0 819 140
+from 819 140 quadCurveTo 960 281 960 480
+
+tri:
+!0 1170S5 |2340 1170 
+!2340 1170 |1170 0 
+!1170 0 |0 1170
+from 0 1170 as ptOrig lineTo 2340 1170
+from 2340 1170 lineTo 1170 0
+from 1170 0 lineTo 0 1170
+
+//eh... ! is actually a draw call, too ... moveTo()
+so...
+!0 1170S5 
+|2340 1170 
+!2340 1170 
+|1170 0 
+!1170 0 
+|0 1170
+moveTo 0 1170 //origin point
+lineTo 2340 1170
+moveTo 2340 1170 //wasted space
+lineTo 1170 0
+moveTo 1170 0 //wasted space
+lineTo 0 1170 //debate-able, if just straight line, could do closePath() , but no harm keeping it as-is
+
+
+//broken circle:
+<edges>
+                    <Edge fillStyle0="1" edges="!864 980|664 980!664 980|664 1260!664 1260[860 1259 999 1119!999 1119[1140 979 1140 780!1140 780|864 780!864 780|864 980"/>
+                    <Edge fillStyle1="1" strokeStyle="1" edges="!664 0[860 1 999 140!999 140[1140 281 1140 480"/>
+                    <Edge fillStyle1="1" edges="!1140 480|664 480!664 480|664 0"/>
+                    <Edge fillStyle1="1" strokeStyle="1" edges="!484 1100[482 1100 480 1100!480 1100[281 1100 140 959!140 959[0 819 0 620!0 620[0 421 140 280!140 280[281 140 480 140!480 140[482 140 484 140"/>
+                    <Edge fillStyle1="1" edges="!484 140|484 1100!757 580|757 780!757 780|557 780!557 780|557 580!557 580|757 580"/>
+                    <Edge strokeStyle="1" edges="!1233 883[1233 1082 1092 1222!1092 1222[953 1362 757 1363"/>
+                  </edges>
