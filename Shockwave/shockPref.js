@@ -1,27 +1,28 @@
 //input, output : textareas
 
 function convertToJSON() {
-	var src = input.value;
+	var src = trimWhiteSpace(input.value);
 	var out = parseSegment(src);
 	output.value = JSON.stringify(out);
 }
 
 function parseSegment(seg) {
-	var s = trimWhiteSpace(trimOuterBrackets(seg));
+	var s = trimOuterBrackets(seg,false);
+	//output.value = s;
 	var children = getChildren(s);
 	var hasChildren = (trimOuterBrackets(seg,true).isComplex);
-	console.log(s);
-	console.log("has children : " + hasChildren);
-	console.log("[  " + children.join("  ,  ") + "  ]");
+	//console.log(s);
+	console.log(s + " | has children : " + hasChildren);
+	//console.log("[  " + children.join("  ,  ") + "  ]");
 	var isSymbol = (detectSymbol(s) && !hasChildren);
 	var isSimple = !hasChildren;
 	if (isSimple) {
-		console.log("is simple data : " + isSimple);
-		console.log("is symbol : " + isSymbol);
-		console.log(s);
+		//console.log("is simple data : " + isSimple);
+		//console.log("is symbol : " + isSymbol);
+		//console.log(s);
 		if (isSymbol) {
 			var out = s; //fine as-is
-			console.log("symbol!");
+			//console.log("symbol!");
 		} else {
 			var type = getType(s);
 			console.log(type);
@@ -40,13 +41,15 @@ function parseSegment(seg) {
 		var out = {list:[],props:{}};
 		appendChildren(out,children);
 	}
-	console.log(out);
+	//console.log(out);
 	return out;
 }
 
+//broken...
+
 function trimOuterBrackets(dat,checkComplex) {
 	var d = dat;
-	var out = "";
+	var out = d;
 	var bracketPairs = [];
 	var currPair = -1;
 	var hasFailed = false;
@@ -87,8 +90,48 @@ function trimOuterBrackets(dat,checkComplex) {
 			}
 		}
 	}
+	bracketPairs = null;
 	return out;
 }
+
+/*
+function trimOuterBrackets(dat) {
+	var d = dat;
+	var out = dat;
+	var bracketPairs = [];
+	var currPair = -1;
+	var hasFailed = false;
+	for (var i=0; i < d.length; i++) {
+		var currChar = d.charAt(i);
+		if (currChar == "[") {
+			var ID = bracketPairs.length;
+			bracketPairs.push({s:i,e:null,p:currPair});
+			currPair = ID;
+		}
+		if (currChar == "]") {
+			if (currPair == -1) {
+				throw new Error("INCORRECTLY NESTED BRACKETS DETECTED, ABORTING!");
+				hasFailed = true;
+				break;
+			}
+			var pair = bracketPairs[currPair];
+			currPair = pair.p;
+			pair.e = i;
+		}
+	}
+	if (!hasFailed) {
+		var lim = d.length - 1;
+		for (var i=0; i < bracketPairs.length; i++) {
+			var test = bracketPairs[i];
+			if (test.s == 0 && test.e == lim) {
+				out = d.slice(1);
+				out = out.slice(0,-1);
+				break;
+			}
+		}
+	}
+	return out;
+}*/
 
 function detectSymbol(s) {
 	var suspect = s;
@@ -107,7 +150,7 @@ function detectSymbol(s) {
 			}
 		}
 	}
-	console.log("detected symbol : " + out);
+	//console.log("detected symbol : " + out);
 	return out;
 }
 
@@ -215,15 +258,16 @@ function getPropertyName(p) {
 
 function getPropertyValue(p) {
 	var out = "";
-	var ind = 0;
-	for (var i=0; i < p.length; i++) {
-		var curr = p.charAt(i);
-		if (curr == "#")
-			continue;
-		if (curr == ":")
-			out = p.slice(i + 1);
+	var prop = p;
+	//console.log("parsing property : " + prop);
+	for (var i=0; i < prop.length; i++) {
+		var curr = prop.charAt(i);
+		if (curr == ":") {
+			out = prop.slice(i + 1);
 			break;
+		}
 	}
+	console.log("retrieved property value : " + out);
 	return out;
 }
 
@@ -231,16 +275,17 @@ function appendChildren(obj,children) {
 	for (i=0; i < children.length; i++) {
 		var curr = children[i];
 		var isProperty = detectProperty(curr);
-		console.log("curr child is prop : " + isProperty);
 		if (isProperty) {
 			var ID1 = obj.list.length;
 			var ID2 = getPropertyName(curr);
 			var data = getPropertyValue(curr);
-			obj.list.push(parseSegment(data));
+			console.log(data);
+			//var data2 = parseSegment(data);
+			obj.list.push(null);
 			obj.props[ID2] = ID1;
 		} else {
-			obj.list.push(parseSegment(curr));
-			console.log("current item : " + curr);
+			var data = parseSegment(curr);
+			obj.list.push(data);
 		}
 	}
 }
