@@ -16,7 +16,7 @@ please don't do anything that would warrant response from Microsoft
 
 Future plans include emulatating other UI styles, or easily providing the tools to do so.
 
-notewrothy features:
+notewrothy features (everything is still heavily WIP):
 "error popups"
 All variations of original Luna (Windows XP) skin, in the default size
 Classic and Classic:Standard (95-2000) 
@@ -34,4 +34,13 @@ installer script
 WIP, assuming the site you're posting on allows JS and HTML,
 this *should* automatically load the required files to correctly render the
 simulated popups
+]
+Alt XP themes
+[
+Royale,Royale Noir,Zune,Embedded
+]
+Windows 3.1
+[
+After several different attempts, all in a row
+(I was very close to giving-up on it...)
 ]

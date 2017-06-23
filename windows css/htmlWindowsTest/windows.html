@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <meta charset="utf-8"/>
 <head>
-	<title>WINDOWS XP CSS3 WINDOWS TESTS</title>
+	<title>CSS3 WINDOWS TESTS</title>
 	<!-- OLD AND BROKE: <link rel="stylesheet" type="text/css" href="windows.css"/> -->
 	<!-- NEW AND IMPROVED: -->
 	<link rel="stylesheet" type="text/css" href="skins/Aero/winAero.css"/>
@@ -9,13 +9,16 @@
 	<link rel="stylesheet" type="text/css" href="skins/Luna/winLuna.css"/>
 	<link rel="stylesheet" type="text/css" href="skins/btnz.css"/>
 	<link rel="stylesheet" type="text/css" href="skins/texts.css"/>
+	<link rel="stylesheet" type="text/css" href="skins/Luna/WinLunaBtnz.css"/>
+	<link rel="stylesheet" type="text/css" href="skins/Luna/WinLunaTopBtnz.css"/>
 	<!--testing and debug, not installed defaultly -->
 	<link rel="stylesheet" type="text/css" href="skins/tests.css"/>
 	<link rel="stylesheet" type="text/css" href="skins/icons.css"/>
+	<link rel="stylesheet" type="text/css" href="skins/3.1/Win3.1.css"/>
 </head>
 <body>
 <br/>
-<div class="Luna">
+<div class="WinLuna">
 	<h4 class="Luna-title">ERROR</h4>
 	<br/>
 	<div class="windowTXT"><p>an error has occured in application.exe <br/>
@@ -33,10 +36,10 @@
 	<ul>
 	</div>
 </div>
-<div align="center" class="LunaCAPbtnz" id="LunaCAPbtnz-2">
+<div align="center" class="WinLunaCAPbtnz" id="WinLunaCAPbtnz-2">
 <ul class="btnz">
-	<li class="btn-Luna"><a onclick="alert('minimized')"><p class="btntxt">-</p></a></li>
-	<li class="btn-Luna"><a onclick="alert('closed')"><p class="btntxt">x</p></a></li>
+	<li class="WinLunaBtnCaption"><a onclick="alert('minimized')">-</a></li>
+	<li class="WinLunaBtnCaption WinLunaBtnClose"><a onclick="alert('closed')">x</a></li>
 <ul>
 </div>
 <!--
@@ -78,11 +81,24 @@
 	</div>
 </div>
 <br/><br/><br/>
-<div class="Luna" id="LunaOlive">
+<div class="WinLuna Olive">
 <h4 class="Luna-title">Luna Olive Test</h4>
 </div>
-<div class="Luna" id="LunaSilver">
+<div class="WinLuna Silver">
 <h4 class="Luna-title" id="Luna-title-black">Luna Silver Test</h4>
+</div>
+<br/><br/>
+<div class="Win3_1Wrapper" style="width:600px; height:440px;">
+	<div class="Win3_1">
+		<div class="Win3_1Title">Windows 3.1 Test</div>
+		<div class="Win3_1Content">stuff</div>
+	</div>
+</div>
+<div class="Win3_1Wrapper Win3_1EmeraldCity" style="min-width:100px; height:100px;">
+	<div class="Win3_1">
+		<div class="Win3_1Title Win3_1EmeraldCity">Windows 3.1 Test (Emerald City style)</div>
+		<div class="Win3_1Content Win3_1EmeraldCity">shiny green stuff</div>
+	</div>
 </div>
 </body>
 </html>

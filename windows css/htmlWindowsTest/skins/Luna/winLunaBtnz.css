@@ -1,0 +1,29 @@
+/*Windows Skins css3*/
+/*Windows Luna (XP theme) - BUTTONS*/
+
+.btn-Luna a {
+  padding-left:5px;
+  padding-right:5px;
+  border:3px solid #003C74;
+  -webkit-border-image:url("btnLuna.png") 3 3 3 3 fill;
+  -o-border-image:url("btnLuna.png") 3 3 3 3 fill;
+  -moz-border-image:url("btnLuna.png") 3 3 3 3 fill;
+  border-image:url("btnLuna.png") 3 3 3 3 fill;
+  cursor:default;
+}
+
+.btn-Luna a:hover{
+  border-color:#003C74;
+  -webkit-border-image-source:url("btnLuna-H.png");
+  -o-border-image-source:url("btnLuna-H.png");
+  -moz-border-image-source:url("btnLuna-H.png");
+  border-image-source:url("btnLuna-H.png");
+}
+
+.btn-Luna a:active{
+  border-color:#003C74;
+  -webkit-border-image-source:url("btnLuna-P.png");
+  -o-border-image-source:url("btnLuna-P.png");
+  -moz-border-image-source:url("btnLuna-P.png");
+  border-image-source:url("btnLuna-P.png");
+}

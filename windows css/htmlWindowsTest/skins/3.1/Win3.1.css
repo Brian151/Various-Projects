@@ -1,0 +1,90 @@
+/*Windows Skins css3*/
+/*Windows 3.1 Theme*/
+
+/*
+	Caveats: Some parts of the window just can NOT be used
+		The amount of effort required to re-create perfectly the
+		Windows 3.1 theme is just not worth it. The fact of the matter
+		is, this is a theme that's intended to be programmed 100%
+		The scope of this project is to primarily be design-oriented and based
+		in HTML. Rendering fully Windows 3.1 styles means using the Canvas element,
+		or spending a painfully long time creating a table layout. So, it's not happening.
+		
+	Some parts of this will require JavaScript
+		Since 3.1 has an insane level of customization, JavaScript will be used to
+		give windows any color besides the default set. Saving every variation to
+		an image and writing CSS rules for it is inefficient in absolutely every way.
+*/
+
+/*the color of the window border comes from this element*/
+.Win3_1Wrapper {
+	border:23px solid #C3C7CB;
+	margin:0px;
+	padding:0px;
+	display:inline-block;
+}
+
+/*the border's outline comes from this element*/
+/*since the image has transparency, the border color of the wrapper shows through*/
+.Win3_1 {
+	margin:-23px;
+	padding:0px;
+	border:23px solid #C3C7CB;
+	-webkit-border-image:url("3.1B.png") 23 23 23 23; /* Safari */
+	-o-border-image:url("3.1B.png") 23 23 23 23; /* Opera */
+	/*effects firefox*/
+	-moz-border-image:url("3.1B.png") 23 23 23 23; /* Old */
+	border-image:url("3.1B.png") 23 23 23 23;
+	display:inline-block;
+	position:relative;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+}
+
+/*The title bar's color comes from this element*/
+.Win3_1Title {
+	position:relative;
+	margin-left: -19px;
+	top:-19px;
+	left:0px;
+	width:100%;
+	height:18px;
+	min-height:18px;
+	max-height:18px;
+	text-align:center;
+	font-weight:bold;
+	color:#FFFFFF;
+	background:#0000AA;
+	border-left:19px solid #0000AA;
+	border-right:19px solid #0000AA;
+}
+
+/*The window's color comes from this element*/
+.Win3_1Content {
+	position:relative;
+	top:-18px;
+	left:-19px;
+	width:100%;
+	height:100%;
+	background:#FFFFFF;
+	border-left:19px solid #FFFFFF;
+	border-right:19px solid #FFFFFF;
+	border-bottom:19px solid #FFFFFF;
+}
+
+/*temporary test, all of these will be set programmtically*/
+.Win3_1Wrapper.Win3_1EmeraldCity {
+	border-color:#2AAA7F;
+}
+
+.Win3_1Title.Win3_1EmeraldCity{
+	background:#2AAA7F;
+	border-color:#2AAA7F;
+}
+
+.Win3_1Content.Win3_1EmeraldCity{
+	background:#C3C7CB;
+	border-color:#C3C7CB;
+}

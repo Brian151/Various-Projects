@@ -1,0 +1,57 @@
+/*Windows Skins css3*/
+/*Windows Luna (XP theme) - CAPTION BUTTONS (the ones at the top of the window)*/
+
+.WinLunaCAPbtnz{
+  display:inline-block;
+  margin:0px;
+  padding:0px;
+  position:relative;
+  top:-193px;
+  right:70px;
+}
+
+#WinLunaCAPbtnz-2{
+  display:inline-block;
+  margin:0px;
+  padding:0px;
+  position:relative;
+  top:-193px;
+  right:85px;
+}
+
+.WinLunaBtnCaption a{
+	margin:0px;
+	padding:0px;
+	display:inline-block;
+	width:21px;
+	height:21px;
+	min-width:21px;
+	min-height:21px;
+	max-width:21px;
+	max-height:21px;
+	background:url("btnLunaTop.png") 0 0;
+	cursor:default;
+	color:#ffffff;
+	font-weight:bold;
+}
+
+.WinLunaBtnCaption a:hover{
+	background:url("btnLunaTop.png") -21px 0;
+}
+
+.WinLunaBtnCaption a:active{
+	background:url("btnLunaTop.png") -42px 0;
+}
+
+
+.WinLunaBtnCaption.WinLunaBtnClose a{
+	background:url("btnLunaClose.png") -42px 0;
+}
+
+.WinLunaBtnCaption.WinLunaBtnClose a:hover{
+	background:url("btnLunaClose.png") -21px 0;
+}
+
+.WinLunaBtnCaption.WinLunaBtnClose a:active{
+	background:url("btnLunaClose.png") -42px 0;
+}

@@ -1,37 +1,45 @@
 /*Windows Skins css3*/
-/*Windows Luna*/
+/*Windows Luna (XP theme)*/
 
 /*default (blue)*/
-.Luna {
+/*also acts as the main template for all variations of the "Luna" skin*/
+.WinLuna {
   min-height:65px;
   min-width:66px;
   max-width:100%;
   max-height:100%;
   display:inline-block; /*fixes width spanning entire page*/
   background:#ECE9D8;
-  /*dimmensions all set to preferred sizes individually, 
-  color "blue" has been defined as a fallback measure*/
+  /*
+	dimmensions all set to preferred sizes individually, 
+	color "blue" has been defined as a fallback measure
+  */
   border-top:29px solid blue;
   border-right:5px solid blue;
   border-bottom:5px solid blue;
   border-left:5px solid blue;
   padding: 10px 20px;
-  /*uses border image "Luna-Blue.png" 
-  slices it to the same dimmensions as the normal border (IMPORTANT that these match EXACTLY)
-  and does not retain the center, 
-  enabling the element's BG to be set independent of the border image
+  /*
+	uses border image "Luna-Blue.png" 
+	slices it to the same dimmensions as the normal border (IMPORTANT that these match EXACTLY)
+	and does not retain the center, 
+	enabling the element's BG to be set independent of the border image.
   */
   -webkit-border-image:url("Luna-Blue.png") 29 5 5 5; /* Safari */
   -o-border-image:url("Luna-Blue.png") 29 5 5 5; /* Opera */
   /*effects firefox*/
   -moz-border-image:url("Luna-Blue.png") 29 5 5 5; /* Old */
   border-image:url("Luna-Blue.png") 29 5 5 5;
+  border-radius: 5px;
 }
 
-/*Variants (IMPORTANT: built on top of default Luna Skin
-html usage: <div class="Luna" id="<Olive/Silver>"></div>)*/
+/*
+	Variants (IMPORTANT: built on top of default Luna Skin)
+	html usage: <div class="WinLuna <Olive/Silver/Royale/RoyaleNoir/Zune/Embedded>"></div>)
+*/
 
-#LunaOlive {
+/*olive green*/
+.WinLuna.Olive {
   border-color:#B0C088;
   -webkit-border-image-source:url("Luna-OliveGreen.png"); /* Safari */
   -o-border-image-source:url("Luna-OliveGreen.png"); /* Opera */
@@ -40,7 +48,8 @@ html usage: <div class="Luna" id="<Olive/Silver>"></div>)*/
   border-image-source:url("Luna-OliveGreen.png");
 }
 
-#LunaSilver{
+/*silver*/
+.WinLuna.Silver{
   border-color:#C4C7D5;
   -webkit-border-image-source:url("Luna-Silver.png"); /* Safari */
   -o-border-image-source:url("Luna-Silver.png"); /* Opera */
@@ -49,4 +58,46 @@ html usage: <div class="Luna" id="<Olive/Silver>"></div>)*/
   border-image-source:url("Luna-Silver.png");
 }
 
+/*alt style: Royale*/
+.WinLuna.Royale{
+	border-color:#76B8EC;
+	background:#EBE9ED;
+	-webkit-border-image-source:url("Royale.png"); /* Safari */
+	-o-border-image-source:url("Royale.png"); /* Opera */
+	/*effects firefox*/
+	-moz-border-image-source:url("Royale.png"); /* Old */
+	border-image-source:url("Royale.png");
+}
 
+/*alt style: Royale Noir*/
+.WinLuna.RoyaleNoir {
+	border-color:#5C6976;
+	background:#EBE9ED;
+	-webkit-border-image-source:url("RoyaleNoir.png"); /* Safari */
+	-o-border-image-source:url("RoyaleNoir.png"); /* Opera */
+	/*effects firefox*/
+	-moz-border-image-source:url("RoyaleNoir.png"); /* Old */
+	border-image-source:url("RoyaleNoir.png");
+}
+
+/*alt style: Zune*/
+.WinLuna.Zune {
+	border-color:#3D3D3D;
+	background:#EBE9ED;
+	-webkit-border-image-source:url("Zune.png"); /* Safari */
+	-o-border-image-source:url("Zune.png"); /* Opera */
+	/*effects firefox*/
+	-moz-border-image-source:url("Zune.png"); /* Old */
+	border-image-source:url("Zune.png");
+}
+
+/*alt style: Embedded*/
+.WinLuna.Embedded{
+	border-color:#01447A;
+	background:#EBE9ED;
+	-webkit-border-image-source:url("Embedded.png"); /* Safari */
+	-o-border-image-source:url("Embedded.png"); /* Opera */
+	/*effects firefox*/
+	-moz-border-image-source:url("Embedded.png"); /* Old */
+	border-image-source:url("Embedded.png");
+}
