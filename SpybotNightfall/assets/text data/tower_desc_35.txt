@@ -1,1 +1,0 @@
-This node contains the access codes to a private security level.  Capture the code to access security level 5. 
